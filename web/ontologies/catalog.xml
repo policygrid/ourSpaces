@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog id="file:/Users/epignott/Documents/workspace/ourSpaces%20project/web/ontologies/" prefer="public" xml:base="file:/Users/epignott/Documents/workspace/ourSpaces%20project/web/ontologies/" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/" uri="discourserelationships.owl"/>
+    <uri name="http://xmlns.com/foaf/0.1/" uri="foaf.owl"/>
+    <uri name="http://www.geonames.org/ontology" uri="geo-names.owl"/>
+    <uri name="http://www.policygrid.org/geo-properties.owl" uri="geo-properties.owl"/>
+    <uri name="http://openprovenance.org/ontology" uri="opm.owl"/>
+    <uri name="http://www.policygrid.org/ourspacesVRE.owl" uri="OurSpacesVRE.owl"/>
+    <uri name="http://www.policygrid.org/project.owl" uri="project.owl"/>
+    <uri name="http://www.policygrid.org/provenance-generic.owl" uri="provenance-generic.owl"/>
+    <uri name="http://www.policygrid.org/provenance-simulation.owl" uri="provenance-simulation.owl"/>
+    <uri name="http://www.policygrid.org/resource.owl" uri="Resource.owl"/>
+    <uri name="http://rdfs.org/sioc/ns#" uri="sioc.owl"/>
+    <uri name="http://www.policygrid.org/task.owl" uri="Task.owl"/>
+    <uri name="http://www.w3.org/2006/time" uri="time.owl"/>
+    <uri name="http://www.policygrid.org/utility.owl" uri="Utility.owl"/>
+    <uri name="http://www.policygrid.org/academic-disciplines" uri="academic-disciplines.owl"/>
+    <uri name="http://www.policygrid.org/provenance-policies" uri="provenance-policies.spin.owl"/>
+</catalog>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class ResearchAim-->
+<ResearchAim>
+  <label>
+<!--     <labelPart type="literal">the research aim </labelPart> -->
+    <labelPart type="directProp">http://www.policygrid.org/project.owl#hasDescription</labelPart>
+  </label>
+</ResearchAim>
+

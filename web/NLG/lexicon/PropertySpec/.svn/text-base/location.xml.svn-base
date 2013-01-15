@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property location--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="occur" idx="predicate"><morph tense="past" /></node><node cat="np" rel="su" idx="source" /><node cat="pp" rel="ppmod"><node cat="prep" rel="hd" root="at" /><node cat="np" rel="obj" root="01/21/2010" idx="target" /></node></node></dt>

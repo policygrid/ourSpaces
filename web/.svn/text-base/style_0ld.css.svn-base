@@ -1,0 +1,253 @@
+
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+body {
+	background-color:#FFFFFF;
+	font-size:12px;
+	font-family: Lucida Sans, Tahoma;
+}
+
+div.header {
+	background-image:url(images/header_02.png);
+	height:71px;
+	overflow:hidden;
+	width:100%;
+	border-bottom:1px solid #FF6600;
+}
+
+div.headerContainer {
+	width:1000px;
+	position:relative;
+	margin:0 auto;
+	height:71px;
+	}
+
+div.headerLogo {
+	background:url(images/header_01.png) no-repeat;
+	height:70px;
+	margin: 0 auto;
+	float:left;
+	overflow:hidden;
+	width:400px;
+	position:relative;
+	}
+
+div.dateTime {
+	height:55px;
+	margin-top:7px;
+	float:left;
+	overflow:hidden;
+	width:300px;
+	border:1px solid #666666;
+	position:relative;
+	}
+	
+div.search {
+	height:55px;
+	margin-top:7px;
+	float:left;
+	overflow:hidden;
+	width:250px;
+	border:1px solid #666666;
+	position:relative;
+	margin-left:35px;
+	}
+	
+div.headerLogo2 {
+	height:70px;
+	margin: 0 auto;
+	overflow:hidden;
+	width:1000px;
+	}
+	
+div.headerIndexLogo {
+	background:url(images/header_01.png) no-repeat;
+	height:70px;
+	margin: 0 auto;
+	overflow:hidden;
+	}
+
+div.indexBG {
+	background:url(images/panelBG.png) ;
+	width:100%;
+	border-bottom:1px solid #333333;
+	border-top:1px solid #CCCCCC;
+	}
+
+div.indexCenterPanel {
+	background:url(images/panel.png) no-repeat;
+	width:400px;
+	height:400px;
+	overflow:hidden;
+	margin: 0 auto;
+	margin-top:110px;
+	margin-bottom:90px;
+	}
+
+div.indexCenterPanelText {
+	padding:20px;
+	}
+
+div.loginForm {
+	margin: 0 auto;
+	}
+
+div.navBarBG {
+	background:url(images/navbar_07.png);
+	overflow:hidden;
+	height:30px;
+	width:100%;
+	}
+
+div.navBar {
+	margin: 0 auto;
+	background:url(images/navbar_07.png);
+	overflow:hidden;
+	width:1000px;
+	height:30px;
+	}
+
+div.navBarLeft {
+	float:left;
+	}
+
+div.navBarRight {
+	float:right;
+	}
+
+div.homeStatusContainer {
+	width:1000px;
+	margin: 0 auto;
+	margin-top:10px;
+	}
+
+div.content {
+	width:1000px;
+	margin: 0 auto;
+	margin-top:10px;
+	}
+
+div.statusBox {
+	width:1000px;
+	margin: 0 auto;
+	margin-top:10px;
+	background:url(images/status.png);
+	height:104px;
+	}
+
+div.statusBoxBox {
+	width: 400px;
+	border: 1px solid #666666;
+	background-color:#F2FDFF;
+	height:52px;
+	margin-left:10px;
+	_margin-left:5px;
+	position:relative;
+	float:left;
+}
+
+div.statusBoxName {
+	position:relative;
+	float:left;
+	width:400px;
+	margin-left:10px;
+	_margin-left:5px;
+	}
+
+div.messageCount {
+	position:relative;
+	float:left;
+	width:400px;
+	margin-left:10px;
+	_margin-left:5px;
+	}
+
+div.statusBoxContent {
+	padding:15px;
+}
+
+div.footer {
+	margin: 0 auto;
+	border-top: 1px solid #333333;
+	padding-top:5px;
+	width:1000px;
+	}
+
+div.spaces {
+	position:relative;
+	float:left;
+	width:440px;
+	margin-left:18px;
+	_margin-left:11px;
+	padding-top:5px;
+	}
+
+a.res {
+	color:#CC0000;
+	text-decoration:none;
+	}
+	
+a.res:link {
+	color:#CC0000;
+	}
+
+a.res:active {
+	color:#CC0000;
+	}
+
+a.res:hover {
+	color:#000000;
+	text-decoration:underline;
+	}
+
+a.res:visited {
+	color:#CC0000;
+	}
+
+a.tag {
+	color:#000000;
+	text-decoration:none;
+	}
+	
+a.tag:link {
+	color:#000000;
+	}
+
+a.tag:active {
+	color:#000000;
+	}
+
+a.tag:visited {
+	color:#000000;
+	}
+
+a:link {
+	color:#666699;
+	text-decoration:none;
+	}
+	
+a:active {
+	color:#666699;
+	text-decoration:none;
+	}
+	
+a:visited {
+	color:#666699;
+	text-decoration:none;
+	}
+
+a:hover {
+	color:#000000;
+	text-decoration:underline;
+	}
+
+	

@@ -1,0 +1,77 @@
+        
+    .ui-autocomplete{
+    	background-color: #CDD;
+    }
+     .resourceInputDiv {  
+        width:270px; 
+        padding:3px 3px 0; 
+        margin:3px auto;  
+        border:1px solid #aaa; 
+        background-color:lightgrey; 
+        cursor:text;  
+        float: right;
+    }  
+     .resourceInput {  
+        width:250px; 
+        margin:0 0 2px 0; 
+        padding:0 0 3px;  
+        position:relative; 
+        top:0;  
+        border:none;  
+        background: white url("/ourspaces/css/custom-theme/images/zoom.png") left no-repeat;
+        padding: 2px 2px 2px 17px;
+    }  
+    
+.ui-autocomplete-loading { background: white url('/ourspaces/images/ui-anim_basic_16x16.gif') left center no-repeat; }
+.blogPostDialog .ui-autocomplete-loading { background: none; }
+
+     .resourceInputDiv span.value {      
+     		float: left;
+        display:block; 
+        margin:0 3px 3px 0; 
+        padding:3px 28px 4px 8px;  
+        position:relative;  
+        background-color:#eee;  
+        color:#333;  
+        font:normal 11px Verdana, Sans-serif;  
+        
+        border:1px solid #333; 
+        -moz-border-radius:7px;  
+        -webkit-border-radius:7px; 
+        border-radius:7px; 
+    }  
+    .resourceInputDiv span.value a.remove {  
+        position:absolute; right:8px; top:2px; color:#666;  
+        font:bold 12px Verdana, Sans-serif; text-decoration:none;  
+    }  
+     .resourceInputDiv span.value a.remove:hover { color:#ff0000; }  
+    .ui-menu .ui-menu-item { whitewhite-space:nowrap; padding:0 10px 0 0; }  
+    
+    .resourceInputDiv button {    
+	    background: none repeat scroll 0 0 OliveDrab;
+	    float: left;
+	    font-size: 11px;
+	    height: 20px;
+	    margin: 0;
+	    padding: 0;
+     }
+     .resourceInputDiv button span.ui-button-icon-primary{   
+    	left: 0.1em;
+     }
+     .resourceInputDiv button span.ui-button-text{    
+     	padding: 0.1em 0.1em 0.1em 1.6em;
+    	left: 0.1em;
+     }
+     
+     .noResults{
+	     background-color: #CCDDDD;
+	    border: 1px solid black;
+	    color: grey;
+	    display: block;
+	    float: right;
+	    font-size: 13px;
+	    height: 18px;
+	    padding: 0.35em 0.55em;
+	    position: absolute;
+	    width: 234px;
+    }

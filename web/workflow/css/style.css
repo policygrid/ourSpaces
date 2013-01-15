@@ -1,0 +1,225 @@
+body {
+	font-size: 12px;
+	marging: 0;
+	font-family: Tahoma;
+}
+#divCanvas {
+	width: 990px;
+	height: 800px;
+	margin: 0px;
+	z-index: 0;
+}
+.component_node {
+	padding: 0px;
+	border: 1px solid gray;
+	z-index: 100;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	cursor: pointer;
+}
+#divComponetBox .component_node {
+	margin: 4px 5px;
+	padding: 2px;
+}
+
+#divComponetBox .process {
+	max-width: 140px;
+}
+
+#divComponetBox .component_node .NodeName {
+	padding: 3px;
+}
+
+#divCanvas .component_node {
+	margin: 0;
+	width: 130px;
+	height: 50px;
+	text-align: center;
+}
+
+#divCanvas .component_node .NodeName {
+	font-weight: bold;
+	display: block;
+	width: 75%;
+}
+.artefact {
+	background-color: #6c3;
+}
+.process {
+	background-color: #39c;
+}
+#divComponetBox .process {
+	float: left;
+	clear: right;
+}
+.disabledComponetNode {
+	background-color: gray !important;
+}
+
+.dragHandler {
+	width: 8px;
+	height: 14px;
+	overflow: hidden;
+	margin: 3px auto 18px;
+	background-color: #c63;
+	vertical-align: middle;
+	cursor: pointer;
+	z-index: 200;
+}
+.leftDragHandler {
+	border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+	float: left;
+}
+.rightDragHandler {
+	border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+	float: right;
+}
+.dragHandler:hover .horizontalLineHandler:hover {
+	background-color: #ff8040;
+}
+.linkHandler {
+
+}
+
+.horizontalLineHandler {
+	position: absolute;
+
+	min-width: 30px;
+	height: 13px;
+	background-color: #c63;
+	z-index: 201;
+	border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	cursor: pointer;
+	font-size: .8em;
+	color: #fff;
+}
+
+.verticalLineHandler {
+	position: absolute;
+	min-width: 30px;
+	height: 13px;
+	background-color: #c63;
+	z-index: 201;
+	border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+	cursor: pointer;
+	font-size: .8em;
+	color: #fff;
+}
+ul.menu {
+	position: absolute;
+	z-index: 250;
+	border-left: solid 3px #c63;
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+ul.menu li {
+	margin: 0;
+	background-color: orange;
+	color: white;
+	padding: 3px 5px;
+}
+ul.menu li:hover {
+	background-color: blue;
+	color: white;
+}
+
+.treenode {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-image: url(../image/tree-icon.gif);
+	background-repeat:no-repeat;
+	background-color: transparent;
+	clear: left;
+}
+.open {
+	background-position: -18px 0;
+}
+.closed {
+	background-position: 0 0;
+}
+.leaf {
+	background: transparent;
+}
+/*.ui-dialog-titlebar {
+	display: none;
+}*/
+.shadow {
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666');
+}
+input.IntegerInput, input.DecimalInput {
+	padding: 3px;
+	width: 40px;
+}
+input.StringInput {
+	padding: 3px;
+	width: 60px;
+}
+input.errorInput, select.errorInput {
+	background-color: #f99;
+}
+.errorMsg {
+	color: #c00;
+}
+.Tooltip {
+	opacity: 0.8;
+	background-color: #fc6;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	padding: 5px;
+	width: 120px;
+	text-align: left;
+	border: 1px dashed #c60;
+}
+.LinkButton:hover {
+	color: #5a85a5;
+}
+.RDFIndicator:hover {
+	color: orange;
+}
+
+#divProcessPrpoerties {
+	margin-left: 30%;
+	width: 68%;
+	border-left: 1px dotted dashed gray;
+	padding: 3px 1%;
+}
+#divAvailableProperties {
+	float: left;
+	width: 27%;
+	padding: 3px 1%;
+}
+.loading {
+	background: url(../image/ajax-loading.gif) no-repeat center center;
+
+}

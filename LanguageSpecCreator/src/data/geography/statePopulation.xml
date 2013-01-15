@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- [source] has a population of [target] people-->
+
+<!DOCTYPE dt>
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="have"/>
+		<node cat="np" rel="comp">
+			<node cat="det" rel="det" root="a"/>
+			<node cat="noun" rel="hd" root="population"/>
+			<node cat="pp" rel="ppmod">
+				<node cat="np" rel="obj">
+					<node cat="adj" rel="mod" idx="target"/>
+					<node cat="noun" rel="hd" root="people"/>
+				</node>
+				<node cat="prep" rel="hd" root="of"/>
+			</node>	
+		</node> 
+		<node cat="np" rel="su" idx="source"/>
+	</node>
+</dt>

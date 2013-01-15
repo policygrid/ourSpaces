@@ -1,0 +1,30 @@
+digraph G {
+edge [decorate=true];
+aax [label="np TARGET aax"]; 
+abb [label="det:some abb"]; 
+aax -> abb [label="det"]; 
+aab [label="np aab"]; 
+aac [label="ssub aac"]; 
+aab -> aac [label="ppmod"]; 
+aah [label="np aah"]; 
+aac -> aah [label="su"]; 
+aaf [label="verb:be aaf"]; 
+aac -> aaf [label="hd"]; 
+aal [label="det:the aal"]; 
+aah -> aal [label="det"]; 
+aaj [label="noun:address aaj"]; 
+aah -> aaj [label="hd"]; 
+aan [label="pp aan"]; 
+aap [label="np SOURCE aap"]; 
+aan -> aap [label="obj"]; 
+aah -> aan [label="ppmod"]; 
+aat [label="det:some aat"]; 
+aap -> aat [label="det"]; 
+aar [label="noun:person aar"]; 
+aap -> aar [label="hd"]; 
+aac -> aax [label="comp"]; 
+aav [label="prep:to aav"]; 
+aan -> aav [label="hd"]; 
+aaz [label="noun:address aaz"]; 
+aax -> aaz [label="hd"]; 
+}

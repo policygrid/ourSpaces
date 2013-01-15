@@ -1,0 +1,28 @@
+digraph G {
+edge [decorate=true];
+target [label="np TARGET target"]; 
+aat [label="noun:address aat"]; 
+target -> aat [label="hd"]; 
+aab [label="smain aab"]; 
+aac [label="verb:be aac"]; 
+aab -> aac [label="hd"]; 
+aar [label="det:some aar"]; 
+target -> aar [label="det"]; 
+aae [label="np aae"]; 
+predicate [label="noun:address predicate"]; 
+aae -> predicate [label="hd"]; 
+aab -> aae [label="su"]; 
+aaf [label="det:the aaf"]; 
+aae -> aaf [label="det"]; 
+aai [label="pp aai"]; 
+source [label="np SOURCE source"]; 
+aai -> source [label="obj"]; 
+aae -> aai [label="ppmod"]; 
+aaj [label="prep:to aaj"]; 
+aai -> aaj [label="hd"]; 
+aap [label="noun:person aap"]; 
+source -> aap [label="hd"]; 
+aab -> target [label="comp"]; 
+aan [label="det:some aan"]; 
+source -> aan [label="det"]; 
+}

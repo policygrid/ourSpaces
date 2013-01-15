@@ -1,0 +1,12 @@
+# Lexicon properties:
+lexiconPath = ../webapps/ourspaces/NLG/lexicon/
+lexiconPropertySpecPath = ${lexiconPath}PropertySpec/
+lexiconClassSpecPath = ${lexiconPath}ClassSpec/
+
+# Sesame server properties:
+sesameRepository = ourSpacesVRE3
+sesameURL = http://howling.esc.abdn.ac.uk:8081/openrdf-sesame
+sesameBaseURI = http://www.policygrid.org/
+
+# Ontology file configuration: 
+ontologyConfig = ../webapps/ourspaces/WEB-INF/nlgOntologies.xml

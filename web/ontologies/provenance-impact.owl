@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ontology "http://openprovenance.org/ontology#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.policygrid.org/provenance-impact.owl#"
+     xml:base="http://www.policygrid.org/provenance-impact.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ontology="http://openprovenance.org/ontology#">
+    <owl:Ontology rdf:about="http://www.policygrid.org/provenance-impact.owl">
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasCorroboratingSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasCorroboratingSource">
+        <rdfs:range rdf:resource="&ontology;Artifact"/>
+        <rdfs:domain rdf:resource="http://www.policygrid.org/provenance-impact.owl#Impact"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasReference -->
+
+    <owl:ObjectProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasReference">
+        <rdfs:range rdf:resource="&ontology;Artifact"/>
+        <rdfs:domain rdf:resource="http://www.policygrid.org/provenance-impact.owl#Impact"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasResearcher -->
+
+    <owl:ObjectProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasResearcher">
+        <rdfs:domain rdf:resource="http://www.policygrid.org/provenance-impact.owl#Impact"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasTwitterPosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasTwitterPosts">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasYouTubeVideo -->
+
+    <owl:ObjectProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasYouTubeVideo">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasDetails">
+        <rdfs:domain rdf:resource="http://www.policygrid.org/provenance-impact.owl#Impact"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasInsights -->
+
+    <owl:DatatypeProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasInsights">
+        <rdfs:domain rdf:resource="http://www.policygrid.org/provenance-impact.owl#Impact"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#hasSummary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.policygrid.org/provenance-impact.owl#hasSummary">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.policygrid.org/provenance-impact.owl#Impact"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openprovenance.org/ontology#Artifact -->
+
+    <owl:Class rdf:about="&ontology;Artifact"/>
+    
+
+
+    <!-- http://www.policygrid.org/provenance-impact.owl#Impact -->
+
+    <owl:Class rdf:about="http://www.policygrid.org/provenance-impact.owl#Impact">
+        <rdfs:subClassOf rdf:resource="&ontology;Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="&foaf;Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1451) http://owlapi.sourceforge.net -->
+

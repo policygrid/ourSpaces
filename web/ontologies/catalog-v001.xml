@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog id="XML Catalog File (see http://www.oasis-open.org/committees/entity/spec-2001-08-06.html) - Created By Protégé 4" prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=/Users/thomas/Documents/workspace/OurSpaces/trunk/web/ontologies, Auto-Update=true" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.w3.org/2006/time" uri="time.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/project.owl" uri="project.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/utility.owl" uri="Utility.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/resource.owl" uri="Resource.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/geo-properties.owl" uri="geo-properties.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/opm-resource.owl" uri="opm-Resource.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://rdfs.org/sioc/ns#" uri="sioc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/opm.owl" uri="opm.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/task.owl" uri="Task.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/ourspacesVRE.owl" uri="OurSpacesVRE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://xmlns.com/foaf/0.1/" uri="foaf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1297076589075" name="http://www.policygrid.org/provenance-generic.owl" uri="provenance-generic.owl"/>
+    </group>
+</catalog>

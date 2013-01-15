@@ -1,0 +1,1 @@
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> . @prefix pg: <http://www.policygrid.org/ontologies/opm.owl#> . { pg:John foaf:kows [foaf:name "Tom"] . }

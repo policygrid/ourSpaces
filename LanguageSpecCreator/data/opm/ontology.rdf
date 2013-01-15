@@ -1,0 +1,114 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:base="http://www.policygrid.org/opm.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" >
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#Artifact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#MayHaveBeenDerived">
+    <rdfs:subClassOf rdf:resource="http://www.policygrid.org/opm.owl#ProvenanceRelation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#usedProcess">
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Used"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#mayHaveBeenDerivedFromArtifact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#MayHaveBeenDerived"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Artifact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#Used">
+    <rdfs:subClassOf rdf:resource="http://www.policygrid.org/opm.owl#ProvenanceRelation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#wasControlledBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Agent"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#mayHaveBeenDerivedToArtifact">
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#MayHaveBeenDerived"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Artifact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#WasGeneratedBy">
+    <rdfs:subClassOf rdf:resource="http://www.policygrid.org/opm.owl#ProvenanceRelation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#mayHaveBeenDerivedWithRole">
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Role"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#MayHaveBeenDerived"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#wasGeneratedByRole">
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Role"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#WasGeneratedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#wasGeneratedByArtifact">
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Artifact"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#WasGeneratedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#wasDerivedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#usedArtifact">
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Used"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Artifact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#ProvenanceRelation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#Role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#wasTriggeredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#wasGeneratedByProcess">
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Process"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#WasGeneratedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#usedRole">
+    <rdfs:range rdf:resource="http://www.policygrid.org/opm.owl#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Used"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/opm.owl#Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,95 @@
+/* it's a good idea to define a height and width for quickFlip */
+
+body {
+    min-width: 100px;
+}
+
+.quickFlip, .quickFlip3 {
+
+}
+
+.quickFlip2 {
+    height: 150px;
+    width: 40%;
+    float: left;
+    margin-right: 9%;
+}
+
+/* the rest of this is irrelevent */
+
+H1, H2 {
+    float: left;
+    padding-right: 15px;
+    line-height: 32px;
+}
+
+.clear {
+    clear: both;
+    magin: 0;
+    padding: 0;
+}
+
+.redPanel, .blackPanel {
+    text-align: center;
+}
+
+.half-col {
+    width: 50%;
+    float: left;
+}
+
+/**** panels ****/
+
+.quickFlip, .quickFlip2, .quickFlip3 {
+
+}
+
+.quickFlip .blackPanel, .quickFlip2 .blackPanel, .quickFlip3 .blackPanel {
+  
+}
+
+.quickFlip .redPanel, .quickFlip2 .redPanel, .quickFlip3 .redPanel {
+
+}
+
+.half-col p {
+
+}
+
+.half-col p.panel-content {
+
+}
+
+.half-col h3, .half-col h4 {
+;
+}
+
+.half-col h3 {
+
+}
+
+.half-col .redPanel h3 {
+
+}
+
+.half-col .first {
+
+}
+
+.half-col EM {
+    display: block;
+    padding: 0;
+}
+
+.half-col A.quickFlipCta {
+    position: absolute;
+    outline: none;
+}
+
+.quickFlip2 .redPanel a {
+    color: #FFF;
+}
+
+.quickFlipCta {
+    cursor: pointer;
+}

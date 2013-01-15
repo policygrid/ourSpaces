@@ -1,0 +1,22 @@
+digraph G {
+edge [decorate=true];
+aab [label="smain aab"]; 
+predicate [label="verb:employee predicate"]; 
+aab -> predicate [label="hd"]; 
+target [label="np TARGET target"]; 
+aaq [label="noun:organisation aaq"]; 
+target -> aaq [label="hd"]; 
+aae [label="pp aae"]; 
+aaf [label="prep:by aaf"]; 
+aae -> aaf [label="hd"]; 
+source [label="np SOURCE source"]; 
+aab -> source [label="obj"]; 
+aak [label="det:the aak"]; 
+source -> aak [label="det"]; 
+aae -> target [label="obj"]; 
+aab -> aae [label="ppmod"]; 
+aao [label="det:some aao"]; 
+target -> aao [label="det"]; 
+aam [label="noun:person aam"]; 
+source -> aam [label="hd"]; 
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property hasDescription--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="be" /><node cat="np" rel="su" idx="source" /><node cat="np" rel="comp"><node cat="noun" rel="hd" root="" idx="predicate" /><node cat="np" rel="det" root="To investigate issues" idx="target" /></node></node></dt>

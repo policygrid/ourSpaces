@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Post-->
+<Post>
+  <label>
+    <labelPart type="literal">the post </labelPart>
+    <labelPart type="directProp">http://rdfs.org/sioc/ns#title</labelPart>
+  </label>
+</Post>
+

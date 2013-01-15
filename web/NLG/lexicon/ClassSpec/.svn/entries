@@ -1,0 +1,58 @@
+10
+
+dir
+13874
+svn://dtp-123.sncs.abdn.ac.uk/policygrid/OurSpaces/trunk/web/NLG/lexicon/ClassSpec
+svn://dtp-123.sncs.abdn.ac.uk/policygrid
+
+
+
+2012-04-02T09:35:07.963345Z
+12475
+tbouttaz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e0d4e648-d86c-e00d-9c55-f47e533b35e5
+
+http%3A%2F%2Fwww.policygrid.org%2Fproject.owl%23
+dir
+
+http%3A%2F%2Fwww.policygrid.org%2Facademic-discipline%23
+dir
+
+http%3A%2F%2Fwww.policygrid.org%2Facademic-disciplines%23
+dir
+
+http%3A%2F%2Fwww.policygrid.org%2Fprovenance-generic.owl%23
+dir
+
+http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F
+dir
+
+http%3A%2F%2Frdfs.org%2Fsioc%2Fns%23
+dir
+
+http%3A%2F%2Fwww.policygrid.org%2FourspacesVRE.owl%23
+dir
+
+http%3A%2F%2Fwww.geonames.org%2Fontology%23
+dir
+
+http%3A%2F%2Fwww.policygrid.org%2Futility.owl%23
+dir
+
+http%3A%2F%2Fopenprovenance.org%2Fontology%23
+dir
+

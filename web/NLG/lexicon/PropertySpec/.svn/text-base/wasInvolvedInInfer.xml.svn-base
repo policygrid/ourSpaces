@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property wasGeneratedByInfer--><dt><node cat="smain" rel="root">
+<node cat="verb" rel="hd" root="involve" idx="predicate">
+	<morph actor="passive" tense="past" />
+</node><node cat="np" rel="obj" idx="source" /><node cat="pp" rel="ppmod"><node cat="prep" rel="hd" root="in" /><node cat="np" rel="obj" idx="target" /></node></node></dt>

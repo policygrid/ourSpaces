@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The river [source] runs through [target] -->
+
+<!DOCTYPE dt>
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="run"/>
+		<node cat="np" rel="su">
+			<node cat="det" rel="det" root="the"/>
+			<node cat="noun" rel="mod" root="river"/>
+			<node cat="np" rel="hd" idx="source"/>
+		</node> 
+		<node cat="pp" rel="ppmod">
+			<node cat="prep" rel="hd" root="through"/>
+			<node cat="np" rel="obj" idx="target" />
+		</node> 
+	</node>
+</dt>

@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.policygrid.org/utility.owl#"
+     xml:base="http://www.policygrid.org/utility.owl"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about=""/>
+    <owl:Class rdf:ID="Address">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Street"/>
+                <owl:minCardinality rdf:datatype="&xsd;int">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Postcode"/>
+                <owl:maxCardinality rdf:datatype="&xsd;int">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Place"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Country"/>
+                <owl:maxCardinality rdf:datatype="&xsd;int">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="AddressOf">
+        <rdfs:domain rdf:resource="#Address"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Department"/>
+                    <owl:Class rdf:about="#Organisation"/>
+                    <owl:Class rdf:about="#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:inverseOf rdf:resource="#HasAddress"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="AnalysisStage">
+        <rdfs:subClassOf rdf:resource="#ProjectStage"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="BeginDay">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePeriod"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="BeginMonth">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePeriod"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="BeginYear">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePeriod"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="IsRegistered">
+    	<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="CollaboratorOf">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasCollaborator"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#MemberOf"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="ResearcherOf">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasResearcher"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#MemberOf"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="SubcontractorOf">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasSubcontractor"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#MemberOf"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Collection">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#HasItem"/>
+                <owl:minCardinality rdf:datatype="&xsd;int">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="ContactOf">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#HasContact"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="Country">
+        <rdfs:domain rdf:resource="#Address"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="DataCollectionStage">
+        <rdfs:subClassOf rdf:resource="#ProjectStage"/>
+    </owl:Class>
+    <owl:Class rdf:ID="DataPreparationStage">
+        <rdfs:subClassOf rdf:resource="#ProjectStage"/>
+    </owl:Class>
+    <owl:Class rdf:ID="Date"/>
+    <owl:Class rdf:ID="DatePeriod">
+        <rdfs:subClassOf rdf:resource="#Date"/>
+    </owl:Class>
+    <owl:Class rdf:ID="DatePoint">
+        <rdfs:subClassOf rdf:resource="#Date"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="Day">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePoint"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="Department">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="DepartmentOf">
+        <rdfs:domain rdf:resource="#Department"/>
+        <rdfs:range rdf:resource="#Organisation"/>
+        <owl:inverseOf rdf:resource="#HasDepartment"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="DesignStage">
+        <rdfs:subClassOf rdf:resource="#ProjectStage"/>
+    </owl:Class>
+    <owl:Class rdf:ID="DisseminationStage">
+        <rdfs:subClassOf rdf:resource="#ProjectStage"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="Email">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="EmployeeOf">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Department"/>
+                    <owl:Class rdf:about="#Organisation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:inverseOf rdf:resource="#HasEmployee"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="EndDay">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePeriod"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="EndMonth">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePeriod"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="EndOfProject">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Date"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="EndYear">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePeriod"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="FurtherResearchQuestions">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Results/Comments</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="Gender">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range>
+            <owl:DataRange>
+                <owl:oneOf>
+                    <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">male</rdf:first>
+                        <rdf:rest>
+                            <rdf:List>
+                                <rdf:first rdf:datatype="&xsd;string">female</rdf:first>
+                                <rdf:rest>
+                                    <rdf:List>
+                                        <rdf:first rdf:datatype="&xsd;string">neutral</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:List>
+                                </rdf:rest>
+                            </rdf:List>
+                        </rdf:rest>
+                    </rdf:List>
+                </owl:oneOf>
+            </owl:DataRange>
+        </rdfs:range>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="GrantNumber">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="subtitle">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="HasAddress">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Department"/>
+                    <owl:Class rdf:about="#Organisation"/>
+                    <owl:Class rdf:about="#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="#Address"/>
+        <owl:inverseOf rdf:resource="#AddressOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasCollaborator">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#CollaboratorOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#HasMember"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasResearcher">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#ResearcherOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#HasMember"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasSubcontractor">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#SubcontractorOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#HasMember"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasContact">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#ContactOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasDepartment">
+        <rdfs:domain rdf:resource="#Organisation"/>
+        <rdfs:range rdf:resource="#Department"/>
+        <owl:inverseOf rdf:resource="#DepartmentOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="HasDescription">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#ResearchAim"/>
+                    <owl:Class rdf:about="#ResearchQuestion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="HasEmployee">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Department"/>
+                    <owl:Class rdf:about="#Organisation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#EmployeeOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasItem">
+        <rdfs:domain rdf:resource="#Collection"/>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="HasJobTitle">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="HasPhoto">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="HasMember">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#MemberOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasPrincipalInvestigator">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#PrincipalInvestigatorOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#HasMember"/>
+    </owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="HasAdministrator">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#AdministratorOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#HasMember"/>
+    </owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="HasCoInvestigator">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Person"/>
+        <owl:inverseOf rdf:resource="#CoInvestigatorOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#HasMember"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasProject">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Department"/>
+                    <owl:Class rdf:about="#Organisation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#OrganisationOrDepartment"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasResearchAims">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#ResearchAim"/>
+        <owl:inverseOf rdf:resource="#ResearchAimOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasResearchQuestions">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#ResearchQuestion"/>
+        <owl:inverseOf rdf:resource="#ResearchQuestionOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="HasStage">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#ProjectStage"/>
+        <owl:inverseOf rdf:resource="#PartOfProject"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="HouseNumber">
+        <rdfs:domain rdf:resource="#Address"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="MemberOf">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasMember"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="Month">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePoint"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="Name">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Department"/>
+                    <owl:Class rdf:about="#Organisation"/>
+                    <owl:Class rdf:about="#Person"/>
+                    <owl:Class rdf:about="#Project"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="Organisation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="OrganisationOrDepartment">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="#Department"/>
+                    <owl:Class rdf:about="#Organisation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:inverseOf rdf:resource="#HasProject"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="PartOfProject">
+        <rdfs:domain rdf:resource="#ProjectStage"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasStage"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Gender"/>
+                <owl:minCardinality rdf:datatype="&xsd;int">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="Place">
+        <rdfs:domain rdf:resource="#Address"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="Postcode">
+        <rdfs:domain rdf:resource="#Address"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="ResearchInterest">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">General information</rdfs:comment>
+    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="IdNumber">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">General information</rdfs:comment>
+    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="Website">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">General information</rdfs:comment>
+    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="OurSpacesDate">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">General information</rdfs:comment>
+    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="Startdate">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">General information</rdfs:comment>
+    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:ID="Enddate">
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">General information</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="PrincipalInvestigatorOf">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasPrincipalInvestigator"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#MemberOf"/>
+    </owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="AdministratorOf">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasAdministrator"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#MemberOf"/>
+    </owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="CoInvestigatorOf">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasCoInvestigator"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Activities/Roles</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#MemberOf"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Project">
+        <rdfs:subClassOf>
+        	<owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#HasMember"/>
+                <owl:minCardinality rdf:datatype="&xsd;int">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    <owl:Class rdf:ID="ProjectDevelopmentStage">
+        <rdfs:subClassOf rdf:resource="#ProjectStage"/>
+    </owl:Class>
+    <owl:Class rdf:ID="ProjectStage"/>
+    <owl:Class rdf:ID="ResearchAim">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#HasDescription"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="ResearchAimOf">
+        <rdfs:domain rdf:resource="#ResearchAim"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasResearchAims"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="ResearchQuestion">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#HasDescription"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:ObjectProperty rdf:ID="ResearchQuestionOf">
+        <rdfs:domain rdf:resource="#ResearchQuestion"/>
+        <rdfs:range rdf:resource="#Project"/>
+        <owl:inverseOf rdf:resource="#HasResearchQuestions"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="StartOfProject">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Project"/>
+        <rdfs:range rdf:resource="#Date"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="Street">
+        <rdfs:domain rdf:resource="#Address"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="TelephoneNumber">
+        <rdfs:domain rdf:resource="#Address"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >General information</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="Year">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#DatePoint"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+</rdf:RDF>

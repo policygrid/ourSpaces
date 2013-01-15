@@ -1,0 +1,18 @@
+digraph G {
+edge [decorate=true];
+aaf [label="np aaf"]; 
+source [label="np SOURCE source"]; 
+aaf -> source [label="det"]; 
+aab [label="smain aab"]; 
+aac [label="verb:be aac"]; 
+aab -> aac [label="hd"]; 
+target [label="np:thomas bouttaz target"]; 
+aab -> target [label="comp"]; 
+aak [label="det:the aak"]; 
+source -> aak [label="det"]; 
+predicate [label="noun:name predicate"]; 
+aaf -> predicate [label="hd"]; 
+aab -> aaf [label="su"]; 
+aam [label="noun:person aam"]; 
+source -> aam [label="hd"]; 
+}

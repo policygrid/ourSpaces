@@ -1,0 +1,68 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:opm="http://www.policygrid.org/opm.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:base="http://www.policygrid.org/geo-properties.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" >
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#submittedAt">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location where the artefact was submitted</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#analysedAt">
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#storedAt">
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location where the artefact was stored</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#issuedAt">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location of formal issurance of the artefact</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#createdAt">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The location where the resource was made</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#publishedAt">
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location where the resource was made available</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#collectedAt">
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#aboutLocation">
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location described by the artefact</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/geo-properties.owl#modifiedAt">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location where the resource was changed.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.policygrid.org/opm.owl#Artefact"/>
+    <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

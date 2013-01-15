@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Project-->
+<Project>
+  <label>
+    <labelPart type="literal">the </labelPart>
+    <labelPart type="directProp">http://www.policygrid.org/project.owl#projectTitle</labelPart>
+    <labelPart type="literal"> project</labelPart>
+  </label>
+</Project>

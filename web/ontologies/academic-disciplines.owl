@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.policygrid.org/academic-disciplines#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.policygrid.org/academic-disciplines">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="VisualRepresentationType">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DisciplineInfo">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AcademicDiscipline">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >academic discipline</rdfs:label>
+  </owl:Class>
+  <rdf:Property rdf:ID="prefersRepresentation"/>
+  <rdf:Property rdf:ID="hasAcademicDiscipline">
+    <rdfs:range rdf:resource="#AcademicDiscipline"/>
+    <rdfs:domain rdf:resource="#DisciplineInfo"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="hasDisciplineTag">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#DisciplineInfo"/>
+  </rdf:Property>
+  <AcademicDiscipline rdf:ID="SocialSciences">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Social Sciences</rdfs:label>
+    <skos:broader>
+      <AcademicDiscipline rdf:ID="SocialSciencesAndHumanities">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Social Sciences and Humanities</rdfs:label>
+      </AcademicDiscipline>
+    </skos:broader>
+    <prefersRepresentation>
+      <VisualRepresentationType rdf:ID="Text">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Text</rdfs:label>
+      </VisualRepresentationType>
+    </prefersRepresentation>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="ChemicalEngineering">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chemical Engineering</rdfs:label>
+    <skos:broader>
+      <AcademicDiscipline rdf:ID="PhysicalSciencesAndEngineering">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Physical Sciences and Engineering</rdfs:label>
+      </AcademicDiscipline>
+    </skos:broader>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="DecisionSciences">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Decision Sciences</rdfs:label>
+    <skos:broader rdf:resource="#SocialSciencesAndHumanities"/>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="Mathematics">
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mathematics</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="AgriculturalAndBiologicalSciences">
+    <skos:broader>
+      <AcademicDiscipline rdf:ID="LifeSciences">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Life Sciences</rdfs:label>
+      </AcademicDiscipline>
+    </skos:broader>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Agricultural and Biological Sciences</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="PharmacologyToxicologyAndPharmaceuticalScience">
+    <skos:broader>
+      <AcademicDiscipline rdf:ID="HealthSciences">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Health Sciences</rdfs:label>
+      </AcademicDiscipline>
+    </skos:broader>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pharmacology, Toxicology and Pharmaceutical Science</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="ArtsAndHumanities">
+    <skos:broader rdf:resource="#SocialSciencesAndHumanities"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arts and Humanities</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="PhysicsAndAstronomy">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Physics and Astronomy</rdfs:label>
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="NursingAndHealthProfessions">
+    <skos:broader rdf:resource="#HealthSciences"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Nursing and Health Professions</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="BiochemistryGeneticsAndMolecularBiology">
+    <skos:broader rdf:resource="#LifeSciences"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Biochemistry, Genetics and Molecular Biology</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="Chemistry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chemistry</rdfs:label>
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="MaterialsScience">
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Materials Science</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="EarthAndPlanetarySciences">
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Earth and Planetary Sciences</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="VeterinaryScienceAndVeterinaryMedicine">
+    <skos:broader rdf:resource="#HealthSciences"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Veterinary Science and Veterinary Medicine</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="MedicineAndDentistry">
+    <skos:broader rdf:resource="#HealthSciences"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Medicine and Dentistry</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="ImmunologyAndMicrobiology">
+    <skos:broader rdf:resource="#LifeSciences"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Immunology and Microbiology</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="EconomicsEconometricsAndFinance">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Economics, Econometrics and Finance</rdfs:label>
+    <skos:broader rdf:resource="#SocialSciencesAndHumanities"/>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="Neuroscience">
+    <skos:broader rdf:resource="#LifeSciences"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Neuroscience</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="Psychology">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Psychology</rdfs:label>
+    <skos:broader rdf:resource="#SocialSciencesAndHumanities"/>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="BusinessManagementAndAccounting">
+    <skos:broader rdf:resource="#SocialSciencesAndHumanities"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Business, Management and Accounting</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="Engineering">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Engineering</rdfs:label>
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="ComputerScience">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Computer Science</rdfs:label>
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+    <prefersRepresentation>
+      <VisualRepresentationType rdf:ID="Graph">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Graph</rdfs:label>
+      </VisualRepresentationType>
+    </prefersRepresentation>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="EnvironmentalScience">
+    <skos:broader rdf:resource="#LifeSciences"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Environmental Science</rdfs:label>
+  </AcademicDiscipline>
+  <AcademicDiscipline rdf:ID="Energy">
+    <skos:broader rdf:resource="#PhysicalSciencesAndEngineering"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Energy</rdfs:label>
+  </AcademicDiscipline>
+  <VisualRepresentationType rdf:ID="Table">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Psychology</rdfs:label>
+  </VisualRepresentationType>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

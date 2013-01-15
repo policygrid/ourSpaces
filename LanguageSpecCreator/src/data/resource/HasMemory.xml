@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property HasMemory--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="have" idx="predicate" /><node cat="np" rel="su" idx="source" /><node cat="np" rel="obj" root="3gb" idx="target"><node cat="pp" rel="ppmod"><node cat="np" rel="obj"><node cat="noun" rel="hd" root="memory" /></node><node cat="prep" rel="hd" root="of" /></node></node></node></dt>

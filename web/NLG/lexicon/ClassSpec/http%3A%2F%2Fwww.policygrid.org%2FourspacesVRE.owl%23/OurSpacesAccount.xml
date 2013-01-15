@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class OurSpacesAccount -->
+<OurSpacesAccount>
+  <label>
+    <labelPart type="literal">the account </labelPart>
+    <labelPart type="indirectProp" classSubj="false" propLink="http://xmlns.com/foaf/0.1/holdsAccount">http://xmlns.com/foaf/0.1/firstName</labelPart>
+    <labelPart type="literal"> </labelPart>
+    <labelPart type="indirectProp" classSubj="false" propLink="http://xmlns.com/foaf/0.1/holdsAccount">http://xmlns.com/foaf/0.1/surname</labelPart>
+  </label>
+</OurSpacesAccount>

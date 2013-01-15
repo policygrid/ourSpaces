@@ -1,0 +1,30 @@
+digraph G {
+edge [decorate=true];
+source [label="np SOURCE source"]; 
+aae [label="adj:brilliant aae"]; 
+source -> aae [label="mod"]; 
+aab [label="smain aab"]; 
+aab -> source [label="su"]; 
+aac [label="verb:be aac"]; 
+aab -> aac [label="hd"]; 
+aah [label="np aah"]; 
+aai [label="det:a aai"]; 
+aah -> aai [label="det"]; 
+predicate [label="noun:researcher predicate"]; 
+aah -> predicate [label="hd"]; 
+aal [label="pp aal"]; 
+aam [label="prep:of aam"]; 
+aal -> aam [label="hd"]; 
+target [label="np TARGET target"]; 
+aal -> target [label="obj"]; 
+aas [label="det:the aas"]; 
+source -> aas [label="det"]; 
+aab -> aah [label="comp"]; 
+aah -> aal [label="ppmod"]; 
+aaw [label="det:some aaw"]; 
+target -> aaw [label="det"]; 
+aau [label="noun:person aau"]; 
+source -> aau [label="hd"]; 
+aay [label="noun:project aay"]; 
+target -> aay [label="hd"]; 
+}

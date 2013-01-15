@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Lexicon entry for the property controlledInfer--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="control" idx="predicate"><morph tense="past" /></node><node cat="np" rel="su" idx="source" /><node cat="np" rel="obj" idx="target" /></node></dt>

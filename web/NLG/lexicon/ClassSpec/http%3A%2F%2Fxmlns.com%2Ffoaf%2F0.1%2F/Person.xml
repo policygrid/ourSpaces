@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Person-->
+<Person>
+  <label>
+    <labelPart type="directProp">http://xmlns.com/foaf/0.1/firstName</labelPart>
+    <labelPart type="literal"> </labelPart>
+    <labelPart type="directProp">http://xmlns.com/foaf/0.1/surname</labelPart>
+  </label>
+</Person>

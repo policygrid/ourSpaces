@@ -1,0 +1,1 @@
+msgzul={};msgzul.UNKNOWN_TYPE="未知元件類型：";msgzul.DATE_REQUIRED="只能輸入日期。格式：";msgzul.OUT_OF_RANGE="超出範圍";msgzul.NO_AUDIO_SUPPORT="你的瀏覽器不支援動態音效";

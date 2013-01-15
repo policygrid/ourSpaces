@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Feature-->
+<Feature>
+  <label>
+    <labelPart type="literal">the location </labelPart>
+    <labelPart type="directProp">http://www.geonames.org/ontology#name</labelPart>
+  </label>
+</Feature>
+

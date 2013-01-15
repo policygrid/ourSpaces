@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property dateOfPublication--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="be"><morph tense="past" /></node><node cat="np" rel="su" idx="source" /><node cat="np" rel="comp"><node cat="noun" rel="hd" root="published" idx="predicate" /><node cat="pp" rel="ppmod"><node cat="prep" rel="hd" root="on" /><node cat="np" rel="obj" idx="target" /></node></node></node></dt>

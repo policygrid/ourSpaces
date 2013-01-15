@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- [source]'s summit is [target] m above sea level -->
+
+<!DOCTYPE dt>
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="be" />
+		<node cat="np" rel="su">
+			<node cat="det" rel="det" idx="source">
+				<morph case="genitive" />
+			</node>
+			<node cat="noun" rel="hd" root="summit" />
+		</node>	
+		<node cat="np" rel="comp">
+			<node cat="adj" rel="mod" idx="target" />
+			<node cat="noun" rel="hd" root="m." />
+			<node cat="pp" rel="ppmod">
+				<node cat="prep" rel="hd" root="above"/>
+				<node cat="np" rel="obj" root="sea level"/>
+			</node>
+		</node>
+	</node>
+</dt>

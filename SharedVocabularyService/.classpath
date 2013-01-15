@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/pdfbox-app-1.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/TDB-0.8.10/lib/jena-2.6.4-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/TDB-0.8.10/lib/jena-2.6.4.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/TDB-0.8.10/lib/slf4j-log4j12-1.5.8.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/TDB-0.8.10/lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/TDB-0.8.10/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/TDB-0.8.10/lib/xercesImpl-2.7.1.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/TDB-0.8.10/lib/iri-0.8.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/commons-lang3-3.1/commons-lang3-3.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/commons-lang3-3.1/commons-lang3-3.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/commons-lang3-3.1/commons-lang3-3.1-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/kapila/Downloads/commons-lang3-3.1/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/jwnl.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

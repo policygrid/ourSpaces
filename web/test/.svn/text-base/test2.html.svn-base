@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>ModalBox Functional Test</title>
+    <link rel="stylesheet" href="styles2.css" type="text/css" media="screen" charset="utf-8" />
+	
+	<script type="text/javascript" src="includes/prototype.js"></script>
+	<script type="text/javascript" src="includes/scriptaculous.js?load=effects"></script>
+	
+	<script type="text/javascript" src="includes/modalbox.js"></script>
+
+	<link rel="stylesheet" href="includes/modalbox.css" type="text/css" />
+	
+	<style type="text/css" media="screen">
+		#MB_loading {
+			font-size: 13px;
+		}
+		#errmsg {
+			margin: 1em;
+			padding: 1em;
+			color: #C30;
+			background-color: #FCC;
+			border: 1px solid #F00;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<form action="#" method="get" accept-charset="utf-8">
+
+		<h1>ModalBox Functional Test</h1>
+
+
+
+<a href="_ajax_content.html" title="Modalbox ASP.NET injecting test" onclick="Modalbox.show(this.href, {title: this.title, aspnet: false}); return false;">Modalbox ASP.NET injecting test</a>
+
+
+
+
+	</form>
+</body>
+</html>

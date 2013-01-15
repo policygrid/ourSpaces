@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Address -->
+<Address>
+	<label>
+		<labelPart type="directProp">http://www.policygrid.org/utility.owl#houseNumber</labelPart>
+		<labelPart preLabel=" " type="directProp">http://www.policygrid.org/utility.owl#street</labelPart>
+		<labelPart preLabel=", " type="directProp">http://www.policygrid.org/utility.owl#place</labelPart>
+	</label>
+</Address>

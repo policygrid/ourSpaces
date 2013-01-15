@@ -1,0 +1,1484 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY opm "http://openprovenance.org/ontology#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY WERCM-0 "http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#" >
+    <!ENTITY history "http://www.obiama.org/ontology/provenance/history.owl#" >
+    <!ENTITY SimpleWERCM-0 "http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#" >
+    <!ENTITY SimpleScheduleOntology "http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#" >
+    <!ENTITY CreateNAgents "http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#" >
+    <!ENTITY UniformRandomChooser "http://www.obiama.org/ontology/built-in/action/UniformRandomChooser.owl#" >
+    <!ENTITY SetPropertyValueCreator-situatedIn "http://www.obiama.org/ontology/built-in/creator/SetPropertyValueCreator-situatedIn.owl#" >
+    <!ENTITY SetPropertyValueCreator-initialContext "http://www.obiama.org/ontology/built-in/creator/SetPropertyValueCreator-initialContext.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.local-fp7.com/ontologies/WERCM-0.0/runs/SimpleWERCM-0.0-run1234-provenance.owl#"
+     xml:base="http://www.local-fp7.com/ontologies/WERCM-0.0/runs/SimpleWERCM-0.0-run1234-provenance.owl"
+     xmlns:SimpleScheduleOntology="http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#"
+     xmlns:WERCM-0="http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#"
+     xmlns:opm="http://openprovenance.org/ontology#"
+     xmlns:SetPropertyValueCreator-situatedIn="http://www.obiama.org/ontology/built-in/creator/SetPropertyValueCreator-situatedIn.owl#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:SetPropertyValueCreator-initialContext="http://www.obiama.org/ontology/built-in/creator/SetPropertyValueCreator-initialContext.owl#"
+     xmlns:history="http://www.obiama.org/ontology/provenance/history.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:UniformRandomChooser="http://www.obiama.org/ontology/built-in/action/UniformRandomChooser.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:CreateNAgents="http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#"
+     xmlns:SimpleWERCM-0="http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#">
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#cause -->
+
+    <owl:ObjectProperty rdf:about="&opm;cause"/>
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#effect -->
+
+    <owl:ObjectProperty rdf:about="&opm;effect"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/provenance/history.owl#object -->
+
+    <owl:ObjectProperty rdf:about="&history;object"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/provenance/history.owl#predicate -->
+
+    <owl:ObjectProperty rdf:about="&history;predicate"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/provenance/history.owl#subject -->
+
+    <owl:ObjectProperty rdf:about="&history;subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.obiama.org/ontology/provenance/history.owl#data -->
+
+    <owl:DatatypeProperty rdf:about="&history;data"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.obiama.org/ontology/provenance/history.owl#Assertion -->
+
+    <owl:Class rdf:about="&history;Assertion"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/provenance/history.owl#Retraction -->
+
+    <owl:Class rdf:about="&history;Retraction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#assertion_1 -->
+    <!-- http://openprovenance.org/ontology#Used -->
+
+    <owl:Class rdf:about="&opm;Used">
+        <rdfs:subClassOf rdf:resource="&opm;Edge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openprovenance.org/ontology#WasControlledBy -->
+
+    <owl:Class rdf:about="&opm;WasControlledBy">
+        <rdfs:subClassOf rdf:resource="&opm;Edge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openprovenance.org/ontology#WasDerivedFrom -->
+
+    <owl:Class rdf:about="&opm;WasDerivedFrom">
+        <rdfs:subClassOf rdf:resource="&opm;Edge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openprovenance.org/ontology#WasGeneratedBy -->
+
+    <owl:Class rdf:about="&opm;WasGeneratedBy">
+        <rdfs:subClassOf rdf:resource="&opm;Edge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openprovenance.org/ontology#WasTriggeredBy -->
+
+    <owl:Class rdf:about="&opm;WasTriggeredBy">
+        <rdfs:subClassOf rdf:resource="&opm;Edge"/>
+    </owl:Class>
+    
+
+
+
+    <owl:Class rdf:about="&history;Assertion">    
+        <rdfs:subClassOf rdf:resource="&opm;Process"/>        
+    </owl:Class>    
+    <owl:Class rdf:about="&history;Retraction">    
+        <rdfs:subClassOf rdf:resource="&opm;Process"/>        
+    </owl:Class>    
+    
+    <history:Retraction rdf:about="&opm;assertion_1">
+    </history:Retraction>
+    <history:Retraction rdf:about="&opm;assertion_2">
+    </history:Retraction>
+    <history:Retraction rdf:about="&opm;assertion_6">
+    </history:Retraction>
+    <history:Retraction rdf:about="&opm;assertion_4">
+    </history:Retraction>
+    
+
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#axiom_1 -->
+
+    <opm:Artifact rdf:about="&opm;axiom_1">
+        <history:object rdf:resource="&CreateNAgents;CreatedThing"/>
+        <history:subject rdf:resource="&CreateNAgents;CreatedThing_1"/>
+        <history:predicate rdf:resource="&owl2xml;ClassAssertion"/>
+    </opm:Artifact>
+    
+    <opm:Artifact rdf:about="&opm;axiom_2">
+        <history:object rdf:resource="&CreateNAgents;CreatedThing"/>
+        <history:subject rdf:resource="&CreateNAgents;CreatedThing_1"/>
+        <history:predicate rdf:resource="&owl2xml;ClassAssertion"/>
+    </opm:Artifact>
+    
+    
+    <opm:Artifact rdf:about="&opm;axiom_3">
+        <history:object rdf:resource="&CreateNAgents;CreatedThing"/>
+        <history:subject rdf:resource="&CreateNAgents;CreatedThing_1"/>
+        <history:predicate rdf:resource="&owl2xml;ClassAssertion"/>
+    </opm:Artifact>
+    
+    
+    <opm:Artifact rdf:about="&opm;axiom_4">
+        <history:object rdf:resource="&CreateNAgents;CreatedThing"/>
+        <history:subject rdf:resource="&CreateNAgents;CreatedThing_1"/>
+        <history:predicate rdf:resource="&owl2xml;ClassAssertion"/>
+    </opm:Artifact>
+    
+
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#usedA_1 -->
+
+    <opm:Used rdf:about="&opm;usedA_1"><rdf:type rdf:resource="&opm;Used"/>
+        <opm:effect rdf:resource="&opm;assertion_1"/>
+        <opm:cause rdf:resource="&opm;axiom_1"/>
+    </opm:Used>
+    <opm:Used rdf:about="&opm;usedA_2"><rdf:type rdf:resource="&opm;Used"/>
+        <opm:effect rdf:resource="&opm;assertion_2"/>
+        <opm:cause rdf:resource="&opm;axiom_2"/>
+    </opm:Used>
+    <opm:Used rdf:about="&opm;usedA_2"><rdf:type rdf:resource="&opm;Used"/>
+        <opm:effect rdf:resource="&opm;assertion_2"/>
+        <opm:cause rdf:resource="&opm;axiom_2"/>
+    </opm:Used>
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#wcb_1 -->
+
+    <opm:WasControlledBy rdf:about="&opm;wcb_1"><rdf:type rdf:resource="&opm;WasControlledBy"/>
+        <opm:effect rdf:resource="&opm;assertion_1"/>
+        <opm:cause rdf:resource="&SimpleScheduleOntology;createWorkersAction"/>
+    </opm:WasControlledBy>
+    
+
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#wcb_2 -->
+
+    <opm:WasControlledBy rdf:about="&opm;wcb_2"><rdf:type rdf:resource="&opm;WasControlledBy"/>
+        <opm:effect rdf:resource="&opm;assertion_2"/>
+        <opm:cause rdf:resource="&SimpleScheduleOntology;choiceAction"/>
+    </opm:WasControlledBy>
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#wcb_3 -->
+
+    <opm:WasControlledBy rdf:about="&opm;wcb_3"><rdf:type rdf:resource="&opm;WasControlledBy"/>
+        <opm:effect rdf:resource="&opm;assertion_6"/>
+        <opm:cause rdf:resource="&SimpleScheduleOntology;implementOptionsAction"/>
+    </opm:WasControlledBy>
+    
+
+    <!-- http://openprovenance.org/model/opmo#wcb_4 -->
+
+    <opm:WasControlledBy rdf:about="&opm;wcb_4"><rdf:type rdf:resource="&opm;WasControlledBy"/>
+        <opm:effect rdf:resource="&opm;assertion_4"/>
+        <opm:cause rdf:resource="&SimpleWERCM-0;setContextCreatorAction"/>
+    </opm:WasControlledBy>
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#wcb_4 -->
+
+    <opm:WasControlledBy rdf:about="&opm;wcb_5"><rdf:type rdf:resource="&opm;WasControlledBy"/>
+        <opm:effect rdf:resource="&opm;assertion_4"/>
+        <opm:cause rdf:resource="&SimpleScheduleOntology;updateContextAction"/>
+    </opm:WasControlledBy>
+    
+
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#wcb_4 -->
+
+    <opm:WasControlledBy rdf:about="&opm;wcb_6"><rdf:type rdf:resource="&opm;WasControlledBy"/>
+        <opm:effect rdf:resource="&opm;assertion_6"/>
+        <opm:cause rdf:resource="&SimpleScheduleOntology;environmentImpactAction"/>
+    </opm:WasControlledBy>
+    
+
+    <!-- http://openprovenance.org/model/opmo#wgbA_1 -->
+
+    <opm:WasGeneratedBy rdf:about="&opm;wgbA_1"><rdf:type rdf:resource="&opm;WasGeneratedBy"/>
+        <opm:cause rdf:resource="&opm;assertion_1"/>
+        <opm:effect rdf:resource="&opm;axiom_1"/>
+    </opm:WasGeneratedBy>
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#wgbA_3 -->
+
+    <opm:WasGeneratedBy rdf:about="&opm;wgbA_3"><rdf:type rdf:resource="&opm;WasGeneratedBy"/>
+        <opm:cause rdf:resource="&opm;assertion_6"/>
+        <opm:effect rdf:resource="&opm;axiom_3"/>
+    </opm:WasGeneratedBy>
+    
+
+
+    <!-- http://openprovenance.org/model/opmo#wgbA_4 -->
+
+    <opm:WasGeneratedBy rdf:about="&opm;wgbA_100"><rdf:type rdf:resource="&opm;WasGeneratedBy"/>
+        <opm:cause rdf:resource="&opm;assertion_4"/>
+        <opm:effect rdf:resource="&opm;axiom_4"/>
+    </opm:WasGeneratedBy>
+    
+    <!-- http://openprovenance.org/model/opmo#wgbA_5 -->
+
+    <opm:WasGeneratedBy rdf:about="&opm;wgbA_5"><rdf:type rdf:resource="&opm;WasGeneratedBy"/>
+        <opm:cause rdf:resource="&opm;assertion_6"/>
+        <opm:effect rdf:resource="&opm;axiom_4"/>
+    </opm:WasGeneratedBy>
+
+   
+
+    <!-- http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#choiceAction -->
+
+    <opm:Agent rdf:about="&SimpleScheduleOntology;choiceAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#createWorkersAction -->
+
+    <opm:Agent rdf:about="&SimpleScheduleOntology;createWorkersAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#environmentImpactAction -->
+
+    <opm:Agent rdf:about="&SimpleScheduleOntology;environmentImpactAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#implementOptionsAction -->
+
+    <opm:Agent rdf:about="&SimpleScheduleOntology;implementOptionsAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#loadCSVFeedbackValuesAction -->
+
+    <opm:Agent rdf:about="&SimpleScheduleOntology;loadCSVFeedbackValuesAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#loadCSVImpactValuesAction -->
+
+    <opm:Agent rdf:about="&SimpleScheduleOntology;loadCSVImpactValuesAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/WERCM-0.0/SimpleScheduleOntology.owl#updateContextAction -->
+
+    <opm:Agent rdf:about="&SimpleScheduleOntology;updateContextAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#busFeedback -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;busFeedback"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#busFeedback_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;busFeedback_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#busFeedback_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;busFeedback_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#busImpact -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;busImpact"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#busImpact_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;busImpact_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#busImpact_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;busImpact_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingFeedback -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingFeedback"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingFeedback_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingFeedback_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingFeedback_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingFeedback_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingFeedback_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingFeedback_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingFeedback_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingFeedback_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingFeedback_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingFeedback_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingFeedback_6 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingFeedback_6"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingImpact -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingImpact"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingImpact_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingImpact_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingImpact_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingImpact_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingImpact_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingImpact_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingImpact_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingImpact_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingImpact_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingImpact_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#cyclingImpact_6 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;cyclingImpact_6"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingFeedback -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingFeedback"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingFeedback_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingFeedback_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingFeedback_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingFeedback_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingFeedback_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingFeedback_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingFeedback_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingFeedback_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingFeedback_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingFeedback_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingImpact -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingImpact"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingImpact_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingImpact_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingImpact_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingImpact_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingImpact_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingImpact_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingImpact_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingImpact_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#drivingImpact_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;drivingImpact_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#environment -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;environment"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#inconvenience -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;inconvenience"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_10 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_10"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_11 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_11"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_12 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_12"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_13 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_13"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_14 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_14"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_15 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_15"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_16 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_16"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_17 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_17"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_18 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_18"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_19 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_19"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_20 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_20"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_6 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_6"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_7 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_7"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_8 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_8"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onFeedback_9 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onFeedback_9"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_10 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_10"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_11 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_11"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_12 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_12"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_13 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_13"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_14 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_14"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_15 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_15"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_16 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_16"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_17 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_17"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_18 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_18"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_19 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_19"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_20 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_20"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_6 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_6"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_7 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_7"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_8 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_8"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#onImpact_9 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;onImpact_9"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#pollution -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;pollution"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#setContextCreatorAction -->
+
+    <opm:Agent rdf:about="&SimpleWERCM-0;setContextCreatorAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#setEnvironmentCreatorAction -->
+
+    <opm:Agent rdf:about="&SimpleWERCM-0;setEnvironmentCreatorAction"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_10 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_10"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_6 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_6"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_7 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_7"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_8 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_8"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByFeedback_9 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByFeedback_9"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_10 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_10"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_3 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_4 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_5 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_6 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_6"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_7 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_7"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_8 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_8"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#standByImpact_9 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;standByImpact_9"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#walkingFeedback -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;walkingFeedback"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#walkingFeedback_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;walkingFeedback_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#walkingFeedback_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;walkingFeedback_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#walkingImpact -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;walkingImpact"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#walkingImpact_1 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;walkingImpact_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/SimpleWERCM-0.0.owl#walkingImpact_2 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleWERCM-0;walkingImpact_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_1 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_1"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_10 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_10"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_11 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_11"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_12 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_12"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_13 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_13"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_14 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_14"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_15 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_15"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_16 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_16"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_17 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_17"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_18 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_18"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_19 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_19"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_2 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_2"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_20 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_20"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_21 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_21"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_22 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_22"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_23 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_23"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_24 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_24"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_25 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_25"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_26 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_26"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_27 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_27"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_28 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_28"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_29 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_29"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_3 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_3"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_30 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_30"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_31 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_31"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_32 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_32"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_33 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_33"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_34 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_34"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_35 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_35"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_36 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_36"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_37 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_37"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_38 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_38"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_39 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_39"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_4 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_4"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_40 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_40"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_41 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_41"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_42 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_42"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_43 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_43"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_44 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_44"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_45 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_45"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_5 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_5"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_6 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_6"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_7 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_7"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_8 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_8"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#ImplementedOption_9 -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;ImplementedOption_9"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#Worker -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;Worker"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#accumulatedImpact -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;accumulatedImpact"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#bus -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;bus"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#choosingCommutingTravel -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;choosingCommutingTravel"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#currentContext -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;currentContext"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#cycling -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;cycling"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#driving -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;driving"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#feedbackFrom -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;feedbackFrom"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#feedbackTo -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;feedbackTo"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#hasOption -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;hasOption"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#implementedBy -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;implementedBy"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#on -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;on"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#pendingChoices -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;pendingChoices"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#pendingFeedback -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;pendingFeedback"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#standBy -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;standBy"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#stoppingForDay -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;stoppingForDay"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#stoppingForLunch -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;stoppingForLunch"/>
+    
+
+
+    <!-- http://www.locaw-fp7.com/ontologies/WERCM-0.0.owl#walking -->
+
+    <owl:NamedIndividual rdf:about="&WERCM-0;walking"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#CreatedThing -->
+
+    <owl:NamedIndividual rdf:about="&CreateNAgents;CreatedThing"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#CreatedThing_1 -->
+
+    <owl:NamedIndividual rdf:about="&CreateNAgents;CreatedThing_1"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#CreatedThing_2 -->
+
+    <owl:NamedIndividual rdf:about="&CreateNAgents;CreatedThing_2"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#CreatedThing_3 -->
+
+    <owl:NamedIndividual rdf:about="&CreateNAgents;CreatedThing_3"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#CreatedThing_4 -->
+
+    <owl:NamedIndividual rdf:about="&CreateNAgents;CreatedThing_4"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/CreateNAgents.owl#CreatedThing_5 -->
+
+    <owl:NamedIndividual rdf:about="&CreateNAgents;CreatedThing_5"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/UniformRandomChooser.owl#choice -->
+
+    <owl:NamedIndividual rdf:about="&UniformRandomChooser;choice"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/action/UniformRandomChooser.owl#chooser -->
+
+    <owl:NamedIndividual rdf:about="&UniformRandomChooser;chooser"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/creator/SetPropertyValueCreator-initialContext.owl#property -->
+
+    <owl:NamedIndividual rdf:about="&SetPropertyValueCreator-initialContext;property"/>
+    
+
+
+    <!-- http://www.obiama.org/ontology/built-in/creator/SetPropertyValueCreator-situatedIn.owl#property -->
+
+    <owl:NamedIndividual rdf:about="&SetPropertyValueCreator-situatedIn;property"/>
+    
+
+
+    <!-- http://www.w3.org/2006/12/owl2-xml#ClassAssertion -->
+
+    <owl:NamedIndividual rdf:about="&owl2xml;ClassAssertion"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

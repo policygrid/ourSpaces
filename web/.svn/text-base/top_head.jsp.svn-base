@@ -1,0 +1,442 @@
+<%@ page language="java" import="java.util.Iterator, java.util.ArrayList, java.io.*, java.net.*, java.util.Vector, common.*" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<jsp:useBean id="contact" class="common.User" />
+<jsp:useBean id="resource" class="common.Resources" />
+<jsp:useBean id="activity" class="common.Activities" />
+<jsp:useBean id="tag" class="common.Tag" />
+<jsp:useBean id="login" class="common.Login" />
+<jsp:useBean id="user" class="common.User" />
+<jsp:useBean id="projectrdf" class="common.ProjectRDF" />
+<jsp:useBean id="projectblog" class="common.ProjectBlogBean" />
+<jsp:useBean id="project" class="common.Project" />
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
+
+<%
+String accept = request.getHeader("accept");
+String user_agent = request.getHeader("user-agent");
+String accept_charset = request.getHeader("accept-charset");
+String accept_language = request.getHeader("accept-language");
+String x_wap_profile = request.getHeader("x-wap-profile");
+String profile = request.getHeader("profile");
+
+common.Utility.log.debug("Accent:"+accept);
+common.Utility.log.debug("User Agent"+user_agent);
+common.Utility.log.debug("Accept Language"+accept_language);
+common.Utility.log.debug("X Wap Profile"+x_wap_profile);
+common.Utility.log.debug("Profile"+profile);
+
+
+
+
+if (session.isNew()==true){ %>
+<jsp:forward page="error.jsp" />
+<% } %>
+
+<% 
+if( session.getAttribute("use") == null){
+	
+String topage = "";
+if (request.getQueryString() != null) {
+	topage = java.net.URLEncoder.encode(request.getRequestURI()+"?"+request.getQueryString());
+} else {
+	topage = request.getRequestURI();
+}
+	%>
+	
+	<jsp:forward page="error.jsp" >
+	<jsp:param name="topage" value="<%=topage%>"/>
+	</jsp:forward>
+	
+
+<% 
+}
+
+
+
+
+String uri = request.getRequestURI();
+
+
+session.setAttribute("mainpage", request.getRequestURL()); 
+
+session.setAttribute("container", "");
+session.setAttribute("containerType", "");
+session.setAttribute("projectID", "");
+
+user = (User) session.getAttribute("use");
+if (user.getID() == 0) {
+	String topage = "";
+	if (request.getQueryString() != null) {
+		topage = java.net.URLEncoder.encode(request.getRequestURI()+"?"+request.getQueryString());
+	} else {
+		topage = java.net.URLEncoder.encode(request.getRequestURI());
+	}
+		%>
+	<jsp:forward page="error.jsp" >
+	<jsp:param name="topage" value="<%=topage%>"/>
+	</jsp:forward>
+	<% 
+}
+
+
+if (!login.checkTC(user.getUsername(user.getID()))) {%>
+	<jsp:forward page="TermsAndConditions.jsp" />
+	<%
+}
+//Ping the user
+user.pingUser(user.getID());
+
+String toPage =  (request.getRequestURL()).toString();
+String note = request.getQueryString();
+
+//Logging
+Logs.addLog(user.getID(), toPage,"navigate", note);
+
+
+String username = user.getUsername(user.getID());
+RDFi rdf = new RDFi();
+String temp = Integer.toString(user.getID());
+int messageCheck = user.checkMessages(user.getID());
+
+String photo = user.getPhoto(user.getID());
+
+String status = user.getStatus(user.getID());
+if(status.equals(""))
+	status = "What is my current status?";
+
+
+
+
+ArrayList projectList = project.getAllProjectsAboutUser(user.getFOAFID());
+
+%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--[if IE 7]>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<![endif]-->  
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>ourSpaces</title>
+
+<link rel="stylesheet" type="text/css" href="/ourspaces/style.css" />
+<link rel="stylesheet" type="text/css" href="/ourspaces/css/imageFrame.css"  />
+<link rel="stylesheet" type="text/css" href="/ourspaces/facebox.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/ourspaces/inettuts.css" />
+<link rel="stylesheet" type="text/css" type="/ourspaces/text/css" href="/ourspaces/css/custom-theme/jquery-ui-1.8.12.custom.css"  />
+<link rel="stylesheet" type="text/css" href="/ourspaces/skins/tango/skin.css" />
+<link rel="stylesheet" type="text/css" href="/ourspaces/javascript/jquery.treeview.css" />
+<link rel="stylesheet" type="text/css" href="/ourspaces/css/chat.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/ourspaces/css/screen.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="/ourspaces/css/jquery.ui.ourSpacesTagging.css" media="all" />
+
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" media="all" href="/ourspaces/css/screen_ie.css" />
+<![endif]-->  
+
+
+<script type="text/javascript" src="http://openspace.ordnancesurvey.co.uk/osmapapi/openspace.js?key=7CCF1E7712317B1BE0405F0AF1604FF3"></script>  
+<script type="text/javascript" src="/ourspaces/javascript/jquery-1.6.2.min.js"></script> 
+<script type="text/javascript" src="/ourspaces/javascript/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/tab.js"></script>
+<script type="text/javascript" src="/ourspaces/facebox.js" ></script>
+<script type="text/javascript" src="/ourspaces/javascript/calendar.js"></script>
+<script type="text/javascript" src="/ourspaces/js/richtext.js"></script>
+<script type="text/javascript" src="/ourspaces/js/config.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/jquery.ifixpng.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/jquery.imageFrame.js"></script> 
+<script type="text/javascript" src="/ourspaces/javascript/jquery.jcarousel.js"></script> 
+<script type="text/javascript" src="/ourspaces/javascript/jquery.simpletip-1.3.1.min.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/jquery.qtip-1.0.0-rc3.min.js"></script> 
+<script type="text/javascript" src="/ourspaces/javascript/jquery.autogrowtextarea.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/chat.js"></script>
+<script type="text/javascript" src="/ourspaces/jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/jquery.treeview.js"></script>
+<script type="text/javascript" src="/ourspaces/codebase/dhtmlxvault.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/pls.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/top.js"></script>
+<script type="text/javascript" src="/ourspaces/messages/msgfunctions.js"></script>
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/imgpreview.full.jquery.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/spin.min.js"></script>
+
+
+
+<script type="text/javascript" src="/ourspaces/javascript/jquery.ourSpacesProvenance.js"></script>
+<script type="text/javascript" src="/ourspaces/javascript/jquery.textchange.js"></script>    
+    
+<!-- My resources box -->
+<script type="text/javascript" src="/ourspaces/boxes/myresources.js"></script>
+<!-- Artifact space -->
+<script type="text/javascript"	src="/ourspaces/artifactSpace/artifactSpace.js"></script>
+    
+<!-- Upload -->
+<script type="text/javascript" src="/ourspaces/javascript/multiplemaps.js"></script>
+<script type="text/javascript" src="/ourspaces/uploadform/ajaxfileupload.js"></script>
+<script type="text/javascript" src="/ourspaces/uploadform/upload.js"></script>
+
+<script type="text/javascript"	src="/ourspaces/simulation/simulation.js"></script>
+
+
+<script type="text/javascript"	src="/ourspaces/javascript/jquery.jsPlumb-1.3.8-all-min.js"></script>
+
+
+<!-- Autocomplete -->
+<link rel="stylesheet" type="text/css" href="/ourspaces/css/autocomplete/autocomplete.css " media="all" />
+    
+</head>
+<body>
+<script type="text/javascript">
+var userID = '<%=user.getID()%>';
+</script>
+
+<div style="position:relative; width:1000px;  margin: 0px auto; ">
+<div id="suggestions"></div>	
+</div>
+      	
+<div id="main_container">
+
+<div class="header">
+	<div class="headerContainer">
+        <div class="headerLogo">
+         <a href="/ourspaces/myhome.jsp" id="headerLogoImg">Home</a>
+        </div>
+
+        <div class="search">
+        	<div style="position: relative; float:left; margin-bottom:5px; width: 100%;">            
+	            <form id="searchform">
+					<div>
+						What are you looking for? <input type="text" name="tag" style="width:230px; height:16px; border:1px solid #666666; background-color:#e6e5e9;" id="inputString" />
+					</div>	
+						
+				</form>
+	        </div>	      
+        </div>
+	</div>
+        
+</div>
+
+<div class="navBarBG">
+	<div class="navBar">
+	    <div class="navBarLeft"> 
+           <div class="dropdownBox">
+              <a class="navBarLeft" href="#" style="float: left; margin-left:5px;"><img src="/ourspaces/icons/001_07.png" align="left" border="0"/>Spaces </a> <img src="/ourspaces/icons/dropdown.png" align="right" border="0"/>
+              <div class="navBarOptions ui-corner-all" style="width: 550px;">
+              <div style="float:left; margin-left: 5px; margin-bottom: 10px;">
+		         <span style="width: 750px; font-weight: 900;">Available Spaces:</span>
+		         </div>
+		         <div style="float:left; width: 750px; margin-left: 5px; margin-bottom: 10px; border-bottom: 1px solid #FF6600"></div> 
+                   <div style="float:left; width: 60px; margin-right: 30px; margin-bottom: 10px; margin-left:10px;">
+		            <a href="/ourspaces/myhome.jsp"><img src="/ourspaces/images/spaces/Home.png" border="0" style="float:left; margin-left: 0px;" /><br /> Home </a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px; margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/impactsSpace"><img src="/ourspaces/images/spaces/Impact.png" border="0" style="float:left; margin-left: 0px;" /><br /> Impacts </a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px; margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/projects.jsp"><img src="/ourspaces/images/spaces/Projects.png" border="0" style="float:left; margin-left: 0px;" /><br /> Projects </a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px; margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/simulation.jsp"><img src="/ourspaces/images/spaces/Models.png" border="0"  style="float:left; margin-left: 0px;"/><br />  Simulations </a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px;  margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/docSpace/"><img src="/ourspaces/images/spaces/Documents.png" border="0"  style="float:left; margin-left: 0px;"/><br /> Documents </a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px;  margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/data/"><img src="/ourspaces/images/spaces/Data.png" border="0" style="float:left; margin-left: 0px;" /><br />  Data </a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px;  margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/maps.jsp"><img src="/ourspaces/images/spaces/Maps.png" border="0" style="float:left; margin-left: 0px;" /><br /> Maps</a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px;  margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/blog.jsp?id=<%=user.getID() %>"><img src="/ourspaces/images/spaces/Blogs.png" border="0"  style="float:left; margin-left: 0px;"/><br />  Blogs </a>
+		           </div>
+		           
+		           <div style="float:left; width: 60px;  margin-right: 30px; margin-bottom: 10px;">
+		           <a href="/ourspaces/commSpace/"><img src="/ourspaces/images/spaces/Communications.png" border="0"  style="float:left; margin-left: 0px;"/><br />  Communications </a>
+		           </div>
+		        
+		      </div>
+           </div>       
+           <div class="separator">
+              <img src="/ourspaces/icons/separator.png" align="right" style="margin: 0px;" border="0"/> 
+           </div>
+        </div>
+        
+       
+        <div class="navBarLeft">
+           <div class="dropdownBox">
+              <a class="navBarLeft" href="#" style="float: left;">
+              <%
+				if(photo.equals(""))  {
+				%>
+	              <img src="images/no.jpg" class="photo" style="width:21px; height:21px;" align="left" />
+	            <% } else { %>
+					<img src="<%=common.Utility.absoluteURLtoRelative(photo)%>"  style="width:21px; height:21px; border: 1px solid #666;" align="left" /> 
+				<% } %>    
+				
+			<% if(messageCheck > 0) { %>         
+              <div class="ui-corner-all" style="margin-rignt: 3px; margin-top: -4px; margin-left: -10px; float:left; background-color: red; border: 2px solid #FFFFFF; font-family: Arial Black; padding:1px; hight:13px; color: white; font-size: 9px;" ><%=messageCheck %></div>
+              <% } %>
+              
+              <%=user.getFirstName(user.getID()) %>
+              </a> 
+              
+              
+              <img src="/ourspaces/icons/dropdown.png" align="right" border="0"/>
+               <div class="navBarOptions ui-corner-all" style="width: 660px; display: none">
+               
+                <div style="float:left; width: 320px;"> <!-- column 1 -->
+                
+                
+                
+                
+                
+                 <!-- Status -->
+                <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;">
+		         <span style="font-weight: 900;"> Your current status:</span>
+		         </div>
+		         <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px; border-bottom: 1px solid #FF6600"></div> 
+               
+                 <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;"> 
+                 <form method="post" action="/ourspaces/Controller?action=status" id="stat">
+                        <div style="float:left; width:245px; margin-right:0px;">
+                            <input type="text" class="ui-corner-all" style="border: 1px solid #000000; width:240px; margin-left:0px; height:22px;" name="status"  value="<%=status%>" onClick="status.value=''" id="status" />
+                            <input type="hidden"  id="username" name="username" value="<%=user.getUsername(user.getID())%>" />
+                        </div>
+                        <div style="float:left; width:70px; margin-left:0px;">    
+                            <input type="submit" class="fg-button ui-state-active fg-button-icon-right ui-corner-all" value="Update" style="margin-left:0px; position:relative;"  />
+                       
+                        </div>
+                                          
+                    </form>
+                 </div>
+              
+           
+              
+                <!-- Messages --> 
+                
+                 <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px; margin-top:10px;">
+		         <span style="font-weight: 900;">Messages:</span>
+		         </div>
+		         <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px; border-bottom: 1px solid #FF6600"></div> 
+		         
+		         
+              <% if ((user.getNewBugs() > 0) & ((user.getID() == 59) || (user.getID() == 56) || (user.getID() == 55))) { %>
+              <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;">             
+               <a href="/ourspaces/admin"><img src="/ourspaces/icons/001_13.png" align="left" border="0"/>You have <%=user.getNewBugs() %> Helpdesk req.</a>          
+		      </div>   
+		      <%} %>
+              
+               
+               <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;">
+                           <% if(messageCheck == 0) { %>
+                            	<a style="margin-left:0px; color:red;" href="/ourspaces/messages/inbox.jsp"><img src="/ourspaces/icons/001_12.png" align="left" border="0"/>0 new messages</a>
+                            
+                            <% } else if (messageCheck == 1){ %>
+                             	<a style="margin-left:0px; color:red;" href="/ourspaces/messages/inbox.jsp"><img src="/ourspaces/icons/001_12.png" align="left" border="0"/>You have <%=messageCheck %> new message</a>
+                             <% } else { %>
+                            	<a style="margin-left:0px; color:red;" href="/ourspaces/messages/inbox.jsp"><img src="/ourspaces/icons/001_12.png" align="left" border="0"/>You have <%=messageCheck %> new messages</a>
+                            <% } %>
+              </div>             
+              
+             
+		         
+		           <!-- Options -->
+		          <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px; margin-top:10px;">
+		          <span style="font-weight: 900;">Options:</span>
+		          </div>
+		          <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px; border-bottom: 1px solid #FF6600"></div> 
+		          
+		            
+		         <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;">
+		          <a href="/ourspaces/profile.jsp?id=<%=user.getID()%>"><img src="/ourspaces/icons/001_55.png" align="left" border="0"/>View Profile</a>
+		         </div>      
+		         <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;">
+		          <a href="/ourspaces/edit.jsp"><img src="/ourspaces/icons/001_45.png" align="left" border="0"/>Edit Profile</a>
+		         </div>
+		         <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;">
+		         <a href="/ourspaces/myresources.jsp"><img src="/ourspaces/icons/001_43.png" align="left" border="0"/>My Resources</a>
+		         </div>
+		         
+		   </div> <!--  eod of coolumn 1 -->
+		     <div style="float:left; width: 320px; margin-left: 20px;"> <!--  coolumn 2 -->    
+		         <!-- Projects -->
+		         <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px; ">
+		         <span style="font-weight: 900;"> My Projects:</span>
+		         </div>
+		         <div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px; border-bottom: 1px solid #FF6600"></div> 
+		          
+		         
+		               	 <%
+						  	for(int i = 0; i < projectList.size(); i++)
+						  	{
+						  		ProjectBean pb = (ProjectBean) projectList.get(i);
+						  		
+						  		String separatedClassName = Utility.splitString(pb.getRole());
+						  		
+						  		String encRes = URLEncoder.encode(pb.getURI());
+						  		
+							%>
+								
+								<div style="float:left; width: 320px;  margin-left: 5px; margin-bottom: 10px;">
+								<a href="/ourspaces/project.jsp?id=<%=pb.getURL()%>"><img src="/ourspaces/images/spaces/Projects_small.png" align="left" border="0"/><%=pb.getTitle()%></a>
+								</div>
+									
+							<% } %>
+		         
+		     </div> <!-- end of coolumn 2 -->    
+		       </div>
+           </div>       
+           <div class="separator">
+              <img src="/ourspaces/icons/separator.png" align="right" style="margin: 0px;" border="0"/> 
+           </div>
+           
+           
+   
+        </div>
+        
+        
+       <!-- 
+        <div class="navBarLeft">
+            <a href="/ourspaces/myhome.jsp"><img src="/ourspaces/images/navbar_01.png" border="0" /> This is a test </a>
+        </div>
+   
+        <div class="navBarLeft">
+            <a href="/ourspaces/profile.jsp?id=<%=user.getID()%>"><img src="/ourspaces/images/navbar_02.png" border="0" /></a>
+        </div>
+        <div class="navBarLeft">
+            <a href="/ourspaces/edit.jsp"><img src="/ourspaces/images/navbar_03.png" border="0" /></a>
+        </div>
+        <div class="navBarLeft">
+             <a href="/ourspaces/myresources.jsp"><img src="/ourspaces/images/navbar_04.png" border="0" /></a>
+        </div>
+        <div class="navBarLeft">
+             <a href="/ourspaces/messages/mymessagesNew.jsp"><img src="/ourspaces/images/navbar_05.png" border="0" /></a>
+        </div>
+        <div class="navBarLeft">
+             <a href="/ourspaces/mycontacts.jsp"><img src="/ourspaces/images/navbar_06.png" border="0" /></a>
+        </div>
+        <div class="navBarRight">
+             <a href="/ourspaces/logout.jsp"><img src="/ourspaces/images/navbar_09.png" border="0" /></a>
+        </div>
+       -->
+       
+       
+       <div id="contextMenu">
+     

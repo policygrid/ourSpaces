@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Paper-->
+<Paper>
+  <label>
+    <labelPart type="literal">the paper </labelPart>
+    <labelPart type="directProp">http://www.policygrid.org/provenance-generic.owl#title</labelPart>
+    <labelPart preLabel=" (v" postLabel=")" type="directProp">http://www.policygrid.org/provenance-generic.owl#versionNumber</labelPart>
+  </label>
+</Paper>
+

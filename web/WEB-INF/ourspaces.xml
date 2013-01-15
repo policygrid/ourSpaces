@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<ourspaces>
+	<ontologies>
+		<parameter name="general" namespace="http://www.policygrid.org/provenance-generic.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/provenance-generic.owl</parameter>
+		<parameter name="project" namespace="http://policygrod.org/project.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/project.owl</parameter>
+		<parameter name="location" namespace="http://policygrid.org/geo-properties.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/geo-properties.owl</parameter>
+		<parameter name="discourse" namespace="http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/discourserelationships.owl</parameter>
+		<parameter name="action" namespace="http://www.policygrid.org/ourspacesVRE.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/actionOntology.owl</parameter>
+		<parameter name="foaf" namespace="http://xmlns.com/foaf/0.1/">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/foaf.owl</parameter>
+		<parameter name="opm" namespace="http://openprovenance.org/ontology">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/opm.owl</parameter>
+		<parameter name="vre" namespace="http://www.policygrid.org/ourspacesVRE.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/ourspacesVRE.owl</parameter>
+		<parameter name="policies" namespace="http://www.policygrid.org/provenance-policies">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/provenance-policies.spin.owl</parameter>
+		<parameter name="utility" namespace="http://www.policygrid.org/Utility.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/Utility.owl</parameter>
+		<parameter name="discipline" namespace="http://www.policygrid.org/academic-disciplines">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/academic-disciplines.owl</parameter>
+		<parameter name="opmv" namespace="http://purl.org/net/opmv/">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/opmv.owl</parameter>
+		<parameter name="simulation" namespace="http://www.policygrid.org/provenance-simulation.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/provenance-simulation.owl</parameter>
+		<parameter name="impact" namespace="http://www.policygrid.org/provenance-impact.owl">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/provenance-impact.owl</parameter>
+	</ontologies>
+	<policies>
+	    <parameter name="policiesFolder">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/ontologies/policies/</parameter>
+	</policies>
+	<lexicon>
+	    <parameter name="path">/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/</parameter>
+	</lexicon>
+	<database>
+		<parameter name="url">jdbc:mysql://[server]:8066/ourspaces3?zeroDateTimeBehavior=convertToNull</parameter>
+		<parameter name="username">ourspaces</parameter>
+		<parameter name="password">[password]</parameter>
+		<parameter name="driver">com.mysql.jdbc.Driver</parameter>
+	</database>
+	<repository>
+	    <parameter name="url">http://howling.esc.abdn.ac.uk:8081/openrdf-sesame/</parameter>
+	    <parameter name="repository">ourSpacesVRE3</parameter>
+	</repository>
+	<proxy>
+		<parameter name="host">proxy.abdn.ac.uk</parameter>
+		<parameter name="port">8080</parameter>
+	</proxy>
+	<file>
+	 	<parameter name="tempFolder">/home/policygrid/apache-tomcat-6.0.18/temp/</parameter>
+	 	<parameter name="dataFolder">/home/policygrid/apache-tomcat-6.0.18/data/</parameter>
+	</file>
+	<upload>
+	 	
+	 	<parameter name="addNewProperties">http://purl.org/net/opmv/ns#,</parameter>
+	 	<parameter name="comboBoxProperties">http://www.policygrid.org/academic-disciplines#hasAcademicDiscipline</parameter>
+	 	<parameter name="noShowClasses">
+	 	http://www.policygrid.org/provenance-policies#ActionRequest, 
+	 	http://www.policygrid.org/provenance-policies#PolicyCondition, 
+	 	http://www.policygrid.org/provenance-policies#PolicyActivation, 
+	 	http://www.policygrid.org/provenance-policies#Policy, 
+	 	http://www.policygrid.org/provenance-policies#ActivationCondition, 
+	 	http://www.policygrid.org/provenance-policies#PolicyReasoning, 
+	 	http://www.policygrid.org/ourspacesVRE.owl#SystemAction, 
+	 	http://www.policygrid.org/ourspacesVRE.owl#ResourceAction, 
+	 	http://www.policygrid.org/ourspacesVRE.owl#UserAction, 
+	 	http://www.policygrid.org/ourspacesVRE.owl#CommunicationAction, 
+	 	http://www.policygrid.org/ourspacesVRE.owl#StateChangeAction, http://www.policygrid.org/ourspacesVRE.owl#QueryAction</parameter>
+	 	<parameter name="noShowProperties">wasEndedAt,wasStartedAt,wasPerformedAt,wasPerformedBy,wasUsedAt,wasGeneratedAt,wasEncodedBy,nlgType, generatedInfer, aggreagtionThreshold, wasControlledByInfer, timestamp, hasURI, depositedBy, type, dateOfDeposit, versionNumber, wasGeneratedByInfer, usedInfer, avalue, label, annotation, pname, account, profile, versionNumber, wasUsedByInfer, controlledInfer,  aboutLocation, modifiedAt, collectedAt, publishedAt, createdAt, storedAt, analysedAt, issuedAt, submittedAt</parameter>
+	 	<parameter name="multiProperties">http://www.policygrid.org/ourspacesVRE.owl#hasDisciplineInfo, http://www.policygrid.org/ourspacesVRE.owl#TEST</parameter>
+	 	<parameter name="http://www.policygrid.org/ourspacesVRE.owl#hasDisciplineInfo">http://www.policygrid.org/academic-disciplines#hasAcademicDiscipline, http://www.policygrid.org/academic-disciplines#hasDisciplineTag</parameter>
+	 	<parameter name="http://www.policygrid.org/ourspacesVRE.owl#TEST">http://www.policygrid.org/academic-disciplines#a, http://www.policygrid.org/academic-disciplines#b</parameter>
+
+	</upload>
+	<pls> 	
+	 	<parameter name="dataFolder">/home/policygrid/apache-tomcat-6.0.18/data/</parameter>
+	 	<parameter name="textFolder">/home/policygrid/apache-tomcat-6.0.18/data/lexicons/temp/txt/</parameter>
+	 	<parameter name="parsedFolder">/home/policygrid/apache-tomcat-6.0.18/data/lexicons/temp/parsed/</parameter>
+	 	<parameter name="sourceFolder">/home/policygrid/apache-tomcat-6.0.18/data/lexicons/personal/</parameter>
+	 	<parameter name="lexsFolder">/home/policygrid/apache-tomcat-6.0.18/data/lexicons/temp/lexs/</parameter>
+	 	<parameter name="scheduleFolder">/home/policygrid/apache-tomcat-6.0.18/data/lexicons/temp/schedule/</parameter>
+	</pls>
+</ourspaces>

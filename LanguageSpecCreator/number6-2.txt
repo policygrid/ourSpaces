@@ -1,0 +1,16 @@
+digraph G {
+edge [decorate=true];
+aab [label="smain aab"]; 
+aac [label="verb:have aac"]; 
+aab -> aac [label="hd"]; 
+source [label="np:null source"]; 
+aab -> source [label="su"]; 
+aaf [label="np aaf"]; 
+target [label="noun:null target"]; 
+aaf -> target [label="hd"]; 
+aab -> aaf [label="comp"]; 
+aag [label="det:the aag"]; 
+aaf -> aag [label="det"]; 
+predicate [label="adj:address predicate"]; 
+aaf -> predicate [label="mod"]; 
+}

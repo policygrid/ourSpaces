@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:spin="http://spinrdf.org/spin#"
+    xmlns:sp="http://spinrdf.org/sp#"
+    xmlns="http://www.policygrid.org/provenance-policies#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:provenance-generic="http://www.policygrid.org/provenance-generic.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:ourspacesVRE="http://www.policygrid.org/ourspacesVRE.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:spl="http://spinrdf.org/spl#"
+  xml:base="http://www.policygrid.org/provenance-policies">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="PolicyCondition">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Artifact"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InformationRequest">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ActionRequest"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Obligation">
+    <rdfs:subClassOf rdf:resource="#PolicyCondition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Prohibition">
+    <rdfs:subClassOf rdf:resource="#PolicyCondition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Policy">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Artifact"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PolicyReasoning">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Process"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Authority">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NLGActionRequest">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ActionRequest"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Permission">
+    <rdfs:subClassOf rdf:resource="#PolicyCondition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PolicyActivation">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Artifact"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="wasInfluencedBy">
+    <rdfs:range rdf:resource="#Policy"/>
+    <rdfs:domain rdf:resource="http://openprovenance.org/ontology#Process"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:ID="WasInfluencedBy">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Used"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NLGRetractionRequest">
+    <rdfs:subClassOf rdf:resource="#NLGActionRequest"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ActionRequest">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Artifact"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ActivationCondition">
+    <rdfs:subClassOf rdf:resource="http://openprovenance.org/ontology#Artifact"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NLGAssertionRequest">
+    <rdfs:subClassOf rdf:resource="#NLGActionRequest"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasSubject">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="#PolicyCondition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="basedOnEvent">
+    <rdfs:range rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#SystemAction"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#CommunicationAction"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#ResourceAction"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#UserAction"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#StateChangeAction"/>
+    <rdfs:range rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#QueryAction"/>
+    <rdfs:domain rdf:resource="#PolicyActivation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAuthority">
+    <rdfs:domain rdf:resource="#Policy"/>
+    <rdfs:range rdf:resource="#Authority"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="requestAboutResource">
+    <rdfs:domain rdf:resource="#ActionRequest"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="requireTriplePart">
+    <rdfs:domain rdf:resource="#NLGActionRequest"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="requireProperty">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="requireInformationItem"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="#InformationRequest"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="requireObject">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="#NLGActionRequest"/>
+    <rdfs:subPropertyOf rdf:resource="#requireTriplePart"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasRule">
+    <rdfs:range rdf:resource="http://spinrdf.org/sp#Construct"/>
+    <rdfs:domain rdf:resource="#PolicyCondition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#requireInformationItem">
+    <rdfs:domain rdf:resource="#InformationRequest"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCondition">
+    <rdfs:domain rdf:resource="#Policy"/>
+    <rdfs:range rdf:resource="#PolicyCondition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="requireSubject">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="#NLGActionRequest"/>
+    <rdfs:subPropertyOf rdf:resource="#requireTriplePart"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasActivation">
+    <rdfs:domain rdf:resource="#Policy"/>
+    <rdfs:range rdf:resource="#ActivationCondition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="requirePredicate">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="#NLGActionRequest"/>
+    <rdfs:subPropertyOf rdf:resource="#requireTriplePart"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="requireInstanceOfClass">
+    <rdfs:subPropertyOf rdf:resource="#requireInformationItem"/>
+    <rdfs:domain rdf:resource="#InformationRequest"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="activePolicy">
+    <rdfs:range rdf:resource="#Policy"/>
+    <rdfs:domain rdf:resource="#PolicyActivation"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="onDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="#PolicyActivation"/>
+  </owl:DatatypeProperty>
+  <spin:RuleProperty rdf:ID="hasActivationRule">
+    <rdfs:range rdf:resource="http://spinrdf.org/sp#Construct"/>
+    <rdfs:subPropertyOf rdf:resource="http://spinrdf.org/spin#rule"/>
+    <rdfs:comment>An inferencing rule attached to a class. Rules are expressed as Construct queries where the variable ?this will be bound to the current instance of the class. These inferences can be used to derive new values from existing values at the instance.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rule</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </spin:RuleProperty>
+  <spin:RuleProperty rdf:ID="hasConditionRule">
+    <rdfs:range rdf:resource="http://spinrdf.org/sp#Construct"/>
+    <rdfs:subPropertyOf rdf:resource="http://spinrdf.org/spin#rule"/>
+    <rdfs:comment>An inferencing rule attached to a class. Rules are expressed as Construct queries where the variable ?this will be bound to the current instance of the class. These inferences can be used to derive new values from existing values at the instance.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rule</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </spin:RuleProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

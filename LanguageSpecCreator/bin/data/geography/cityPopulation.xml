@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- [source]'s population numbers [target] people-->
+
+<!DOCTYPE dt>
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="number"/>
+		<node cat="np" rel="comp">
+			<node cat="adj" rel="mod" idx="target"/>
+			<node cat="noun" rel="hd" root="people"/>
+		</node> 
+		<node cat="np" rel="su">
+			<node cat="det" rel="det" idx="source">
+				<morph case="genitive" />
+			</node>
+			<node cat="noun" rel="hd" root="population"/>
+		</node>
+	</node>
+</dt>

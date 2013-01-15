@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.mooney.net/geo#"
+     xml:base="http://www.mooney.net/geo"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >Mooney Geography Data as an Ontology, OWL Lite</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >mooney_geo_v0.1.owl, based on Mooney Queries</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&xsd;string">not yet</rdfs:comment>
+    </owl:Ontology>
+    <owl:DatatypeProperty rdf:ID="abbreviation">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="borders">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#State"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Capital">
+        <rdfs:subClassOf rdf:resource="#City"/>
+    </owl:Class>
+    <owl:Class rdf:ID="City">
+    	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="cityPopulation">
+        <rdfs:domain rdf:resource="#City"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="hasCapital">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#Capital"/>
+        <owl:inverseOf rdf:resource="#isCapitalOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasCity">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#City"/>
+        <owl:inverseOf rdf:resource="#isCityOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasHighPoint">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#HighPoint"/>
+        <owl:inverseOf rdf:resource="#isHighestPointOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasLake">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#Lake"/>
+        <owl:inverseOf rdf:resource="#isLakeOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasLowPoint">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#LowPoint"/>
+        <owl:inverseOf rdf:resource="#isLowestPointOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasMountain">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#Mountain"/>
+        <owl:inverseOf rdf:resource="#isMountainOf"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasRiver">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#River"/>
+        <owl:inverseOf rdf:resource="#runsThrough"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="hasRoad">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="#Road"/>
+        <owl:inverseOf rdf:resource="#passesThrough"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="height">
+        <rdfs:domain rdf:resource="#Mountain"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="highElevation">
+        <rdfs:domain rdf:resource="#HighPoint"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="lowElevation">
+        <rdfs:domain rdf:resource="#LowPoint"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="HighPoint"/>
+    <owl:Class rdf:ID="LowPoint"/>
+    <owl:ObjectProperty rdf:ID="isCapitalOf">
+        <rdfs:domain rdf:resource="#Capital"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasCapital"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="isCityOf">
+        <rdfs:domain rdf:resource="#City"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasCity"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="isHighestPointOf">
+        <rdfs:domain rdf:resource="#HighPoint"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasHighPoint"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="isLakeOf">
+        <rdfs:domain rdf:resource="#Lake"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasLake"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="isLowestPointOf">
+        <rdfs:domain rdf:resource="#LowPoint"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasLowPoint"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="isMountainOf">
+        <rdfs:domain rdf:resource="#Mountain"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasMountain"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="Lake">
+    	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="lakeArea">
+        <rdfs:domain rdf:resource="#Lake"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="length">
+        <rdfs:domain rdf:resource="#River"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="Mountain">
+    	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="Name">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="number">
+        <rdfs:domain rdf:resource="#Road"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:ID="passesThrough">
+        <rdfs:domain rdf:resource="#Road"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasRoad"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:ID="populationDensity">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:ID="River">
+    	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:ID="Road"/>
+    <owl:ObjectProperty rdf:ID="runsThrough">
+        <rdfs:domain rdf:resource="#River"/>
+        <rdfs:range rdf:resource="#State"/>
+        <owl:inverseOf rdf:resource="#hasRiver"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Class rdf:ID="State">
+    	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#Name"/>
+                <owl:cardinality rdf:datatype="&xsd;int">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:DatatypeProperty rdf:ID="stateArea">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:ID="statePopulation">
+        <rdfs:domain rdf:resource="#State"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:comment rdf:datatype="&xsd;string">xxx</rdfs:comment>
+    </owl:DatatypeProperty>
+</rdf:RDF>

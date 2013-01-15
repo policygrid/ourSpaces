@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property HasProcessors--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="have" /><node cat="np" rel="su" idx="source" /><node cat="np" rel="obj"><node cat="np" rel="mod" root="intel" idx="target" /><node cat="noun" rel="hd" root="processor" idx="predicate"><morph num="plural" /></node></node></node></dt>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property HasOperatingSystem--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="have" /><node cat="np" rel="su" idx="source" /><node cat="np" rel="comp"><node cat="noun" rel="hd" root="operating system" idx="predicate" /><node cat="det" rel="det" root="a" /><node cat="np" rel="mod" root="linux" idx="target" /></node></node></dt>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property Title-->
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="be" />
+		<node cat="np" rel="comp" root="The Unbearable Lightness of Being" idx="target" />
+		<node cat="np" rel="su">
+			<node cat="np" rel="det" idx="source">
+				<morph case="genitive" />
+			</node>
+			<node cat="noun" rel="hd" root="title" idx="predicate" />
+		</node>
+	</node>
+</dt>

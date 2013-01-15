@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property ResearcherOf-->
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="be">
+			<morph tense="future" />
+		</node>
+		<node cat="np" rel="su" idx="source">
+			<node cat="adj" rel="mod" root="brilliant" />
+		</node>
+		<node cat="np" rel="comp">
+			<node cat="det" rel="det" root="a" />
+			<node cat="noun" rel="hd" root="researcher" idx="predicate" />
+			<node cat="pp" rel="ppmod">
+				<node cat="prep" rel="hd" root="of" />
+				<node cat="np" rel="obj" idx="target" />
+				
+				</node></node></node></dt>

@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY discourse-relationships "http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/" >
+]>
+
+
+<rdf:RDF xmlns="http://swan.mindinformatics.org/ontologies/1.2/discourserelationships.owl#"
+     xml:base="http://swan.mindinformatics.org/ontologies/1.2/discourserelationships.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:discourse-relationships="http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://swan.mindinformatics.org/ontologies/1.2/discourserelationships.owl">
+        <rdfs:label rdf:datatype="&xsd;string">Discourse relationships vocabulary v. 1.0</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.0</owl:versionInfo>
+        <dc:contributor rdf:datatype="&xsd;string">Elizabeth Wu</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Gwen Wong</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">June Kinoshita</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Marco Ocana</dc:contributor>
+        <dc:date rdf:datatype="&xsd;string">May 11, 2009</dc:date>
+        <dc:contributor rdf:datatype="&xsd;string">Paolo Ciccarese</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Tim Clark</dc:contributor>
+        <dc:format rdf:datatype="&xsd;string">rdf/xml</dc:format>
+        <dc:language>en</dc:language>
+        <dc:title xml:lang="en">Discourse relationships vocabulary</dc:title>
+        <dc:publisher rdf:resource="http://swan.mindinformatics.org"/>
+        <dc:creator rdf:resource="http://www.hcklab.org/people/paolo-ciccarese/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/agreesWith -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;agreesWith">
+        <rdfs:comment rdf:datatype="&xsd;string">It expresses the fact that one entity is talking 
+				    		about another one expressing agreement</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;inResponseTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/alternativeTo -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;alternativeTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It connects two different resources that can be 
+		    		considered alternative interpretations</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;relatedTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/arisesFrom -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;arisesFrom">
+        <rdfs:comment rdf:datatype="&xsd;string">Something (question, doubt...) that arises because of a resource</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;refersTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/cites -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;cites">
+        <rdfs:comment rdf:datatype="&xsd;string">An explicit reference to another resource for supporting the discourse.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;refersTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/consistentWith -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;consistentWith">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It expresses consistency between two resources. 
+		    		It is a bidirectional relationship</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;relatedTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/disagreesWith -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;disagreesWith">
+        <rdfs:comment rdf:datatype="&xsd;string">It expresses the fact that one entity is talking 
+				    		about another one expressing disagreement</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;inResponseTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/discusses -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;discusses">
+        <rdfs:comment rdf:datatype="&xsd;string">It expresses the fact that one entity is 
+				    		talking about another one without expressing agreement or disagreement</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;inResponseTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/inResponseTo -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;inResponseTo">
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;refersTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/inconsistentWith -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;inconsistentWith">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It expresses inconsistency between two resources. 
+		    		It is a bidirectional relationship</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;relatedTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/motivatedBy -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;motivatedBy">
+        <rdfs:comment rdf:datatype="&xsd;string">An action motivated by some resource</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;refersTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/refersTo -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;refersTo">
+        <rdfs:comment rdf:datatype="&xsd;string">It connects an entity with another entity in an 
+    		unidirectional way</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;relatedTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/relatedTo -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;relatedTo">
+        <rdfs:comment rdf:datatype="&xsd;string">The most generic relationships. It expresses connection 
+    		between two resources without specifying the nature of such connection</rdfs:comment>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swan.mindinformatics.org/ontologies/1.2/discourse-relationships/relevantTo -->
+
+    <owl:ObjectProperty rdf:about="&discourse-relationships;relevantTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It expresses the fact that a resource is 
+		    		relevant for another one and vice-versa</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&discourse-relationships;relatedTo"/>
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty">
+        
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1451) http://owlapi.sourceforge.net -->
+

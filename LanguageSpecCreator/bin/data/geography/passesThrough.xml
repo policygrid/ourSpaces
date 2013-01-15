@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- [source] passes through [target] -->
+
+<!DOCTYPE dt>
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="pass"/>
+		<node cat="np" rel="su" idx="source"/>
+		<node cat="pp" rel="ppmod">
+			<node cat="prep" rel="hd" root="through"/>
+			<node cat="np" rel="obj" idx="target" />
+		</node> 
+	</node>
+</dt>

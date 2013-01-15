@@ -1,0 +1,38 @@
+.fileName
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+a.link:hover
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0033CC;
+}
+a.link:visited
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0033CC;
+  
+}
+a.link:link
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0033CC;
+    
+}
+.text
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+input.hidden {
+    z-index: 2;
+    filter: alpha(opacity: 0);
+    position: relative;
+    text-align: left;
+    opacity: 0;
+    moz-opacity: 0;
+}

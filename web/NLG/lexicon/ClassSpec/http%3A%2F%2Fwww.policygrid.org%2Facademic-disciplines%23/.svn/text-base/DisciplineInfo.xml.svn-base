@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class ResearchAim-->
+<DisciplineInfo>
+  <label>
+	<labelPart type="directProp">http://www.policygrid.org/academic-disciplines#hasAcademicDiscipline</labelPart>
+  </label>
+</DisciplineInfo>

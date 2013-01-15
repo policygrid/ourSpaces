@@ -1,0 +1,550 @@
+/* CSS Document */
+
+* { margin: 0; padding: 0; }
+
+body {
+	background-color: #e7e9f0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #000000;
+	}
+	
+div.outline {
+	margin:auto;
+	}	
+
+div.containter {
+	width:800px;
+	margin:0 auto;
+	
+	position:relative;
+
+	}
+	
+div.main {
+	width:798px;
+	border:1px solid #cccccc;
+	position:relative;
+	float:left;
+	background-color:#FFFFFF;
+	margin-top:7px;
+	padding-bottom:10px;
+	}
+
+/* PROFILE PAGE CSS */
+	
+div.topoutline {
+	position:relative;
+	float:left;
+	}
+
+div.loginbox {
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+	width:798px;
+	height:27px;
+	position:relative;
+	float:left;
+	background-color:#FFFFFF;
+	}
+	
+div.logintext {
+	padding-top:7px;
+	position:relative;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	}
+
+img.loginicon1 {
+	padding-left:15px;
+	position:relative;
+	float:left;
+	}
+	
+img.loginicon2 {
+	position:relative;
+	float:left;
+	}
+	
+div.nameoutline {
+	width:297px;
+	position:relative;
+	float:left;
+}
+
+div.namebox {
+	width:297px;
+	background-color:#006699;
+	height:95px;
+	position:relative;
+	float:left;
+	}
+
+div.nametext {
+	padding-top:15px;
+	padding-left:15px;
+	position:relative;
+	float:left;
+	}
+
+p.name {
+	color:#FFFFFF;
+	font-size:36px;
+	}
+
+p.info {
+	font-size:18px;
+	color:#cccccc;
+	}
+
+p.message {
+	padding-top:12px;
+	padding-left:15px;
+	padding-bottom:25px;
+	}
+	
+div.messagebox {
+	width:290px;
+	height:30px;
+	background-color:#FFFFFF;
+	position:relative;
+	float:left;
+	}
+
+div.topbox {
+	width:501px;
+	height:21px;
+	position:relative;
+	float:left;
+	background-color:#006699;
+	}
+	
+div.spacesbox {
+	width:486px;
+	height:105px;
+	position:relative;
+	float:left;
+	background-color:#3650a7;
+	border:4px solid #FFFFFF;
+	}
+	
+img.spaces {
+	padding-left:3px;
+	padding-top:10px;
+	}
+
+div.rightbox {
+	width:7px;
+	height:74px;
+	background-color:#006699;
+	position:relative;
+	float:left;
+	}
+
+div.seperator {
+	width:798px;
+	height:3px;
+	position:relative;
+	float:left;
+	}
+
+span.bottom {
+	width:798px;
+	height:10px;
+	position:relative;
+	float:left;
+	}
+
+div.rightoutline {
+	width:500px;
+	padding-left:30px;
+	position:relative;
+	float:left;
+	}
+
+div.leftoutline {
+	width:262px;
+	position:relative;
+	float:left;
+	}
+	
+div.tagsbox {
+	width:250px;
+	border:1px solid #000066;
+	padding:10px;
+	position:relative;
+	float:left;
+	margin-top:10px;
+	margin-left:14px;
+	}
+	
+div.addressbox {
+	width:260px;
+	border:1px solid #cccccc;
+	padding:5px;
+	margin-left:14px;
+	position:relative;
+	float:left;
+	}
+
+div.address {
+	position:relative;
+	float:left;
+	width:133px;
+	padding-left:10px;
+	padding-top:2px;
+	height: 120px;
+	}
+	
+p.addressline{
+	font-size:16px;
+	font-weight:bold;
+	}
+
+p.actualaddress {
+	padding-left:10px;
+	padding-top:5px;
+	font-size:10px;
+	}
+
+img.photo {
+	position:relative;
+	float:left;
+	width:117px;
+	height:122px;
+	}
+
+div.activities {
+	width:480px;
+	position:relative;
+	float:left;
+	padding:20px;
+	}
+	
+
+
+p.activities {
+	font-size:16px;
+	color:#999999;
+	}
+
+div.bottombox {
+	width:798px;
+	border:1px solid #cccccc;
+	margin-top:7px;
+	position:relative;
+	float:left;
+	background-color:#FFFFFF;
+	}
+
+/* FRONT PAGE CSS */
+
+div.frontloginbox {
+	background-color:#006699;
+	float:left;
+	position:relative;
+	width:738px;
+	height:100px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:37px;
+	
+	}
+	
+div.frontnews {
+	width:506px;
+	position:relative;
+	float:left;
+	padding:10px;
+	background-color:#e7e9f0;
+	margin-left:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:7px;
+	border:1px solid #9AD0E4;
+	height:258px;
+	}
+	
+div.joinimage {
+	width:240px;
+	margin-left:3px;
+	margin-top:10px;
+	position:relative;
+	float:left;
+	}
+
+div.fronttagbox {
+	width:755px;
+	float:left;
+	position:relative;
+	padding:10px;
+	height:150px;
+	border:1px solid #9AD0E4;
+	margin-left:10px;
+	}
+	
+/* EDIT PROFILE PAGE */
+
+div.picturebox {
+	width:260px;
+	border:1px solid #cccccc;
+	padding:5px;
+	margin-left:14px;
+	position:relative;
+	float:left;
+	}
+	
+div.collaborators {
+	width:464px;
+	height:112px;
+	border:1px solid #cccccc;
+	float:left;
+	position:relative;
+	padding:10px;
+	margin-left:15px;
+	}
+	
+div.projectstools {
+	width:485px;
+	height:132px;
+	float:left;
+	position:relative;
+	margin-left:15px;
+	margin-top:10px;
+	margin-bottom:3px;	
+	}
+
+div.projects {
+	width:312px;
+	height:112px;
+	position:relative;
+	float:left;
+	border:1px solid #9AD0E4;
+	padding:10px;
+	}
+	
+div.tools {
+	width:114px;
+	height:112px;
+	position:relative;
+	float:left;
+	border:1px solid #9AD0E4;
+	margin-left:15px;
+	padding:10px;
+	}	
+	
+div.ouractivities {
+	width:464px;
+	height:210px;
+	border:1px solid #9AD0E4;
+	float:left;
+	position:relative;
+	padding:10px;
+	margin-left:15px;
+	margin-top:10px;
+	}
+	
+div.ourresources {
+	width:750px;
+	height:210px;
+	border:1px solid #9AD0E4;
+	float:left;
+	position:relative;
+	padding:10px;
+	margin-left:14px;
+	margin-top:10px;
+	}
+	
+div.editprofilemain {
+	width:698px;
+	padding-left:50px;
+	padding-right:50px;
+	padding-bottom:25px;
+	padding-top:15px;
+	float:left;
+	position:relative;
+	}
+	
+div.editwrapper {
+	width:360px;
+	float:left;
+	position:relative;
+	}
+
+div.editboxes {
+	width:300px;
+	float:left;
+	position:relative;
+	padding:15px;
+	margin-left:20px;
+	}
+
+div.contactswrapper {
+	width:600px;
+	float:left;
+	position:relative;
+	}
+	
+div.contactsboxes {
+	width:600px;
+	float:left;
+	position:relative;
+	padding:15px;
+	margin-left:20px;
+	}
+
+div.register {
+	position:relative;
+	float:left;
+	padding:15px;
+	width:768px;
+	}
+
+div.regintrotext {
+	float:left;
+	position:relative;
+	width: 500px;
+	}
+
+p.regtext {
+	font-size:20px;
+	color:#9AD0E4;
+	padding-bottom:10px;
+	}
+	
+div.regcontent {
+	float:left;
+	position:relative;
+	padding:15px;
+	width:768px;
+	}
+
+div.regcontentleft {
+	float:left;
+	position:relative;
+	width:400px;
+	padding-right:0px;
+	}
+div.regform {
+	float:left;
+	position:relative;
+	width:220px;
+	padding-top:4px;
+	}
+
+p.regform {
+	padding:5px;
+	}
+	
+div.regcontentright {
+	margin-top:9px;
+	float:left;
+	position:relative;
+	width:360px;
+	border: 1px solid #9AD0E4;
+	height:50px;
+	margin-bottom:10px;
+	}
+
+table.messages {
+	border: 1px solid #9AD0E4;
+	}
+
+tr.messages {
+	border: 1px solid #9AD0E4;
+	}
+	
+td.messages {
+	border: 1px solid #9AD0E4;
+	height:35px;
+	padding:5px;
+	}
+	
+td.messages2 {
+	border: 1px solid #9AD0E4;
+	height:35px;
+	padding:5px;
+	color:#CC0000;
+	}
+
+div.projleft {
+	position:relative;
+	float:left;
+	width:250px;
+	}
+
+div.projright {
+	position:relative;
+	float:left;
+	width:480px;
+	margin-left:15px;
+	}
+
+div.projmem {
+	float:left;
+	position:relative;
+	width:250px;
+	padding:10px;
+	background-color:#EAEAEA;
+	border: 1px solid #9AD0E4;
+	margin-bottom:15px;
+	}
+
+div.projmemonly {
+	float:left;
+	position:relative;
+	width:250px;
+	padding:10px;
+	border: 1px solid #999999;
+	margin-bottom:15px;
+	}
+	
+div.projtags {
+	float:left;
+	position:relative;
+	width:250px;
+	padding:10px;
+	border:1px solid #003399;
+	}
+	
+div.projres {
+	float:left;
+	position:relative;
+	width:450px;
+	padding:15px;
+	}
+
+a.tag {
+	color:#000000;
+	text-decoration:none;
+	}
+	
+a.tag:link {
+	color:#000000;
+	}
+
+a.tag:active {
+	color:#000000;
+	}
+
+a.tag:visited {
+	color:#000000;
+	}
+
+a:link {
+	color:#666699;
+	}
+	
+a:active {
+	color:#666699;
+	}
+	
+a:visited {
+	color:#666699;
+	}
+
+a:hover {
+	color:#000000;
+	}

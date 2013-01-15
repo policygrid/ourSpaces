@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.policygrid.org/UKDADocumentationPolicy2#"
+    xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+    xmlns:spin="http://spinrdf.org/spin#"
+    xmlns:sp="http://spinrdf.org/sp#"
+    xmlns:pol="http://www.policygrid.org/provenance-policies#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:pggen="http://www.policygrid.org/provenance-generic.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:spl="http://spinrdf.org/spl#"
+  xml:base="http://www.policygrid.org/UKDADocumentationPolicy2">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.policygrid.org/ourspacesVRE.owl"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <owl:imports rdf:resource="http://rdfs.org/sioc/ns"/>
+    <owl:imports rdf:resource="http://spinrdf.org/spin"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://openprovenance.org/ontology"/>
+    <owl:imports rdf:resource="http://www.policygrid.org/provenance-generic.owl"/>
+    <owl:imports rdf:resource="http://www.policygrid.org/provenance-policies"/>
+  </owl:Ontology>
+  <rdf:Description rdf:about="http://www.policygrid.org/provenance-generic.owl#UnpublishedReport">
+    <pol:hasConditionRule>
+      <sp:Construct>
+        <sp:templates rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A0"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A1">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >date</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#onDate"/>
+            <sp:subject rdf:nodeID="A0"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://spinrdf.org/spin#_this"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+            <sp:subject rdf:nodeID="A0"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#dateOfPublication"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+            <sp:subject rdf:nodeID="A0"/>
+          </rdf:Description>
+        </sp:templates>
+        <sp:where rdf:parseType="Collection">
+          <sp:Let>
+            <sp:expression>
+              <afn:now/>
+            </sp:expression>
+            <sp:variable rdf:nodeID="A1"/>
+          </sp:Let>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#Paper"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A2">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >up</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#basedOnEvent"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A3">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >policy</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy1#UKDADocumentationPolicy1"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:subject rdf:nodeID="A3"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#UploadResource"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A2"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A2"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A4">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://spinrdf.org/spin#_this"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:subject rdf:nodeID="A4"/>
+          </rdf:Description>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:object rdf:parseType="Resource">
+                  <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                  >x</sp:varName>
+                </sp:object>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-generic.owl#dateOfPublication"/>
+                <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+                <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <sp:subject>
+                  <rdf:Description rdf:nodeID="A5">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >ar</sp:varName>
+                  </rdf:Description>
+                </sp:subject>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:object rdf:resource="http://spinrdf.org/spin#_this"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+                <sp:subject rdf:nodeID="A5"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#dateOfPublication"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+                <sp:subject rdf:nodeID="A5"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+        </sp:where>
+      </sp:Construct>
+    </pol:hasConditionRule>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

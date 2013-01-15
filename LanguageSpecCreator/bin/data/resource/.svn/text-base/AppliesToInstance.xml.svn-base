@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property AppliesToInstance--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="apply" idx="predicate" /><node cat="np" rel="su" idx="source" /><node cat="pp" rel="ppmod"><node cat="prep" rel="hd" root="to" /><node cat="np" rel="obj" idx="target" /></node></node></dt>

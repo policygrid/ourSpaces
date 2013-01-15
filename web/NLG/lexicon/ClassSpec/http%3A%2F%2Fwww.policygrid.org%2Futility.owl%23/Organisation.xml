@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Organisation-->
+<Organisation>
+  <label>
+    <labelPart type="literal">the organisation </labelPart>
+    <labelPart type="directProp">http://www.policygrid.org/utility.owl#Name</labelPart>
+  </label>
+</Organisation>
+

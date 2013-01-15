@@ -1,0 +1,14 @@
+digraph G {
+edge [decorate=true];
+aab [label="smain aab"]; 
+predicate [label="verb:end predicate"]; 
+aab -> predicate [label="hd"]; 
+aae [label="pp aae"]; 
+aaf [label="prep:at aaf"]; 
+aae -> aaf [label="hd"]; 
+source [label="np:null source"]; 
+aab -> source [label="su"]; 
+target [label="np:01/21/2010 TARGET target"]; 
+aae -> target [label="obj"]; 
+aab -> aae [label="ppmod"]; 
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class Communication-->
+<Communication>
+  <label>
+    <labelPart type="literal">the communication </labelPart>
+    <labelPart type="directProp">http://www.policygrid.org/provenance-generic.owl#title</labelPart>
+  </label>
+</Communication>
+

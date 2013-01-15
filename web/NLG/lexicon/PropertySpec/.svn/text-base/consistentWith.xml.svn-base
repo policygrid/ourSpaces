@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Lexicon entry for the property consistentWith--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="be" /><node cat="np" rel="su" idx="source" /><node cat="np" rel="comp"><node cat="noun" rel="hd" root="consistent" idx="predicate" /><node cat="pp" rel="ppmod"><node cat="prep" rel="hd" root="with" /><node cat="np" rel="obj" idx="target" /></node></node></node></dt>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property HasOperatingSystemVersion--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="be" /><node cat="np" rel="comp" root="2.3.64" idx="target" /><node cat="np" rel="su"><node cat="np" rel="det" idx="source"><morph case="genitive" /></node><node cat="adj" rel="mod" root="operating system" /><node cat="noun" rel="hd" root="version" idx="predicate" /></node></node></dt>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- [source] is in the state [target] -->
+
+<!DOCTYPE dt>
+<dt>
+	<node cat="smain" rel="root">
+		<node cat="verb" rel="hd" root="be"/>
+		<node cat="np" rel="su" idx="source"/>
+		<node cat="pp" rel="ppmod">
+			<node cat="prep" rel="hd" root="in"/>
+			<node cat="np" rel="obj">
+				<node cat="det" rel="det" root="the"/>
+				<node cat="noun" rel="hd" root="state"/>
+				<node cat="pp" rel="ppmod">
+					<node cat="prep" rel="hd" root="of"/>
+					<node cat="np" rel="obj" idx="target" />
+				</node>
+			</node> 
+		</node>
+	</node>
+</dt>

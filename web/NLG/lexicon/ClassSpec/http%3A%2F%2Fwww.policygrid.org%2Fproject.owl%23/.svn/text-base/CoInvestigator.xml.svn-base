@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Specification for the class OurSpacesAccount -->
+<CoInvestigator>
+  <label>
+    <labelPart type="literal">the co-investigator </labelPart>
+    <labelPart type="indirectProp" classSubj="true" propLink="http://www.policygrid.org/project.owl#roleOf">http://xmlns.com/foaf/0.1/firstName</labelPart>
+    <labelPart type="literal"> </labelPart>
+    <labelPart type="indirectProp" classSubj="true" propLink="http://www.policygrid.org/project.owl#roleOf">http://xmlns.com/foaf/0.1/surname</labelPart>
+  </label>
+</CoInvestigator>

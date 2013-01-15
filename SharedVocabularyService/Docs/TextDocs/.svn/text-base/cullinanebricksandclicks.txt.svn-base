@@ -1,0 +1,792 @@
+ABSTRACT Online retailing is growing fast and claims are being made about its positive
+environmental impact relative to traditional shopping, particularly by the retailers them-
+selves. There is, however, little concrete evidence to support the claims. Whilst there exists
+some research into the passenger travel implications of e-shopping, this paper seeks to
+analyse the issues involved in online shopping from both a passenger and freight transport
+perspective. The objectives of the paper are first, to set out the complex transport relation-
+ships involved in online shopping and in particular the interaction between the passenger
+and freight aspects and second, to shed some light on the environmental impact of online
+shopping. It concludes that as things currently stand, it cannot be stated with any degree
+of certainty that clicks are any more environmentally responsible than bricks. The paper is
+conceptual in nature and is the pre-cursor to an empirical study of the issue.
+
+Various forecasts have been made over the years of the impact of improving
+information and communications technology (ICT) on travel demand. There
+has been (and still is), for instance, a great deal of interest in the area of tele-
+commuting and its likely impact on travel and the environment. The subject of
+telecommuting has raised considerable debate about the need for travel and
+human behaviour in relation to it. As the wider, more indirect issues relating to
+telecommuting are discovered, the debate still continues as to its net impact on
+travel. Home shopping in general, and internet shopping in particular, presents
+additional complexities since not only do we need to consider consumers and
+their travel behaviour, but we must also consider the freight dimension in terms
+of the deliveries of goods ordered to homes. Much of the previous research into
+online retailing has focussed either on the consumer side or on the freight side
+of the last mile issue (an exception is the paper by Visser and Lanzendorf,
+2004). This (conceptual) paper seeks to combine the two. It does not aim to
+determine a precise answer as to the impact of online retailing (sometimes
+
+Correspondence Address: Sharon Cullinane, Senior Lecturer in Logistics, Logistics Research Centre,
+School of Management and Languages, Heriot-Watt University, Edinburgh EH14 4AS, Scotland, UK.
+Email: s.l.cullinane@hw.ac.uk
+
+referred to as e-tailing) on the environment, but seeks to set out the complexity
+of the issues as a pre-cursor to a future empirical study. The literature review
+concentrates principally (but not exclusively) on publications since 2001 since
+evidence pre-2001 is thoroughly reviewed in Browne et al. (2001), the OECD/
+ECMT (2001) and the Retail Logistics Task Force (Chaired by Prof Alan McKin-
+non, 2001) as well as in the ROSETTA (www.trg.soton.ac.uk/rosetta) and
+STELLA European projects (www.stellaproject.org).
+
+In common with most research dealing with environmental impacts, one of the
+difficulties is deciding where to set the boundaries of the research. This paper
+confines itself to the impacts from the shop to the consumer and does not take
+into consideration possible impacts arising from changes in either the retail struc-
+ture itself or the supply chain configuration. Such changes could include the
+closure of shops, relocation of distribution centres, the building of purpose-built
+e-fulfilment centres, changes in picking and packing processes, in the sourcing of
+products, in inventory levels as well as in the number of stock-keeping units held.
+These are substantial and important changes which would require a separate
+paper to analyse and are, therefore, beyond the scope of this paper.
+
+Shopping generates a great deal of travel. In GB, the average person aged 16+
+makes 219 shopping trips1 a year, accounting for 21% of total trips made per year
+(DfT, 2006). Of the 219 trips, 42% are made as car drivers and 21% as car passen-
+ger. In terms of mileage, an average person aged 16+ travels 926 miles per year on
+shopping trips, 82% of which is done in a car. Over the last ten years, the average
+number of shopping trips per person has dropped by 13%, but the average length
+of trip has increased by 10% as some people have changed from making frequent
+trips to local shops in favour of less frequent trips to edge-of-town or out-of-town
+centres. Overall shopping mileage has increased by 22% since the 1993/95
+National Travel Survey (DfT, 1996, 2006).
+
+The environmental impact of these trips is considerable. Defra (2007) has calcu-
+lated that cars produce 54% of the CO2 emissions of transport, which itself
+accounts for 28% of the domestic emissions of CO2 by source.
+
+2 Defra calculates
+that each medium-sized petrol car emits 216 grams of CO2 per kilometre (or 348g
+per mile). Since vehicle miles travelled (VMT) is the main aggregate variable
+determining transport’s carbon footprint, methods to reduce car use are
+constantly being sought. One potential candidate for this is online shopping.
+
+Home shopping has been happening for decades and is not confined to online
+shopping. In 2007, orders taken in store still account for just over 50% of the home-
+shopping market and this mode of shopping is particularly prevalent in the
+electrical goods sector (Verdict, 2007). Other home-shopping channels include
+television shopping, catalogue or mail-order shopping, telephone ordering and
+door-sales shopping. According to Verdict (2007) online retail spending in the UK
+in 2006 only accounted for 25% of the home-shopping spend. What is important,
+however, is that the £10.9 billion spent online, represented an increase of 33.4% over
+the previous year (compared to an average increase in home-shopping of 7.2%).
+
+Online retail spending is one element of a larger e-commerce sector. In 2005,
+total internet sales to households amounted to £21.4 billion (ONS, 2005). This
+includes all internet sales including financial and other intangible goods. The
+£10.9 billion of internet retail sales represents approximately 4% of total retail
+sales and is roughly the same proportion as in the USA where e-tail sales
+amounted to $104 billion in 2006 (an increase of 18% over the 2005 figures)
+(Plunkett Research, 2007). Although this paper concentrates on consumers, it is
+interesting to note that B2B (business-to-business) online sales are nearly five
+times higher in the UK than B2C (business to consumer) sales; for every £100 of
+goods sold online in the UK, £21 represented B2C sales, the remainder being B2B
+sales. Proportionately, B2B online sales are also rising at a faster rate than B2C
+(ONS, 2005).
+
+E-tailing is obviously dependent on household internet access. Across Europe
+(EU 27), household access to broadband internet has increased substantially from
+14% in 2004 to 42% in 2007. Household access ranges from 7% in Greece to 74% in
+the Netherlands (Eurostat, 2008). In 2007, 61% of households in the UK had inter-
+net access and 84% of those had broadband (ONS, 2007). As Cairns et al. (2004)
+point out, household access to the internet is not necessarily a limiting factor as
+many people have access to it at work.
+
+In 2006, just under half of all men and women used the internet to buy physical
+goods, but one in six did not use the internet at all. Of those aged 65+ only one in
+four has access to the internet and one in seven has bought online (Mintel, 2007).
+However, silver surfer clubs are encouraging older people to use the internet and
+in 2005, online spending by the 55+ age group rose by 47% to £458 million (RAC
+Foundation, 2006). The RAC Foundation survey of 1000 people found that of
+those who use the internet, the main reasons for doing so were: to search for a
+better price (75%), to save the hassle of getting out the car or catching a bus (75%),
+to save time (73%), to have a better choice (62%) and to save the cost of getting to
+the shops (51%).
+
+Travel, accommodation or holidays 51
+Films, videos or DVDs 42
+Music or CDs 41
+Clothes or sports goods 37
+Books, magazines, e-learning, training material 37
+Tickets for events 35
+Computer software 29
+Electronic equipment 25
+Household goods 24
+Computer hardware 22
+Insurance 21
+Food or groceries 20
+
+Home-delivered products can be divided into physical goods (i.e. those that
+require to be physically distributed to households) and digitally delivered goods
+(which are delivered down the wire) (Fernie and McKinnon, 2004). The most
+frequently purchased products are the digitally delivered ones (travel, music,
+etc.), whereas the physical goods are less frequently purchased online (ONS,
+2007). The difference is a very important one as far as distribution is concerned in
+that there are usually no marginal freight trips generated by digitally delivered
+goods, whereas the physical goods require at least one freight trip to be delivered
+to the customer. In cases where goods are sent by post, there may be no marginal
+freight trips generated (except that if the volume of post increases greatly, at some
+stage additional post vans may be required). In terms of passenger trips, it makes
+less difference whether the goods concerned are digital or physical as it is possi-
+ble that the purchase of a theatre ticket online could substitute for a physical
+journey to buy it at a box office in the same way as the purchase of a book online
+could substitute for a trip to the shops to buy it.
+
+Mintel (2007) divides the e-tailing industry into five major sectors; catalogue
+and TV shopping companies (which have obviously changed their mode of retail
+to include online ordering) account for 29% of the market, non-food-based retail-
+ers 21%, grocery-store-based retailers 21%, offshore companies (i.e. companies
+based outside the UK) 16% and pure players (i.e. those who retail only online and
+have no physical store presence, such as Amazon) 13%. The largest online retailer
+in the UK is Tesco which reported online sales of nearly £1 billion in 2006, with
+Argos coming in second, with online sales of £183 million (Mintel, 2007). Online
+grocery sales are still rising fast in the UK and are forecast to increase from £2.4
+billion in 2007 to £5 billion by 2012 (the Grocer, 13 October 2007). However,
+despite all the hype it receives, online grocery sales only account for 2% of the UK
+grocery market. It is interesting to note that in 2001, Browne et al. mentioned that
+forecasts for online grocery sales were that they would increase from £530 million
+in 2000 to £4.96 billion by 2005. Clearly this has not been achieved. In the USA,
+online retailing has in fact reported a downturn as people return to the high street
+(Daily Mail, 18 June 2007). This does not seem to be a pattern replicated in the UK,
+however, as the Interactive Media in Retail Group (IMRG) reported in October
+2007 that growth in internet shopping in the nine months to September 2007 was
+51.8% higher than for the same period the previous year (IMRG, 2007).
+
+In order to gauge the importance and impact of online shopping, we need to have
+some understanding of consumer shopping behaviour in general. There is a large
+academic literature on this (see, e.g. Engel et al., 1995; Dubois, 2000; Solomon et al.,
+2002) which space does not allow us to pursue. We do need, however, to know
+something about consumer spending patterns. Table 2 shows the purchase profile
+of shoppers from a large survey by the CfIT of shopping trips (based on 22,885
+responses).
+
+Food and non-alcoholic drinks were the most frequently purchased goods, with
+publications and stationery (probably frequently amounting to a newspaper),
+second. It is interesting that the third most purchased type of good was ‘nothing’
+(16% of cases). There are many possible reasons for this latter figure, including the
+desired products being out of stock, browsing activity, people shopping for social
+reasons and people accompanying others who are making a purchase.
+
+Table 3 shows how much was spent during the average shopping trip. It
+illustrates that average spend per trip to the shops is actually very low in many
+cases; less than £10 in 43% of cases. This might again support the notion of the
+social nature of shopping trips, but could also reflect the influence of any of the
+factors mentioned above.
+
+Unfortunately, we know very little about how many products were bought on
+the same trip and in what combinations. This information might help us to deter-
+mine the similarities and differences between physical and online shopping
+behaviours and the impact of online shopping on travel.
+
+The extent of the take-up of online shopping depends greatly on consumer
+attitudes towards it. The shopping experience has changed a great deal over the
+past century, responding to consumer pressures and the technological capabilities
+of the retailers themselves. Parking constraints in town and city centres have
+
+Food and non-alcoholic drinks 46
+Publications and stationery 22
+Nothing 16
+Household goods 15
+Alcohol and beverages 10
+Clothing and footwear 10
+Recreation and culture 8
+Personal care 7
+Restaurants and hotels 6
+Medical goods 4
+Personal effects 4
+Transport related goods 3
+Financial services 3
+Other 2
+Energy products and utilities 1
+Returning unwanted goods 1
+Housing 1
+
+increased the popularity of edge-of-town and out-of-town shopping. However,
+retailers have adapted and shopping has become more of a social experience. It
+has always been common for department stores to have their own cafes, but now
+this extends to book shops, clothes shops and others. In many ways, conventional
+shops are becoming more like showrooms where people browse and maybe order
+online later once they have inspected the goods physically.
+
+The British Council of Shopping Centres (BCSC) conducts continuous research
+into consumer shopping behaviour. In a recent publication (BCSC, 2006, p. 8)
+aimed at their members, they state that owners and developers must “understand
+that shoppers are faced with a myriad of shopping opportunities, and they have
+to give them a reason to keep going to the shops rather than shopping online”.
+The main way of achieving this, they state, is to put real emphasis on customer
+service in-store. A survey carried out for Accenture (Hoffman and Lowitt, 2007)
+of consumers in the USA showed that consumers were actually very dissatisfied
+with the service they received in stores. They state (p. 2) that “consumers continue
+to experience service annoyances and are responding by not making desired
+purchases, creating a revenue leak in retailers’ business models”. The main
+sources of these ‘service annoyances’ were ‘too little attention’ and ‘too much
+attention’. Poor in-store service is likely to encourage more online shopping.
+
+In the RAC Foundation (2006) survey, when asked to respond to the statement
+“In the future people will buy most things online and shops will just become
+showrooms for browsing”, 50% disagreed and 39% agreed (with 9% neither
+agreeing nor disagreeing). The survey also found that nearly two thirds of 17- to
+24-year olds enjoyed shopping as a leisure pursuit. However, there is also anec-
+dotal evidence that young people regard shopping online as a leisure pursuit and
+do it with friends in a social way.
+
+Cushman and Wakefield (2000) suggest that the retail transition from bricks to
+clicks will be as shown in Table 4. Rather than accessing products at the local
+store, purchases will be made online from specialist shops all over the world, at
+any time of the day from retailers that have a proven record of secure, on-time
+delivery. The physical store will become a showcase for products bought subse-
+quently online, where people can feel and touch the products and find out any
+additional information required.
+
+The main thrust of the difference between the traditional and the new mixed
+medium shopping formats, concerns the fragmentation of the shopping process.
+Social commentators suggest that we will be buying goods at any time of the day,
+including when we are at work. This might also include when we are using public
+
+Location Access/popularity
+Generalists Specialists
+Times when we do Moments when we might
+Store as a warehouse Store as a showroom/theatre
+Store as a transaction point Store as an information point
+Retailer power Consumer/broker/distributor power
+Convenience Relationship and trust
+Value for money Value for time coupled with value for money
+
+transport, waiting at airports and even climbing up mountains! The Blackberry
+and other such hand-held communication devices enable people to order goods
+online from any location where there is a network signal. Retailers are improving
+and simplifying their ordering formats in order to facilitate this move, although
+sales through this medium are likely to be quite low.
+
+Online shopping and in-store shopping are not direct substitutes. They offer
+different experiences and the general consensus of opinion appears to be that
+most people will not buy exclusively from either mode but will combine the two
+formats. According to Mokhtarian (2004), the difference between in-store shop-
+ping and online shopping is as shown in Table 5.
+
+We have already seen (Table 1) how there is a difference in the extent of online
+use according to the product being purchased. The same is the case with the type
+of person doing the shopping. The BCSC (2006) divides consumers into five
+groups with respect to their inclination to shop online. These are: 
+
+In a similar vein, Couclelis (2001) divided the act of shopping into three phases;
+before purchase, the purchase itself and after purchase, for each of which there
+are two mode possibilities; local (i.e. physical) and remote (i.e. online). Based on
+these she divides people into particular kinds of shopper: the traditional shopper
+(local/local/local), the cybernaut (remote/remote/remote), the good citizen
+(remote/local/remote) and the free rider (local/remote/local). There also
+appears to be a gender issue too. Men are more likely to want to shop online than
+women (RAC Foundation, 2006).
+
+The direct net impact on the environment, at least on the passenger transport
+level, will depend how many people fall into each of the above categories and
+how this changes in the future. The RAC Foundation (2006) suggests that for
+many goods bought online, almost 80% of purchasers will still travel to the shops
+
+Large choice Sensory information (touch and see)
+Lower prices/search costs Tangibility (familiarity with store)
+Information easily accessible Immediate possession (take goods away)
+Personalisation to customer Social interaction (meeting in store)
+Convenience (not having to go out in rain, 
+can be done at any time)
+
+to browse and compare. Some shoppers will buy online but collect from store
+(i.e. click and collect).What is clear is that the picture is not simple. If people
+browse online and shop in-store, some journeys may be saved, but if they browse
+in-store and shop online, then it is likely that additional mileage will be incurred
+(by the distribution company). However, in the latter case, if people have no
+intention of buying in-store when they have made the decision to purchase some-
+thing, they may be more inclined to use public transport since they will not
+be carrying their purchases home. The CfIT (2006) found that the need to carry
+shopping is a significant influence in modal choice between private and public
+transport.
+
+Online shopping is not the first telecommunications-enabled influence on travel.
+The widespread adoption of the telephone was predicted to have an impact on
+travel behaviour (Pool, 1983) as was teleworking. The notion of teleworking, or
+telecommuting, has parallels to the online shopping debate, as in its early days, it
+was viewed as being totally positive in its impact on travel (i.e. telecommuting
+would reduce travel). It has subsequently transpired that this simple relationship
+does not necessarily hold.
+
+There is now a substantial literature on telecommuting and its impact on
+personal travel (for reviews, see, for instance, Hensher and Golob, 2000; Golob
+and Regan, 2001; Mokhtarian and Salomon, 2002; Zhang et al., 2005). Individual
+studies have their own specific objectives, but the overall theme of the literature is
+to determine to what extent the relationship is substitutional or complementary.
+Substitution refers to the extent to which ICT replaces physical travel, whereas
+complementarity refers to the extent to which use of ICT is in addition to physical
+travel. Hjorthol (2002, p. 438) refines this binary division slightly by suggesting
+that there are four ways in which new technology can interact with old: 
+
+In assessing the carbon footprint of e-tailing, it is the net effect of substitution/
+complementarity (i.e. after taking into account all the modification, generation,
+additional and substitutional effects) that we are interested in determining as it is
+this that determines the overall environmental impact.
+
+Most studies of the direct impact of telecommuting on travel suggest that there is
+a net benefit but that the benefits are tempered by elements of complementarity.
+For instance, telecommuters may use their cars for shorter trips associated with
+
+activities other than work on the days they are telecommuting, or the car that was
+previously used for commuting by one family member may be used by another
+family member for a different purpose. Complementarity effects are not always
+predictable. For instance, a study by Balepur et al. (1998) on the telecentres project
+in California found that although person and VMT decreased as a result of the
+telecentres, because people were not driving so far to work, they were coming
+home for lunch and carrying out other activities by car.
+
+A thorough review of the telecommuting literature undertaken by Cairns et al.
+(2004) for the UK Department for Transport came to the conclusion that although
+much of the US literature on teleworking and telecommuting suggested that the
+complementarity effects either balanced or outweighed the substitutional effects,
+most of this literature was ‘based on speculation rather than empirical evidence’.
+They go on to review a host of empirical studies, nearly all of which illustrate that
+although complementary car use reduced the overall impact of teleworking, total
+VMT reduced as a result of teleworking. Indeed, they found some evidence (from
+a study by Pendyala et al., 1991) that teleworkers chose to travel to non-work
+activities that were closer to home, exhibiting ‘contracted action spaces’. A very
+similar conclusion was reached following a review of the literature for the DLTR
+(2002).
+
+Not all research has reinforced the link between telecommuting and reductions
+in travel. Hjorthol’s (2002) study of telecommuting in Norway concluded that
+“stationary communication seems to be a supplement to activities based on
+mobile technology but it gives people more spatial and temporal options”
+(p. 451). The stationary communication referred to here by Hjorthol is the
+computer and the mobile technology is the car. This study found that VMT
+actually increased as a result of telecommuting.
+
+As stated above, much of the telecommuting literature is confined to
+determining the extent of substitution versus complementarity. In terms of the
+environmental impact, however, although number of VMT is probably the key
+overall variable, there are also important issues about the type of miles being
+driven. This has been the subject of a great deal of Mokhtarian’s work in rela-
+tion to telecommuting. In a paper by Koenig et al. (1996), the authors set out to
+model the environmental impact of telecommuting, but not simply by using
+the traditional variables such as VMT or number of trips because as they state: 
+
+These traditional measures only partially explain vehicle emissions. The
+vehicle emission process is very complex involving the interaction of
+numerous other factors including: the vehicle types and pollution control
+technologies in the fleet; how the vehicles are operated (speeds, accelera-
+tion/deceleration etc.) other travel related indicators (such as number of
+cold and hot engine starts); and environmental conditions (including
+season and ambient temperature). (p. 14)
+
+One of the benefits of telecommuting is that the number of cold starts is reduced
+since, although the car is still used during the day for other reasons, it is not
+necessarily being used first thing in the morning when starting the car creates the
+most emissions. Koenig et al. (1996) also found that telecommuting meant less
+freeway driving but more driving on small, residential roads, which is dispropor-
+tionately more environmentally damaging.
+
+Having briefly reviewed the debate on telecommuting and travel, we now return
+to online shopping and the question of whether it will ultimately be beneficial or
+detrimental to the environment. Many of the issues raised above concerning
+telecommuting are equally valid in relation to online shopping. It is important to
+determine to what extent the online shopping is substitutional and to what extent
+it is complementary and also to consider the direct and indirect effects. James and
+Hopkinson (2001) aptly describe the dichotomy as being between ‘quieter roads
+and fuller baskets’ as people stay at home and interact more with the local
+community, or ‘e-road rage’ where home shopping increases delivery van
+movements and people use their cars for other purposes instead.
+
+In an early paper on the effect of electronic home shopping on travel, Gould
+and Golob (1997) investigated the complex relationship between e-shopping and
+personal travel. They carried out a multi-diary activity and travel survey in the
+Portland Metropolitan area of the USA. They concluded that the elimination of
+some shopping trips would probably lead to an increase in trips for other reasons,
+particularly in the case of women, where there was a latent demand for ‘mainte-
+nance trips’, e.g. eating meals, medical care, picking up or dropping off of passen-
+gers, taking care of household or personal obligations. They also investigated the
+relationship between teleworkers and their shopping habits. They considered the
+idea, for instance, that teleworkers may be less likely to shop online, since they
+may shop more locally. Additionally, they postulated that since many shopping
+trips are part of a trip-chain linked to the daily commute, teleworkers shopping-
+related VMT could be higher than conventional workers.
+
+Cairns (2005) suggests that another complementarity effect of online shopping
+is that consumers who would previously have walked or cycled to the shops may
+choose to have home deliveries, thereby increasing the total VMT. Research in the
+Netherlands (Transport en Logistiek Nederland, 2000, quoted in Retail Logistics
+Task Force, 2001) supports this notion. They calculated that if 11.5% of total sales
+are purchased online and delivered to the home by 2005, there would be a 17%
+increase in VMT because of the substitution of walking and cycling trips by
+motorized deliveries. Cairns also suggests, however, that if online shopping
+became the norm, it might actually encourage some people to give up their cars
+altogether. A contrary view put forward by Visser and Lanzendorf (2004) is that
+the growth in online shopping may cause shops in more remote areas to close
+down, forcing people without cars in these areas to buy one, thereby increasing
+vehicle mileage.
+
+One of the complexities suggested by Gould and Golob (1997) is that online
+shopping allows the shopper to expand their horizons in terms of their shopping
+location. For instance, if a person is looking for a specific item, rather than confin-
+ing their search to the local town, they may search online and find it cheaper
+further afield and travel to purchase it. This notion is supported by Ferrell (2004)
+
+who analysed data from an activity diary survey of residents in the San Francisco
+Bay area and found that “teleshopping households engage in more shopping
+trips, travel longer distances for shopping and chain more of their shopping trips”
+(p. 241) and that the benefits of the trip chaining “are being overwhelmed by the
+complementary effects of home shopping on shop travel” (p. 241). In contrast,
+Cairns et al. (2004, p. 316) after reviewing the small number of empirical studies
+on the complementarity effects of teleshopping, come to the conclusion that
+whilst it may generate some offsetting travel, teleshopping “is likely to reduce
+personal car use”.
+
+Mokhtarian (2004) sets out a conceptual analysis of the impact of online shop-
+ping on travel based on a more aggregate economic consideration of some of the
+indirect effects. On the personal travel side, she states that many shopping trips
+are made as part of a trip chain and the amount of travel reduced by ordering
+online is actually quite low. Browne et al. (2001, p. 44) suggest that grocery shop-
+ping “is typically carried out as a dedicated car trip, so home shopping and deliv-
+ery in the grocery sector does often lead to the removal of an entire shopping
+trip”. There appears to be little hard evidence for this assertion, however, and
+further research is required to validate it. There is still also the question of the
+second round effects concerning alternative uses of the car if it is not being used
+for shopping.
+
+On the freight side, amongst other things, Mokhtarian addresses the possibility
+that because goods are cheaper online, more will be demanded and this in turn
+will increase the number of deliveries made. Additionally, online ordering
+increases the potential for goods to travel further as they can be ordered from
+anywhere in the world. She also looks at the changing demographics to assess
+likely influences on aggregate demand and therefore freight movements. Overall
+she comes to the conclusion that: 
+
+The combined outcome of all factors does not appear to support any hope
+that e-shopping will reduce travel on net; to the contrary there may be
+negative impacts due to increased travel, even if those impacts are likely
+to be localised and/or small in magnitude for the most part (Mokhtarian,
+2004, p. 257).
+
+Similar arguments are raised by Hesse (2002, p. 229) who argues that e-tailing is
+just another step in the development of logistics structures which will not
+impinge on cultural mores. He suggests that shopping is a cultural experience
+and that “new technologies are deeply embedded in culture and in social prac-
+tices, in daily routines and habits that are far from being rapidly changed by new
+order-and-delivery services”. On the freight side, he argues that e-tailing will
+result in a greater propensity to use air transport (environmentally more damag-
+ing) because of both the time sensitive nature of e-tailing and the ability to order
+and source goods from further afield. He also argues that huge e-fulfilment and
+consolidation centres will need to be built (and that they will not replace the tradi-
+tional warehouse, but will be in addition to them), often on greenfield sites, to
+cope with the distribution of products bought online.
+
+A further, longer term impact of e-shopping is that on residential location.
+There is some evidence that telecommuting increases the distance from work that
+people are prepared to live (Pendyala et al., 1991; Hjorthol, 2002; White et al.,
+2007). If, on top of telecommuting, you can also shop online and have goods
+
+delivered to your door, this might reinforce the decision to live in a more remote
+location. Shen (2000) modelled the impact of new telecommunications in general
+on residential location and found that “as the level of substitution of telecommu-
+nications for transportation increases substantially, the residential location
+flexibility of those households that have technological capabilities is significantly
+enhanced” (p. 1458). This would mean that the number of trips made might
+reduce, but their length would increase, perhaps substantially. Ironically, Shen
+suggested that it was the non-IT-enabled trips that reduced the possibility for
+locational flexibility (e.g. members of the household that relied on public trans-
+port to carry out activities). With shopping becoming an IT-enabled activity,
+according to Shen’s logic, a substantial increase in locational flexibility might
+result.
+
+Turning to the type of trip that is replaced by online shopping, in the UK, the
+majority (63%) of shopping trips by car take place between 1000 hours and 1600
+hours, outside of the peak congestion time (ONS, 2007). The issue of cold starts,
+therefore, is less relevant. Furthermore, the marginal environmental benefit in
+reducing a shopping trip should be less than that of reducing a commuting trip
+because the shopping trip is less likely to take place in congested conditions. On
+the other hand, shopping trips are more likely to take place on smaller roads
+rather than on main roads, and this results in a marginal increase in environmen-
+tal cost over the same length commuting trip.
+
+So to what extent is online shopping a substitute for physical travel? The RAC
+Foundation (2006) found that 80% of online purchases still resulted in a physical
+journey. As Mokhtarian (2004, p. 6) puts it: in e-shopping “products are detached
+from the physical cues afforded by a bricks-and-mortar store”. Consumers there-
+fore are likely to browse before purchasing online. Returning to the discussion on
+shoppers behaviour, people are social beings. In the case of telecommuting,
+although telecommuters reduce their VMT on the commuting trip, they tend to use
+their car for other things during the telecommuting day. Mokhtarian (2004, p. 9)
+suggests that “It is likely that a number of shopping trips are ‘invented’ in order to
+justify (often subconsciously) an urge simply to get out and go somewhere”.
+
+The freight dimension of online shopping is also a complex issue. Cairns (2005)
+models the impact of home deliveries of groceries specifically on traffic and
+suggests that online grocery deliveries could reduce vehicle km by at least 70%.
+Although she briefly considers some of the indirect affects in her discussion of the
+validity of her and others’ models, she still concludes that there will be a substan-
+tial reduction in traffic. She suggests that the grocery market is somewhat unique,
+however, in that it is “typically a trip least valued in its own right” (p. 53) and is
+highly car dependent because of the need to carry things. The implication is that
+there is less likelihood of complementarity in this sector than others.
+
+Many retailers are making claims about the greenness of this method of distri-
+bution. Jonathan Faiman, co-founder of Ocado, the online supermarket which
+works in partnership with Waitrose, claimed for instance that “each Ocado van
+replaces up to 20 cars on the road which overall can result in huge savings of
+unnecessary car journeys” (Guardian, 2007, p. 9). The environmental section of
+the Tesco website (Tesco, 2008, www.tesco.com/greenerliving) boasts that each
+delivery van saves 6000 car journeys per year. The validity of these claims (and
+
+Online shopping is usually delivered to consumers in diesel vans.3 Vehicle for
+vehicle, a van is more environmentally polluting than a car. Vans delivering
+goods ordered online are in most cases a total addition to the vehicle stock in the
+UK. In some cases they are replacing HGVs, but in the majority of cases they are
+performing a function that was previously not performed by a goods vehicle.
+Although not entirely a result of online shopping, the number of vans in the UK
+has increased substantially over the past ten years and there are now five times as
+many vans in GB as HGVs. They consume 25% of the total diesel and 3% of the
+total petrol used by all motorized vehicles in GB (Browne et al., 2007). According
+to Defra (2007), vans account for 13% of the CO2 emissions of transport in the
+UK. Of course, not all of the vans on the road are used for home deliveries; the
+DfT (2004) calculates that freight transport only accounts for approximately 1/3
+of van kilometres. McKinnon (2007) has pointed out, however, that a problem
+with GB van statistics is determining the number that are used for freight
+deliveries at all.
+
+Delivery vans, by their very nature, are also continuously stop-starting. This
+type of vehicle operation is bad for the environment (although this type of
+operation with a high drop-density is better environmentally than the situation
+where each retail company makes its own deliveries, often with lower drop-
+densities). Additionally, they often have to park at the side of the road causing
+traffic obstruction and slowing the free-flow of traffic (adding further to the
+environmental problems).
+
+The notion of fragmentation of the shopping activity and product flow which
+results from online shopping has been discussed above. This in itself causes its
+own problems. Cairns (2005) argues that for grocery shopping, in many cases, the
+online shop is likely to be a direct replacement for a physical shop. Even if this
+were to be the case, for the non-grocery shop the situation could be very different.
+Rather than one trip to the shops to buy a selection of things (e.g. clothes from
+several different shops, plus a few household goods), if bought online, each of
+these things would be ordered at a different time of the day, but more impor-
+tantly, from a different company, sometimes requiring separate delivery (depend-
+ing on the extent of load consolidation). If this is the case, the number of freight
+trips generated could be huge and although delivery companies obviously
+combine deliveries for many different people in one van, there is likely to be an
+overall increase in VMT by van.
+
+One of the problems with online shopping is that, for non-letterbox size products,
+the customer often needs to be at home to receive the goods bought. For whatever
+reason, this is not always possible. The IMRG reckons that 11% of deliveries fail
+on first attempt and 2% fail altogether. McKinnon and Tallam (2003) found that in
+
+cases where parcel carriers refuse to leave consignments unsecured, the level of
+failed deliveries exceeds 20%. The DTi (2001) suggests that in cases where no
+delivery time has been specified in advance, the failure to deliver rate is around
+60%. The higher the number of failed deliveries, the greater the VMT by vans and
+the greater the pollution caused. McLeod et al. (2006) point out that failed deliver-
+ies also lead to increased car journeys as customers eventually need to pick up
+their deliveries from the carrier’s depot (quite often located in an edge-of-town
+location, inaccessible by public transport).
+
+There is also some evidence that when purchasing online, people actually over-
+order knowing that they will send some of it back. For instance, because it is
+impossible to try on clothes bought online, consumers may buy several sizes and
+even several colours and send back what they do not like. Fernie and McKinnon
+(2004) state that around 25% of goods purchased online are returned. Nairn (2003)
+suggests that this increases to 30% of non-food products, compared to 6–10% in
+the case of physical shops. Returns also add to the number of van trips made,
+although the overall impact on VMT depends on the returns policy of the
+company (some companies require customers to return goods through the postal
+service or through local agents) and the extent to which returns can be integrated
+with existing trips.
+
+The customer requires as narrow a delivery slot as possible, preferably an hour,
+so that they are not waiting around for a delivery. For the distribution company,
+however, the wider the delivery window, the lower the cost of delivery. Nockold
+(2001) modelled the impact on transport costs of varying the window delivery
+width in the London area. He found that a reduction in the window width from
+3 hours to 1.5 hours resulted in a cost increase of 17–24% and elimination of
+windows altogether resulted in savings of between 27% and 37%. In terms of the
+environment, wider windows also equate to reduced costs per delivery. Ocado
+customers can choose a green van delivery display when they are buying online
+which means that they can take advantage of a van already allocated to their area.
+
+It must be recognized that online shopping is in its infancy and to date, the logis-
+tical systems developed to deal with it have often adapted on a piecemeal basis.
+Some have reached a high level of sophistication using routeing and scheduling
+software and picking and packing processes to minimize distance travelled and
+maximize drop-density. Dedicated home-delivery companies, consolidating
+products from a number of online retailers, have also emerged. However, anoma-
+lies still exist. Customers ordering multiple products from a single online retailer
+may not necessarily receive all their items in one delivery because of the picking
+system used. This can result in trip duplication (as well as customer dissatisfac-
+tion). In the future, aspects of online shopping could change significantly. Most of
+the major grocery retailers are experimenting with less environmentally damag-
+ing vans, such as electrically powered vans, vans powered by biofuels and others.
+
+By 2010, it looks from the websites of the large grocery companies, like at least
+nearly all urban grocery deliveries will made in such vehicles. This obviates some
+of the problems alluded to above, but does not address all the issues (and there is
+still the issue of the upstream environmental effects of the power generation to be
+dealt with).
+
+Research has been ongoing into the ‘not at home’ or unattended delivery issue,
+with solutions such as secure lockers, local drop-off and collection points and
+community delivery points all being considered (see Punakivi et al., 2001;
+McKinnon and Tallam, 2003; Fernie and McKinnon, 2004). The research centres
+around finding a solution which balances security (of products delivered and of
+the premises to which they are delivered), cost (of providing the solution) and
+practicality for both the customer and the carrier. Home-based reception boxes
+have been tried in several places but most experiments have been curtailed due to
+a combination of costs being too high and usage being too low (McKinnon and
+Tallam, 2003). In Helsinki, Punakivi and Tanskanen (2002) carried out research on
+shared reception boxes (which can be placed at petrol stations, tobacconists or
+elsewhere) and found that transport costs were 55–66% lower than with unat-
+tended delivery and two-hour delivery windows. However, the idea was not
+operationalized.
+
+Unattended delivery possibilities would eliminate the return journeys problem
+outlined in points 4.3 and, to a certain extent, the problem alluded to in 4.5 above.
+They might also allow the delivery of goods overnight when congestion is lower
+(although the noise creation could be a problem). However, an important point
+here is the extent to which eliminating these problems might actually stimulate
+demand for online shopping. At present, it seems likely that many people would
+prefer to shop physically for some items because they cannot, or do not want to, be
+at home waiting for deliveries. In certain circumstances an increase in the propor-
+tion of online shopping could improve the situation for consumers as frequency of
+deliveries to any one area could improve as demand from that area increases.
+
+The environmental consequences of a large increase in online shopping are
+even more highly debatable since this probably would require changes to the
+entire structure of the distribution system. On the positive side, an increase in
+the proportion of online shopping should improve both the drop densities and
+the vehicle loading percentages. For instance, if either more people in a specific
+area order goods online from a specific retailer, or each person ordering orders
+more, the distance travelled by each delivery vehicle should decrease and the
+vehicle utilization should increase. This would be environmentally beneficial.
+
+There is also discussion about company collaboration on consignment consoli-
+dation, whereby consignments going to a specific geographical location from
+different companies might be consolidated at a convenient location for final
+delivery to the consumer. To some extent, use of parcel delivery services such as
+DHL and UPS are already performing this function, but many companies do not
+use such services. Collaboration requires a great deal of trust on behalf of the
+companies involved, particularly since the distribution company is the interface
+between the retailer and the customer. Customer service perception is very
+dependent on this final leg of the journey. Indeed, Esper et al. (2003) found that in
+the USA, perception of the carrier had a significant influence on the consumer
+decision as to whether or not to buy online. The Royal Mail (2007) home shopping
+tracker study survey also showed that 70% of respondents liked to know which
+company would be delivering their goods.
+
+Consolidation has been a central feature of city logistics for many years and a
+whole academic literature has built up around it (see, for instance, Taniguchi
+et al., 2001; Browne et al., 2005; Visser and Hassal, 2005). It needs to be even more
+widely used, encompassing much more than logistics in urban areas, if online
+shopping is to be the environmentally responsible shopping option.
+
+It is clear that, despite the claims of the major UK grocers, the impact of online
+shopping on the environment is not clear cut. Rather the issue is complex and
+dynamic, involving human behaviour as well as hard business decisions. If the
+only considerations taken into account are the direct and static ones, i.e. one van
+replaces 20 shopping journeys, then on balance, yes, it appears that online shop-
+ping could be environmentally responsible. However, when consumer behaviour
+and the subtle interactions between shopping and other activities as well as the
+dynamics of household travel patterns are taken into consideration, the whole
+issue becomes much more complex. Combining the passenger travel complexities
+together with those on the freight side and also adding into the pot the problem of
+where to set the boundaries in terms of looking at the travel and environmental
+impacts makes the whole agenda fraught with difficulties. What is clear,
+however, is that there is an over-riding need for further study, particularly in
+light of the projections for the future of online shopping.
+
+1. A shopping trip is defined in the National Travel Survey as a trip to the shops or from the shops to
+home even if there is no intention to buy. A trip to the shops where there is no direct shop-home or
+home-shop element is not included in the statistics.
+
+2. Source figures allocate emissions according to where the fuel is consumed and so do not attribute
+emissions arising from fuel refining or electricity generation to the transport sector but to the
+energy sector. Figures include all transport except international air and sea.
+
+Balepur, P. N., Varma, K. V. and Mokhtarian, P. L. (1998) Transportation impacts of centrebased
+telecommuting: interim findings from the neighbourhood telecentres project. Transportation, 25,
+pp. 287–386.
+
+Browne, M., Allen, J., Anderson, S. and Jackson, M. (2001) Overview of Home Deliveries in the UK. Project
+Report (London: University of Westminster and the Freight Transport Association, a study for the
+DTI).
+
+Browne, M., Allen, J., Woodburn, A. and Piotrowska, M. (2007) Light goods vehicles in urban areas.
+Literature review carried out as part of work module 1 of the Green logistics module. Available at:
+http://www.greenlogistics.org (accessed 16 May 2007).
+
+Cairns, S., Sloman, L., Newson, C., Anable, J., Kirkbride, A. and Goodwin, P. (2004) Smarter Choices:
+Changing the Way We Travel (Final report to the Department for Transport) (London: Department for
+Transport).
+
+Couclelis, H. (2001) Pizza over the internet: e-commerce, the fragmentation of activity, and the
+tyranny of the region. Paper presented at the workshop on Entrepreneurship, ICT and the Region,
+Amsterdam, The Netherlands, 7–8 June 2001 (cited in Mokhtarian, 2004).
+
+DfT (1996) Transport Statistics (London: TSO).
+DfT (2004) Survey of Van Activity (London: TSO).
+DfT (2006) National Travel Survey: 2006 (London: TSO).
+DLTR (2002) The impact of information and communications technology on travel and freight distri-
+
+DTi (2001) @ Your Home: New Markets for Customer Service and Delivery (London: DTi Foresight).
+Dubois, B. (2000) Understanding the Consumer (Dorchester: Prentice Hall).
+Engel, J. F., Blackwell, R. A. and Miniard, P. (1995) Consumer Behaviour (New York: Dryden Press).
+Esper, T. I., Jensen, T. D., Turnipseed, F. L. and Burton, S. (2003) The last mile: an examination of effects
+
+of online retail delivery strategies on consumers, Journal of Business Logistics, 24(2), pp. 177–204.
+Eurostat (2008) Households having access to the Internet. Available at: http://ec.europa.eu/eurostat/
+
+Golob, T. F. and Regan, A. 2001. Impacts of information technology on personal travel and
+commercial vehicle operations: research challenges and opportunities, Transportation Research C,
+9, pp. 87–121.
+
+IMRG (2007) E-retail sales index. Available at: http://www.imrg.org (accessed 2 November 2007).
+James, P. and Hopkinson, P. (2001) Virtual traffic: e-commerce, transport and distribution, in: J. Wilsdon
+
+Mokhtarian, P. L. and Saloman, I. (2002) Emerging travel patterns: do telecommunications make a
+difference? in: H. S. Mahmassani (Ed.) Perpetual Motion: Travel Behaviour Research Opportunities and
+Application Changes, pp. 143–182, chap. 7 (Oxford: Pergamon).
+
+downloads/theme_economy/ecommerce_report_2005.pdf (accessed 3 December 2007).
+ONS (2007) Social Trends (London: HSO).
+Pendyala, R. M., Goulias, K. and Kitamura, R. (1991) Impact of telecommuting on spatial and temporal
+
+industries/retailing/retailingstatistics/tabid/268/default.aspx (accessed 04 July 2007).
+Pool, I. (1983) Forecasting the Telephone (Norwood, NJ: Ablex).
+Punakivi, M. and Tanskanen, K. (2002) Increasing the cost efficiency of e-fulfilment using shred
+
+reception boxes, International Journal of Retail and Distribution Management, 30(10), pp. 498–507.
+Punakivi, M., Yrjola, H. and Holmstrom, J. (2001) Solving the last mile issue: reception box or delivery
+
+box, International Journal of Physical Distribution and Logistics Management, 31(6), pp. 427–439.
+RAC Foundation (2006) Motoring towards 2050: Shopping and Transport Policy (London: RAC).
+Retail Logistics Task Force (2001) @ Your Home: New Markets for Customer Service and Delivery
+
+(Foresight Programme) (London: DTI).
+Royal Mail (2007) Home Shopping Tracker Study (London: Royal Mail Group Ltd).
+Shen, Q. 2000. New telecommunications and residential location flexibility, Environment and Planning
+
+(London: Prentice Hall).
+Taniguchi, E, Thompson, R, Yamada, T. and van Duin, R. (2001) City Logistics (Oxford: Pergamon).
+Verdict (2007) UK Home Delivery and Fulfilment 2007 (London: Verdict Research Ltd.).
+Visser, J. and Hassal, K. (2005) The future of city logistics: estimating the demand for home delivery in
+
+White, P., Christodoulou, G., Mackett, R., Titheridge, H., Thoreau, R. and Polak, J. (2007) The role of
+teleworking in Britain: its implications for the transport system and economic evaluation, in:
+Proceedings of the European Transport Conference, 17–19 October 2007 (Leiden, The Netherlands:
+Association for European Transport).
+
+Zhang, F., Clifton, K. and Shen, Q. (2005) Re-examining ICT on travel using the 2001 NHTS data
+for Baltimore Metropolitan Area, in: H. J. Miller (Ed.) Societies and Cities in the Age of Instant Access,
+pp. 153–166 (Dordrecht, The Netherlands: Springer).
+

@@ -1,0 +1,16 @@
+digraph G {
+edge [decorate=true];
+aab [label="smain aab"]; 
+predicate [label="verb:end predicate"]; 
+aab -> predicate [label="hd"]; 
+target [label="np:01/05/2012 target"]; 
+aae [label="det:on aae"]; 
+target -> aae [label="det"]; 
+aab -> target [label="obj"]; 
+source [label="np SOURCE source"]; 
+aab -> source [label="su"]; 
+aak [label="noun:project aak"]; 
+source -> aak [label="hd"]; 
+aai [label="det:the aai"]; 
+source -> aai [label="det"]; 
+}

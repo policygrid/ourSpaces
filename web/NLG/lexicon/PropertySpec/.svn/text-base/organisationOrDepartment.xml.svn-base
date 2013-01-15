@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property organisationOrDepartment--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="be" /><node cat="np" rel="comp" idx="target" /><node cat="np" rel="su"><node cat="np" rel="det" idx="source"><morph case="genitive" /></node><node cat="noun" rel="hd" root="organisation" idx="predicate" /></node></node><minCard value="3" /></dt>

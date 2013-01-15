@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Automatically generated lexicon entry for the property startDate--><dt><node cat="smain" rel="root"><node cat="verb" rel="hd" root="start" idx="predicate" /><node cat="np" rel="su" idx="source" /><node cat="np" rel="obj" root="01/05/2012" idx="target"><node cat="det" rel="det" root="on" /></node></node></dt>

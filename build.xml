@@ -1,0 +1,158 @@
+<!--
+Standard Build file for java applications
+Created from: Edoardo Pigotti (March 2004)
+
+Modify all the properties from build.properties
+-->
+
+<project name="Your project name here" default="run" basedir=".">
+
+  <!-- ===================++ Global properties ======================== -->
+  <property name="version" value="8.3"/>
+  <property file="build.properties" /> 
+  <property name="src" value="src"/>
+  <property name="build" value="build"/>
+  <property name="lib"  value="dist"/>
+  <property name="classpath"  value="classes"/>
+  <property name="jarname" value="${jarname}"/>
+  <property name="docs" value="docs"/>
+  <property name="include" value="lib"/>
+  <property name="runclass" value="${runclass}"/>  
+  <!-- ============================================================== -->
+    
+  <!-- ===================Compiler properties ======================== -->
+  <property name="compile.debug" value="true" /> 
+  <property name="compile.deprecation" value="false" /> 
+  <property name="compile.optimize" value="true" /> 
+  <!-- ============================================================== -->
+  
+  <!-- =================== CLASSPATH DEFINITION ======================== -->
+  <path id="compile.classpath">
+
+    <pathelement location="${include}"/>
+     <fileset dir="${include}">
+      <include name="**/*.jar"/>
+     </fileset>
+    
+    <pathelement location="/Users/policygrid/java/apache-tomcat-5.5.17/common/lib"/>
+     <fileset dir="/home/policygrid/apache-tomcat-6.0.18/lib">
+      <include name="**/*.jar"/>
+     </fileset>
+ </path>
+  
+  <path id="run.classpath">
+    <pathelement location="${lib}"/>
+    <fileset dir="${lib}">
+      <include name="**/*.jar"/>
+    </fileset>
+    
+    <!-- add here any other jar dependency -->
+     
+  </path>
+   <!-- ============================================================== -->
+  
+	 <!-- =================== Uodate the svn ======================== --> 
+	  <target name="svn">  	
+	  	<exec executable="/usr/bin/svn" >
+	  	  <arg line="update"/>
+	  		 <!-- <arg line="svn://filer2.csd.abdn.ac.uk/OurSpaces/trunk"/> -->
+	  		 <arg line="svn://dtp-123.sncs.abdn.ac.uk/policygrid/OurSpaces/trunk"/>
+	  		 <arg line="/home/policygrid/svnOurSpaces/"/>
+	  	</exec>
+	  	
+	  </target>
+	 <!-- ============================================================== -->
+	
+  <!-- =================== Initialize Build ======================== --> 
+  <target name="init">
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}" />
+    <!-- Create the directory for the jar file -->
+    <mkdir dir="${lib}" />
+    <!-- Create the directory for the java docs -->
+    <mkdir dir="${docs}" />
+  </target>
+ <!-- ============================================================== -->
+ 
+ <!-- =================== Compile Source Files ======================== --> 
+  <target name="compile" depends="init">
+    <!-- run javac to compile the source files -->          
+      <javac srcdir="${src}" destdir="${build}" debug="${compile.debug}" 
+             deprecation="${compile.deprecation}" optimize="${compile.optimize}">
+       <classpath refid="compile.classpath" /> 
+      </javac>          
+  </target>
+ <!-- ============================================================== -->
+ 
+ <!-- =================== Create jar Files ======================== -->
+  <target name="jar" depends="compile">
+    <!-- make a jar file -->
+    <jar jarfile="${lib}/${jarname}" basedir="${build}/"/> 
+  </target>
+ <!-- ============================================================== -->  
+ 
+ 
+ <!-- =================== Ourspaces deploy ======================== -->
+  <target name="deploy" depends="jar">
+    
+    <copy todir="/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/">
+      <fileset dir="web"/>
+    </copy>
+   
+   <copy file="${lib}/${jarname}" todir="/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/WEB-INF/lib"/>
+
+   <copy todir="/home/policygrid/apache-tomcat-6.0.18/webapps/ourspaces/WEB-INF/lib">
+      <fileset dir="${include}"/>
+   </copy>
+ 
+  </target>
+
+
+  <target name="bootstrap" depends="deploy">
+    <java dir="${tomcat.home}/bin"
+  	      jar="${tomcat.home}/bin/bootstrap.jar" fork="true">
+        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>     
+        <jvmarg value="-XX:PermSize=128M"/>        
+        <jvmarg value="-XX:MaxPermSize=196M"/>
+    </java>
+
+  </target>
+
+
+
+ <!-- ============================================================== -->  
+ 
+ <!-- =================== Create javadoc files ======================== -->
+  <target name="docs" depends="compile">
+   <!-- create javadocs -->
+    <javadoc packagenames="${javadoc.packages}"
+             sourcepath="${build}"
+             defaultexcludes="yes"
+             destdir="${docs}"
+             author="true"
+             version="true"
+             use="true"
+             windowtitle="${javadoc.title} Version. ${version}">
+    </javadoc>
+  </target>
+  <!-- ============================================================== -->
+  
+  <!-- =================== Run Application ======================== -->
+  <target name="run" depends="compile,jar">
+   <!-- run the class -->
+       <java classname="${runclass}" fork="true">
+          <!-- add a command line arg: <arg value="-h"/> -->
+            <jvmarg value="-DfearlusOptionsFile=${fearlusOptionsFile}"/>
+            <classpath refid="compile.classpath" /> 
+            <classpath refid="run.classpath" /> 
+       </java>
+  </target>
+  
+  <target name="clean">
+    <!-- Delete the ${build} and ${lib} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${lib}"/>
+    <delete dir="${docs}"/>
+  </target>
+</project>
+

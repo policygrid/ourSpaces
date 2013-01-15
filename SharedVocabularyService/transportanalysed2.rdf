@@ -1,0 +1,965 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:word="http://rasp/word:"
+    xmlns:gr="http://rasp/rule:" > 
+  <rdf:Description rdf:about="http://rasp/word:model+ed">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:work+s">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:go+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:point">
+    <gr:dobj rdf:resource="http://rasp/word:Relationship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:deliver+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+    <gr:iobj rdf:resource="http://rasp/word:down"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:increase+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:divide+ed">
+    <gr:iobj rdf:resource="http://rasp/word:into"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:know">
+    <gr:iobj rdf:resource="http://rasp/word:about"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:afford+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:combine">
+    <gr:iobj rdf:resource="http://rasp/word:for"/>
+    <gr:dobj rdf:resource="http://rasp/word:format+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:two"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Speed">
+    <gr:dobj rdf:resource="http://rasp/word:information"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:per">
+    <gr:dobj rdf:resource="http://rasp/word:delivery"/>
+    <gr:dobj rdf:resource="http://rasp/word:trip"/>
+    <gr:dobj rdf:resource="http://rasp/word:year"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:result">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:source">
+    <gr:dobj rdf:resource="http://rasp/word:goods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:On">
+    <gr:dobj rdf:resource="http://rasp/word:hand"/>
+    <gr:dobj rdf:resource="http://rasp/word:side"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:concentrate+s">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:allude+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:account">
+    <gr:iobj rdf:resource="http://rasp/word:for"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:raise+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+    <gr:iobj rdf:resource="http://rasp/word:about"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Task">
+    <gr:dobj rdf:resource="http://rasp/word:Force"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:consolidate+ed">
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:go">
+    <gr:dobj rdf:resource="http://rasp/word:somewhere‚Äù"/>
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:respond">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:substitute">
+    <gr:iobj rdf:resource="http://rasp/word:for"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:At">
+    <gr:dobj rdf:resource="http://rasp/word:present"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:respond+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:leave">
+    <gr:dobj rdf:resource="http://rasp/word:consignment+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:clothe+s">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Store">
+    <gr:iobj rdf:resource="http://rasp/word:as"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:locate+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:send">
+    <gr:dobj rdf:resource="http://rasp/word:what"/>
+    <gr:iobj rdf:resource="http://rasp/word:of"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:carry+ing">
+    <gr:iobj rdf:resource="http://rasp/word:out"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:‚Äòinvented‚Äô">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Trip">
+    <gr:dobj rdf:resource="http://rasp/word:Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Up">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:allocate+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:beyond">
+    <gr:dobj rdf:resource="http://rasp/word:scope"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Over">
+    <gr:dobj rdf:resource="http://rasp/word:year+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:further">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:on">
+    <gr:dobj rdf:resource="http://rasp/word:road"/>
+    <gr:dobj rdf:resource="http://rasp/word:attitude+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:teleworking"/>
+    <gr:dobj rdf:resource="http://rasp/word:environment"/>
+    <gr:dobj rdf:resource="http://rasp/word:telecentre+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:this"/>
+    <gr:dobj rdf:resource="http://rasp/word:net"/>
+    <gr:dobj rdf:resource="http://rasp/word:demand"/>
+    <gr:dobj rdf:resource="http://rasp/word:road+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:effect"/>
+    <gr:dobj rdf:resource="http://rasp/word:level"/>
+    <gr:dobj rdf:resource="http://rasp/word:impact"/>
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:extent"/>
+    <gr:dobj rdf:resource="http://rasp/word:location"/>
+    <gr:dobj rdf:resource="http://rasp/word:decision"/>
+    <gr:dobj rdf:resource="http://rasp/word:trip+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:balance"/>
+    <gr:dobj rdf:resource="http://rasp/word:side"/>
+    <gr:dobj rdf:resource="http://rasp/word:or"/>
+    <gr:dobj rdf:resource="http://rasp/word:traffic"/>
+    <gr:dobj rdf:resource="http://rasp/word:trip"/>
+    <gr:dobj rdf:resource="http://rasp/word:cost+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:publication+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:dation"/>
+    <gr:dobj rdf:resource="http://rasp/word:effect+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:travel"/>
+    <gr:dobj rdf:resource="http://rasp/word:behaviour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:interact">
+    <gr:iobj rdf:resource="http://rasp/word:with"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:‚Äòbased">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:suggest+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:result+s">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:determine">
+    <gr:dobj rdf:resource="http://rasp/word:answer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:outline+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:between">
+    <gr:dobj rdf:resource="http://rasp/word:travel"/>
+    <gr:dobj rdf:resource="http://rasp/word:debate"/>
+    <gr:dobj rdf:resource="http://rasp/word:transport"/>
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Cost">
+    <gr:iobj rdf:resource="http://rasp/word:of"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:get+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:positive">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:analyse">
+    <gr:dobj rdf:resource="http://rasp/word:issue+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:by">
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+    <gr:dobj rdf:resource="http://rasp/word:company"/>
+    <gr:dobj rdf:resource="http://rasp/word:van+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:vehicle+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:CfIT"/>
+    <gr:dobj rdf:resource="http://rasp/word:47"/>
+    <gr:dobj rdf:resource="http://rasp/word:nature"/>
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:retailer+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:2005"/>
+    <gr:dobj rdf:resource="http://rasp/word:transport"/>
+    <gr:dobj rdf:resource="http://rasp/word:van."/>
+    <gr:dobj rdf:resource="http://rasp/word:10"/>
+    <gr:dobj rdf:resource="http://rasp/word:et"/>
+    <gr:dobj rdf:resource="http://rasp/word:delivery+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:post"/>
+    <gr:dobj rdf:resource="http://rasp/word:Prof"/>
+    <gr:dobj rdf:resource="http://rasp/word:car"/>
+    <gr:dobj rdf:resource="http://rasp/word:2012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:ping">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:wait+ing">
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:during">
+    <gr:dobj rdf:resource="http://rasp/word:day"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:use">
+    <gr:dobj rdf:resource="http://rasp/word:service+s"/>
+    <gr:iobj rdf:resource="http://rasp/word:for"/>
+    <gr:dobj rdf:resource="http://rasp/word:transport"/>
+    <gr:dobj rdf:resource="http://rasp/word:internet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:valid">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:support+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:replace">
+    <gr:dobj rdf:resource="http://rasp/word:warehouse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:feel">
+    <gr:dobj rdf:resource="http://rasp/word:goods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:take+en">
+    <gr:iobj rdf:resource="http://rasp/word:into"/>
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:To">
+    <gr:dobj rdf:resource="http://rasp/word:extent"/>
+    <gr:dobj rdf:resource="http://rasp/word:Moment+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:depend-">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:accord+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:save">
+    <gr:dobj rdf:resource="http://rasp/word:cost"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:come+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:low">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:come">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:validate">
+    <gr:dobj rdf:resource="http://rasp/word:it"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:add">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:try">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:search">
+    <gr:dobj rdf:resource="http://rasp/word:online"/>
+    <gr:iobj rdf:resource="http://rasp/word:for"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:under">
+    <gr:dobj rdf:resource="http://rasp/word:half"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:confine+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:drop+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Accord+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:carry">
+    <gr:dobj rdf:resource="http://rasp/word:thing+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:activity+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:shopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:take">
+    <gr:dobj rdf:resource="http://rasp/word:advantage"/>
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+    <gr:dobj rdf:resource="http://rasp/word:place"/>
+    <gr:iobj rdf:resource="http://rasp/word:into"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:base+ed">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+    <gr:iobj rdf:resource="http://rasp/word:outside"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:over-">
+    <gr:dobj rdf:resource="http://rasp/word:order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:amongst">
+    <gr:dobj rdf:resource="http://rasp/word:thing+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:continue">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:change+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:over">
+    <gr:dobj rdf:resource="http://rasp/word:year+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:world"/>
+    <gr:dobj rdf:resource="http://rasp/word:century"/>
+    <gr:dobj rdf:resource="http://rasp/word:figure+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:year"/>
+    <gr:dobj rdf:resource="http://rasp/word:p"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:except">
+    <gr:dobj rdf:resource="http://rasp/word:that"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:deliver">
+    <gr:dobj rdf:resource="http://rasp/word:rate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:store">
+    <gr:dobj rdf:resource="http://rasp/word:online"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:quote+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:to">
+    <gr:dobj rdf:resource="http://rasp/word:which"/>
+    <gr:dobj rdf:resource="http://rasp/word:it"/>
+    <gr:dobj rdf:resource="http://rasp/word:study"/>
+    <gr:dobj rdf:resource="http://rasp/word:contrary"/>
+    <gr:iobj rdf:resource="http://rasp/word:as"/>
+    <gr:dobj rdf:resource="http://rasp/word:consumer"/>
+    <gr:dobj rdf:resource="http://rasp/word:extent"/>
+    <gr:dobj rdf:resource="http://rasp/word:shopping"/>
+    <gr:dobj rdf:resource="http://rasp/word:this"/>
+    <gr:dobj rdf:resource="http://rasp/word:eliminate+ing"/>
+    <gr:dobj rdf:resource="http://rasp/word:¬£458"/>
+    <gr:dobj rdf:resource="http://rasp/word:future"/>
+    <gr:dobj rdf:resource="http://rasp/word:stock"/>
+    <gr:dobj rdf:resource="http://rasp/word:household+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:activity+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:door"/>
+    <gr:dobj rdf:resource="http://rasp/word:old+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:¬£4.96"/>
+    <gr:dobj rdf:resource="http://rasp/word:September"/>
+    <gr:dobj rdf:resource="http://rasp/word:Convenience"/>
+    <gr:dobj rdf:resource="http://rasp/word:or"/>
+    <gr:dobj rdf:resource="http://rasp/word:hour+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:inclination"/>
+    <gr:dobj rdf:resource="http://rasp/word:these"/>
+    <gr:dobj rdf:resource="http://rasp/word:impact+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:shop+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:date"/>
+    <gr:dobj rdf:resource="http://rasp/word:impact"/>
+    <gr:dobj rdf:resource="http://rasp/word:they+"/>
+    <gr:dobj rdf:resource="http://rasp/word:debate"/>
+    <gr:dobj rdf:resource="http://rasp/word:town"/>
+    <gr:dobj rdf:resource="http://rasp/word:¬£5"/>
+    <gr:dobj rdf:resource="http://rasp/word:return+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:p"/>
+    <gr:dobj rdf:resource="http://rasp/word:spending"/>
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:dobj rdf:resource="http://rasp/word:structure"/>
+    <gr:dobj rdf:resource="http://rasp/word:any"/>
+    <gr:dobj rdf:resource="http://rasp/word:street"/>
+    <gr:dobj rdf:resource="http://rasp/word:travel"/>
+    <gr:dobj rdf:resource="http://rasp/word:browse"/>
+    <gr:dobj rdf:resource="http://rasp/word:internet"/>
+    <gr:dobj rdf:resource="http://rasp/word:order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Base+ed">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:compare+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:explain">
+    <gr:dobj rdf:resource="http://rasp/word:emission+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:describe">
+    <gr:dobj rdf:resource="http://rasp/word:dichotomy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:conceptual">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:into">
+    <gr:dobj rdf:resource="http://rasp/word:pot"/>
+    <gr:dobj rdf:resource="http://rasp/word:consideration"/>
+    <gr:dobj rdf:resource="http://rasp/word:each"/>
+    <gr:dobj rdf:resource="http://rasp/word:kind+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:group+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:behaviour"/>
+    <gr:dobj rdf:resource="http://rasp/word:sector+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:retailing"/>
+    <gr:dobj rdf:resource="http://rasp/word:implication+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:link+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:depend">
+    <gr:iobj rdf:resource="http://rasp/word:how"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:collect">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:put">
+    <gr:dobj rdf:resource="http://rasp/word:emphasis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:freight">
+    <gr:dobj rdf:resource="http://rasp/word:movement+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:distribute+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:perform+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:through">
+    <gr:dobj rdf:resource="http://rasp/word:service"/>
+    <gr:dobj rdf:resource="http://rasp/word:agent+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:medium"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:value+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:replace+s">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:deter-">
+    <gr:dobj rdf:resource="http://rasp/word:mine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:dependent">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:come+s">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:replace+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:shed">
+    <gr:dobj rdf:resource="http://rasp/word:light"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:power+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:increase">
+    <gr:dobj rdf:resource="http://rasp/word:number"/>
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:address">
+    <gr:dobj rdf:resource="http://rasp/word:all"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:make+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+    <gr:iobj rdf:resource="http://rasp/word:per"/>
+    <gr:iobj rdf:resource="http://rasp/word:over"/>
+    <gr:iobj rdf:resource="http://rasp/word:about"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:generate">
+    <gr:dobj rdf:resource="http://rasp/word:travel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:produce">
+    <gr:dobj rdf:resource="http://rasp/word:p"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:amount+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:home">
+    <gr:dobj rdf:resource="http://rasp/word:study"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:towards">
+    <gr:dobj rdf:resource="http://rasp/word:it"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Table">
+    <gr:dobj rdf:resource="http://rasp/word:1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:review">
+    <gr:dobj rdf:resource="http://rasp/word:host"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:format+s">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:journey+s">
+    <gr:iobj rdf:resource="http://rasp/word:per"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:suggest">
+    <gr:dobj rdf:resource="http://rasp/word:‚Äúis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:rely+ed">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:range+s">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:in">
+    <gr:dobj rdf:resource="http://rasp/word:fleet"/>
+    <gr:dobj rdf:resource="http://rasp/word:four"/>
+    <gr:dobj rdf:resource="http://rasp/word:2004"/>
+    <gr:dobj rdf:resource="http://rasp/word:VMT"/>
+    <gr:dobj rdf:resource="http://rasp/word:term+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:favour"/>
+    <gr:dobj rdf:resource="http://rasp/word:addition"/>
+    <gr:dobj rdf:resource="http://rasp/word:width"/>
+    <gr:dobj rdf:resource="http://rasp/word:shop+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:tion"/>
+    <gr:dobj rdf:resource="http://rasp/word:sector"/>
+    <gr:dobj rdf:resource="http://rasp/word:culture"/>
+    <gr:dobj rdf:resource="http://rasp/word:models‚Äù"/>
+    <gr:dobj rdf:resource="http://rasp/word:tice+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:proportion"/>
+    <gr:dobj rdf:resource="http://rasp/word:way"/>
+    <gr:dobj rdf:resource="http://rasp/word:home-shopping"/>
+    <gr:dobj rdf:resource="http://rasp/word:majority"/>
+    <gr:dobj rdf:resource="http://rasp/word:bookstore"/>
+    <gr:dobj rdf:resource="http://rasp/word:online"/>
+    <gr:dobj rdf:resource="http://rasp/word:world"/>
+    <gr:dobj rdf:resource="http://rasp/word:Downloaded"/>
+    <gr:dobj rdf:resource="http://rasp/word:case+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:flexibility"/>
+    <gr:dobj rdf:resource="http://rasp/word:2007"/>
+    <gr:dobj rdf:resource="http://rasp/word:propensity"/>
+    <gr:dobj rdf:resource="http://rasp/word:month+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:2005"/>
+    <gr:dobj rdf:resource="http://rasp/word:2000"/>
+    <gr:dobj rdf:resource="http://rasp/word:extent"/>
+    <gr:dobj rdf:resource="http://rasp/word:Netherlands"/>
+    <gr:dobj rdf:resource="http://rasp/word:sourcing"/>
+    <gr:dobj rdf:resource="http://rasp/word:order"/>
+    <gr:dobj rdf:resource="http://rasp/word:GB"/>
+    <gr:dobj rdf:resource="http://rasp/word:Greece"/>
+    <gr:dobj rdf:resource="http://rasp/word:‚Äúproducts"/>
+    <gr:dobj rdf:resource="http://rasp/word:shopping"/>
+    <gr:dobj rdf:resource="http://rasp/word:centre+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:fact"/>
+    <gr:dobj rdf:resource="http://rasp/word:car"/>
+    <gr:dobj rdf:resource="http://rasp/word:partnership"/>
+    <gr:dobj rdf:resource="http://rasp/word:discussion"/>
+    <gr:dobj rdf:resource="http://rasp/word:light"/>
+    <gr:dobj rdf:resource="http://rasp/word:morning"/>
+    <gr:dobj rdf:resource="http://rasp/word:choice"/>
+    <gr:dobj rdf:resource="http://rasp/word:area"/>
+    <gr:dobj rdf:resource="http://rasp/word:development"/>
+    <gr:dobj rdf:resource="http://rasp/word:store"/>
+    <gr:dobj rdf:resource="http://rasp/word:Logistics"/>
+    <gr:dobj rdf:resource="http://rasp/word:Retail"/>
+    <gr:dobj rdf:resource="http://rasp/word:either"/>
+    <gr:dobj rdf:resource="http://rasp/word:delivery"/>
+    <gr:dobj rdf:resource="http://rasp/word:general"/>
+    <gr:dobj rdf:resource="http://rasp/word:particular"/>
+    <gr:dobj rdf:resource="http://rasp/word:van"/>
+    <gr:dobj rdf:resource="http://rasp/word:itself"/>
+    <gr:dobj rdf:resource="http://rasp/word:traffic"/>
+    <gr:dobj rdf:resource="http://rasp/word:UK"/>
+    <gr:dobj rdf:resource="http://rasp/word:travel"/>
+    <gr:dobj rdf:resource="http://rasp/word:Vehicle"/>
+    <gr:dobj rdf:resource="http://rasp/word:case"/>
+    <gr:dobj rdf:resource="http://rasp/word:relation"/>
+    <gr:dobj rdf:resource="http://rasp/word:2001"/>
+    <gr:dobj rdf:resource="http://rasp/word:USA"/>
+    <gr:dobj rdf:resource="http://rasp/word:p"/>
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:combination+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:et"/>
+    <gr:dobj rdf:resource="http://rasp/word:area+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:2006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:live">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:In">
+    <gr:dobj rdf:resource="http://rasp/word:way+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:order"/>
+    <gr:dobj rdf:resource="http://rasp/word:USA"/>
+    <gr:dobj rdf:resource="http://rasp/word:2007"/>
+    <gr:dobj rdf:resource="http://rasp/word:contrast"/>
+    <gr:dobj rdf:resource="http://rasp/word:paper"/>
+    <gr:dobj rdf:resource="http://rasp/word:Helsinki"/>
+    <gr:dobj rdf:resource="http://rasp/word:case+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:vein"/>
+    <gr:dobj rdf:resource="http://rasp/word:common"/>
+    <gr:dobj rdf:resource="http://rasp/word:term+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:future"/>
+    <gr:dobj rdf:resource="http://rasp/word:2005"/>
+    <gr:dobj rdf:resource="http://rasp/word:UK"/>
+    <gr:dobj rdf:resource="http://rasp/word:case"/>
+    <gr:dobj rdf:resource="http://rasp/word:circumstance+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Turn+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:about">
+    <gr:dobj rdf:resource="http://rasp/word:collaboration"/>
+    <gr:dobj rdf:resource="http://rasp/word:greenness"/>
+    <gr:dobj rdf:resource="http://rasp/word:type"/>
+    <gr:dobj rdf:resource="http://rasp/word:pattern+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:need"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:refer+s">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:use+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:iobj rdf:resource="http://rasp/word:during"/>
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:support">
+    <gr:dobj rdf:resource="http://rasp/word:hope"/>
+    <gr:dobj rdf:resource="http://rasp/word:notion"/>
+    <gr:dobj rdf:resource="http://rasp/word:claim+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:e-shoppers‚Äîsee">
+    <gr:iobj rdf:resource="http://rasp/word:as"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:set">
+    <gr:dobj rdf:resource="http://rasp/word:boundary+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:complexity"/>
+    <gr:obj2 rdf:resource="http://rasp/word:interaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:facilitate">
+    <gr:dobj rdf:resource="http://rasp/word:move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:shop">
+    <gr:dobj rdf:resource="http://rasp/word:channel+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:online"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:arise+ing">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:involve+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:temper+ed">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:reinforce">
+    <gr:dobj rdf:resource="http://rasp/word:decision"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:of">
+    <gr:iobj rdf:resource="http://rasp/word:between"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:reduce">
+    <gr:dobj rdf:resource="http://rasp/word:vehicle"/>
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+    <gr:dobj rdf:resource="http://rasp/word:car"/>
+    <gr:dobj rdf:resource="http://rasp/word:travel"/>
+    <gr:dobj rdf:resource="http://rasp/word:use"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:lead">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:impinge">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:cause">
+    <gr:dobj rdf:resource="http://rasp/word:shop+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:like">
+    <gr:dobj rdf:resource="http://rasp/word:will"/>
+    <gr:dobj rdf:resource="http://rasp/word:showroom+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:maximize">
+    <gr:dobj rdf:resource="http://rasp/word:drop-density"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:increase+s">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:model">
+    <gr:dobj rdf:resource="http://rasp/word:impact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:require">
+    <gr:dobj rdf:resource="http://rasp/word:change+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:customer+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:paper"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:order+ing">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:become">
+    <gr:iobj rdf:resource="http://rasp/word:for"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:sell+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:come+ing">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:purchase">
+    <gr:dobj rdf:resource="http://rasp/word:it"/>
+    <gr:dobj rdf:resource="http://rasp/word:thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:look+s">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:ery">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:help">
+    <gr:dobj rdf:resource="http://rasp/word:we+"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:consider">
+    <gr:dobj rdf:resource="http://rasp/word:effect+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:receive">
+    <gr:obj2 rdf:resource="http://rasp/word:item+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:goods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:commute+ing">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:choose">
+    <gr:dobj rdf:resource="http://rasp/word:van"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:eliminate">
+    <gr:dobj rdf:resource="http://rasp/word:problem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:from">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:dobj rdf:resource="http://rasp/word:retailer+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:work"/>
+    <gr:dobj rdf:resource="http://rasp/word:company"/>
+    <gr:dobj rdf:resource="http://rasp/word:shop"/>
+    <gr:dobj rdf:resource="http://rasp/word:number"/>
+    <gr:dobj rdf:resource="http://rasp/word:cue+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:mode"/>
+    <gr:dobj rdf:resource="http://rasp/word:study"/>
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:p"/>
+    <gr:dobj rdf:resource="http://rasp/word:brick+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:survey"/>
+    <gr:dobj rdf:resource="http://rasp/word:depot"/>
+    <gr:dobj rdf:resource="http://rasp/word:retailer"/>
+    <gr:dobj rdf:resource="http://rasp/word:hour+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:shop+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:location"/>
+    <gr:dobj rdf:resource="http://rasp/word:company+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:gauge">
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:result+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:aim+ed">
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:due">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:shoppers‚Äîthe">
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:rise+ing">
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:conduct+s">
+    <gr:iobj rdf:resource="http://rasp/word:into"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:find">
+    <gr:dobj rdf:resource="http://rasp/word:it"/>
+    <gr:dobj rdf:resource="http://rasp/word:information"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:expand">
+    <gr:dobj rdf:resource="http://rasp/word:horizon+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:improve+ing">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:shop+ing">
+    <gr:iobj rdf:resource="http://rasp/word:into"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:place">
+    <gr:iobj rdf:resource="http://rasp/word:between"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:travel">
+    <gr:obj2 rdf:resource="http://rasp/word:problem"/>
+    <gr:dobj rdf:resource="http://rasp/word:indicator+s"/>
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:rise+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:cost">
+    <gr:iobj rdf:resource="http://rasp/word:over"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:park">
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:improve">
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:situation"/>
+    <gr:iobj rdf:resource="http://rasp/word:as"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:versus">
+    <gr:dobj rdf:resource="http://rasp/word:complementarity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:travel+s">
+    <gr:iobj rdf:resource="http://rasp/word:per"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:reflect">
+    <gr:iobj rdf:resource="http://rasp/word:of"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:at">
+    <gr:dobj rdf:resource="http://rasp/word:all"/>
+    <gr:dobj rdf:resource="http://rasp/word:any"/>
+    <gr:dobj rdf:resource="http://rasp/word:stage"/>
+    <gr:dobj rdf:resource="http://rasp/word:or"/>
+    <gr:dobj rdf:resource="http://rasp/word:home"/>
+    <gr:dobj rdf:resource="http://rasp/word:work"/>
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+    <gr:dobj rdf:resource="http://rasp/word:store"/>
+    <gr:dobj rdf:resource="http://rasp/word:office"/>
+    <gr:dobj rdf:resource="http://rasp/word:time"/>
+    <gr:dobj rdf:resource="http://rasp/word:issue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:undertake+en">
+    <gr:iobj rdf:resource="http://rasp/word:by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:buy">
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:selection"/>
+    <gr:dobj rdf:resource="http://rasp/word:one"/>
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:dobj rdf:resource="http://rasp/word:online"/>
+    <gr:dobj rdf:resource="http://rasp/word:it"/>
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+    <gr:dobj rdf:resource="http://rasp/word:goods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:change+s">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:telecommute+ing">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:allow">
+    <gr:dobj rdf:resource="http://rasp/word:delivery"/>
+    <gr:dobj rdf:resource="http://rasp/word:we+"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:deal">
+    <gr:iobj rdf:resource="http://rasp/word:with"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:pick">
+    <gr:dobj rdf:resource="http://rasp/word:delivery+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:place+ed">
+    <gr:iobj rdf:resource="http://rasp/word:at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:include">
+    <gr:dobj rdf:resource="http://rasp/word:ordering"/>
+    <gr:dobj rdf:resource="http://rasp/word:and"/>
+    <gr:dobj rdf:resource="http://rasp/word:closure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:enable">
+    <gr:dobj rdf:resource="http://rasp/word:people"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:and/or">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Across">
+    <gr:dobj rdf:resource="http://rasp/word:Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:order">
+    <gr:iobj rdf:resource="http://rasp/word:from"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:around">
+    <gr:dobj rdf:resource="http://rasp/word:25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:adapt+ed">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:as">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:encourage">
+    <gr:dobj rdf:resource="http://rasp/word:people"/>
+    <gr:dobj rdf:resource="http://rasp/word:shopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:despite">
+    <gr:dobj rdf:resource="http://rasp/word:claim+s"/>
+    <gr:dobj rdf:resource="http://rasp/word:all"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:stimulate">
+    <gr:iobj rdf:resource="http://rasp/word:for"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:see">
+    <gr:obj2 rdf:resource="http://rasp/word:and"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:depend+s">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:for">
+    <gr:iobj rdf:resource="http://rasp/word:over"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:questionable">
+    <gr:iobj rdf:resource="http://rasp/word:on"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:give">
+    <gr:dobj rdf:resource="http://rasp/word:car+s"/>
+    <gr:obj2 rdf:resource="http://rasp/word:reason"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:or">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:likely">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:receive+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:return">
+    <gr:dobj rdf:resource="http://rasp/word:goods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:replicate+ed">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:touch">
+    <gr:dobj rdf:resource="http://rasp/word:product+s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:cope">
+    <gr:iobj rdf:resource="http://rasp/word:with"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:amount+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:Return+ing">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:order+ed">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:show+en">
+    <gr:iobj rdf:resource="http://rasp/word:in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:extend+s">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rasp/word:argue+s">
+    <gr:iobj rdf:resource="http://rasp/word:to"/>
+  </rdf:Description>
+</rdf:RDF>

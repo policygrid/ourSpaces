@@ -1,0 +1,748 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:pol="http://www.policygrid.org/provenance-policies#"
+    xmlns:pggen="http://www.policygrid.org/provenance-generic.owl#"
+    xmlns:academic-disciplines="http://www.policygrid.org/academic-disciplines#"
+    xmlns:opm="http://openprovenance.org/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.policygrid.org/UKDADocumentationPolicy2#"
+    xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+    xmlns:spin="http://spinrdf.org/spin#"
+    xmlns:sp="http://spinrdf.org/sp#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:spl="http://spinrdf.org/spl#"
+  xml:base="http://www.policygrid.org/UKDADocumentationPolicyQuestionnaire">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.policygrid.org/ourspacesVRE.owl"/>
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <owl:imports rdf:resource="http://rdfs.org/sioc/ns"/>
+    <owl:imports rdf:resource="http://www.policygrid.org/provenance-generic.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://rdfs.org/ns/void"/>
+    <owl:imports rdf:resource="http://purl.org/net/opmv/ns"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <owl:imports rdf:resource="http://purl.org/net/provenance/ns"/>
+    <owl:imports rdf:resource="http://openprovenance.org/ontology"/>
+    <owl:imports rdf:resource="http://spinrdf.org/spin"/>
+    <owl:imports rdf:resource="http://www.policygrid.org/provenance-policies"/>
+  </owl:Ontology>
+  <rdf:Description rdf:about="http://www.policygrid.org/provenance-generic.owl#Questionnaire">
+    <pol:hasConditionRule>
+      <sp:Construct>
+        <sp:where rdf:parseType="Collection">
+          <sp:Bind>
+            <sp:variable>
+              <rdf:Description rdf:nodeID="A0">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >date</sp:varName>
+              </rdf:Description>
+            </sp:variable>
+            <sp:expression>
+              <afn:now/>
+            </sp:expression>
+          </sp:Bind>
+          <rdf:Description>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A1">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >policy</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#basedOnEvent"/>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A2">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >up</sp:varName>
+              </rdf:Description>
+            </sp:object>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A1"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:object>
+              <pol:Policy rdf:about="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire">
+                <pol:policyTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >UKDA Documentation policy</pol:policyTitle>
+              </pol:Policy>
+            </sp:object>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A3">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:object rdf:nodeID="A2"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A3"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A4">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >resource</sp:varName>
+              </rdf:Description>
+            </sp:object>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A4"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#Questionnaire"/>
+          </rdf:Description>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:subject>
+                  <rdf:Description rdf:nodeID="A5">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >edge2</sp:varName>
+                  </rdf:Description>
+                </sp:subject>
+                <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+                <sp:object rdf:nodeID="A4"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A5"/>
+                <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+                <sp:object>
+                  <rdf:Description rdf:nodeID="A6">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >process</sp:varName>
+                  </rdf:Description>
+                </sp:object>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A6"/>
+                <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#QuestionnaireSurvey"/>
+              </rdf:Description>
+              <sp:Filter>
+                <sp:expression>
+                  <sp:ne>
+                    <sp:arg1 rdf:nodeID="A6"/>
+                    <sp:arg2 rdf:nodeID="A2"/>
+                  </sp:ne>
+                </sp:expression>
+              </sp:Filter>
+            </sp:elements>
+          </sp:NotExists>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:subject>
+                  <rdf:Description rdf:nodeID="A7">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >ar</sp:varName>
+                  </rdf:Description>
+                </sp:subject>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+                <sp:object rdf:nodeID="A4"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A7"/>
+                <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A7"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+                <sp:object rdf:resource="http://purl.org/net/opmv/ns#wasGeneratedBy"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A7"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireInstanceOfClass"/>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#QuestionnaireSurvey"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+        </sp:where>
+        <sp:templates rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A8"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A8"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#onDate"/>
+            <sp:object rdf:nodeID="A0"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A8"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+            <sp:object rdf:nodeID="A4"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A8"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+            <sp:object rdf:resource="http://purl.org/net/opmv/ns#wasGeneratedBy"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A8"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireInstanceOfClass"/>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#QuestionnaireSurvey"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A8"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+          </rdf:Description>
+        </sp:templates>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Request for a QuestionnaireSurvey</rdfs:comment>
+      </sp:Construct>
+    </pol:hasConditionRule>
+    <pol:hasConditionRule>
+      <sp:Construct>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Property numberSentOut for the QuestionnaireSurvey</rdfs:comment>
+        <sp:templates rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A9"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A10">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >date</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#onDate"/>
+            <sp:subject rdf:nodeID="A9"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A11">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >process</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+            <sp:subject rdf:nodeID="A9"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#numberSentOut"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+            <sp:subject rdf:nodeID="A9"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:subject rdf:nodeID="A9"/>
+          </rdf:Description>
+        </sp:templates>
+        <sp:where rdf:parseType="Collection">
+          <sp:Bind>
+            <sp:expression>
+              <afn:now/>
+            </sp:expression>
+            <sp:variable rdf:nodeID="A10"/>
+          </sp:Bind>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A12">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >policy</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A13">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >up</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#basedOnEvent"/>
+            <sp:subject rdf:nodeID="A12"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A13"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A14">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A15">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >resource</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:subject rdf:nodeID="A14"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#Questionnaire"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A15"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A15"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A16">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge2</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A11"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:subject rdf:nodeID="A16"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#QuestionnaireSurvey"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A11"/>
+          </rdf:Description>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:object rdf:parseType="Resource">
+                  <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                  >x</sp:varName>
+                </sp:object>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-generic.owl#numberSentOut"/>
+                <sp:subject rdf:nodeID="A11"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:object rdf:nodeID="A11"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+                <sp:subject>
+                  <rdf:Description rdf:nodeID="A17">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >ar</sp:varName>
+                  </rdf:Description>
+                </sp:subject>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+                <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <sp:subject rdf:nodeID="A17"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#numberSentOut"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+                <sp:subject rdf:nodeID="A17"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+        </sp:where>
+      </sp:Construct>
+    </pol:hasConditionRule>
+    <pol:hasConditionRule>
+      <sp:Construct>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Property responseRate for the QuestionnaireSurvey</rdfs:comment>
+        <sp:templates rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A18"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A19">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >date</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#onDate"/>
+            <sp:subject rdf:nodeID="A18"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A20">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >process</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+            <sp:subject rdf:nodeID="A18"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#responseRate"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+            <sp:subject rdf:nodeID="A18"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:subject rdf:nodeID="A18"/>
+          </rdf:Description>
+        </sp:templates>
+        <sp:where rdf:parseType="Collection">
+          <sp:Bind>
+            <sp:expression>
+              <afn:now/>
+            </sp:expression>
+            <sp:variable rdf:nodeID="A19"/>
+          </sp:Bind>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A21">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >policy</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A22">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >up</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#basedOnEvent"/>
+            <sp:subject rdf:nodeID="A21"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A22"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A23">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A24">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >resource</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:subject rdf:nodeID="A23"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#Questionnaire"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A24"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A24"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A25">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge2</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A20"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:subject rdf:nodeID="A25"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#QuestionnaireSurvey"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A20"/>
+          </rdf:Description>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:object rdf:parseType="Resource">
+                  <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                  >x</sp:varName>
+                </sp:object>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-generic.owl#responseRate"/>
+                <sp:subject rdf:nodeID="A20"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:object rdf:nodeID="A20"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+                <sp:subject>
+                  <rdf:Description rdf:nodeID="A26">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >ar</sp:varName>
+                  </rdf:Description>
+                </sp:subject>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+                <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <sp:subject rdf:nodeID="A26"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#responseRate"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+                <sp:subject rdf:nodeID="A26"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+        </sp:where>
+      </sp:Construct>
+    </pol:hasConditionRule>
+    <pol:hasConditionRule>
+      <sp:Construct>
+        <sp:where rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A27">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >policy</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A27"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#basedOnEvent"/>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A28">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >up</sp:varName>
+              </rdf:Description>
+            </sp:object>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A29">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:object rdf:nodeID="A28"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A29"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A30">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >resource</sp:varName>
+              </rdf:Description>
+            </sp:object>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A30"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#Questionnaire"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A31">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge2</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:object rdf:nodeID="A30"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A31"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A32">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >process</sp:varName>
+              </rdf:Description>
+            </sp:object>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A32"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#QuestionnaireSurvey"/>
+          </rdf:Description>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A32"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-generic.owl#numberReceived"/>
+                <sp:object rdf:parseType="Resource">
+                  <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                  >x</sp:varName>
+                </sp:object>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:subject>
+                  <rdf:Description rdf:nodeID="A33">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >ar</sp:varName>
+                  </rdf:Description>
+                </sp:subject>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+                <sp:object rdf:nodeID="A32"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A33"/>
+                <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:subject rdf:nodeID="A33"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+                <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#numberReceived"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+        </sp:where>
+        <sp:templates rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A34"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#InformationRequest"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A34"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#onDate"/>
+            <sp:object rdf:parseType="Resource">
+              <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >date</sp:varName>
+            </sp:object>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A34"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requestAboutResource"/>
+            <sp:object rdf:nodeID="A32"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A34"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#requireProperty"/>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#numberReceived"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:subject rdf:nodeID="A34"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+          </rdf:Description>
+        </sp:templates>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Property numberReceived for the QuestionnaireSurvey</rdfs:comment>
+      </sp:Construct>
+    </pol:hasConditionRule>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.policygrid.org/provenance-policies#Policy">
+    <pol:hasActivationRule>
+      <sp:Construct>
+        <sp:templates rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-policies#PolicyActivation"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A35"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+            <sp:subject rdf:nodeID="A35"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:parseType="Resource">
+              <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >date</sp:varName>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#onDate"/>
+            <sp:subject rdf:nodeID="A35"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A36">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >up</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#basedOnEvent"/>
+            <sp:subject rdf:nodeID="A35"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>UKDA questionnaire policy</sp:object>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#policyTitle"/>
+            <sp:subject rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+          </rdf:Description>
+        </sp:templates>
+        <sp:where rdf:parseType="Collection">
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/ourspacesVRE.owl#UploadResource"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A36"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:nodeID="A36"/>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#cause"/>
+            <sp:subject>
+              <rdf:Description rdf:nodeID="A37">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >edge</sp:varName>
+              </rdf:Description>
+            </sp:subject>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object>
+              <rdf:Description rdf:nodeID="A38">
+                <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >resource</sp:varName>
+              </rdf:Description>
+            </sp:object>
+            <sp:predicate rdf:resource="http://openprovenance.org/ontology#effect"/>
+            <sp:subject rdf:nodeID="A37"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/provenance-generic.owl#Questionnaire"/>
+            <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <sp:subject rdf:nodeID="A38"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sp:object rdf:resource="http://www.policygrid.org/project.owl#473dfa6d-3c9c-46d6-bf62-f66b9e48782a"/>
+            <sp:predicate rdf:resource="http://www.policygrid.org/provenance-generic.owl#producedInProject"/>
+            <sp:subject rdf:nodeID="A38"/>
+          </rdf:Description>
+          <sp:NotExists>
+            <sp:elements rdf:parseType="Collection">
+              <rdf:Description>
+                <sp:object rdf:resource="http://www.policygrid.org/UKDADocumentationPolicy2#UKDADocumentationPolicyQuestionnaire"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#activePolicy"/>
+                <sp:subject>
+                  <rdf:Description rdf:nodeID="A39">
+                    <sp:varName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >activation</sp:varName>
+                  </rdf:Description>
+                </sp:subject>
+              </rdf:Description>
+              <rdf:Description>
+                <sp:object rdf:nodeID="A36"/>
+                <sp:predicate rdf:resource="http://www.policygrid.org/provenance-policies#basedOnEvent"/>
+                <sp:subject rdf:nodeID="A39"/>
+              </rdf:Description>
+            </sp:elements>
+          </sp:NotExists>
+        </sp:where>
+      </sp:Construct>
+    </pol:hasActivationRule>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
